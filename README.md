@@ -1,4 +1,6 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=김동준%20포트폴리오&desc=김동준의%20유니티%20게임클라이언트%20포트폴리오입니다&fontSize=70)
+<div style="margin-bottom: 20px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=김동준%20포트폴리오&desc=김동준의%20유니티%20게임클라이언트%20포트폴리오입니다&fontSize=70" alt="헤더 이미지">
+</div>
 
 # 김동준의 유니티 게임 클라이언트 포트폴리오
 
