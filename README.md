@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=김동준%20포트폴리오&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=김동준%20포트폴리오&fontSize=90&textColor=ffffff)
 
 # 김동준의 유니티 게임 클라이언트 포트폴리오
 
