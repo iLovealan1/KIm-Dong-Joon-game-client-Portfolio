@@ -1,22 +1,14 @@
 # 김동준의 유니티 게임 클라이언트 포트폴리오
 
 <style>
-h1 {
-  color: #336699;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-h2 {
+.project-title {
   color: #6699cc;
   font-size: 20px;
   font-weight: bold;
 }
-
-.project-screenshot {
-  max-width: 500px;
-}
 </style>
+
+## <span class="project-title">프로젝트 1: 게임 제목</span>
 
 안녕하세요! 저는 김동준이라고 합니다. 이곳은 제 유니티 게임 클라이언트 포트폴리오입니다. 아래에서 몇 가지 프로젝트를 확인할 수 있습니다.
 
