@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving)
+![header](https://capsule-render.vercel.app/# 김동준의 유니티 게임 클라이언트 포트폴리오/api?type=waving)
 # 김동준의 유니티 게임 클라이언트 포트폴리오
 
 안녕하세요! 저는 김동준이라고 합니다. 이곳은 제 유니티 게임 클라이언트 포트폴리오입니다.
