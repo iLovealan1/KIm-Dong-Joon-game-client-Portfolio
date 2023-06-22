@@ -1,5 +1,4 @@
 ![header](https://capsule-render.vercel.app/api?type=waving)
-![header](https://capsule-render.vercel.app/api?color=auto)
 
 # 김동준의 유니티 게임 클라이언트 포트폴리오
 
