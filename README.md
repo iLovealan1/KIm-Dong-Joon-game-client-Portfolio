@@ -7,16 +7,20 @@
 발매작으로는 직업훈련 중 3개월간 유니티엔진을 활용하여 제작 및 발매한 "건즈앤레이첼스" 가 있습니다.<br>
 저는 "건즈앤레이첼스" 프로젝트를 진행하며 아래 기능들을 담당하여 제작하였습니다.<br>
 
-:large_blue_circle: 맵 랜덤 생성 알고리즘 설계.<br>
-:large_blue_circle: 성소(마을) 맵 디자인 및 던전디자인<br>
-:large_blue_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 로직.<br>
-:large_blue_circle: 인벤토리 제작 및 아이템 생성 로직 제작.<br>
-:large_blue_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 어셋 을 이용한 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
-:large_blue_circle: 싱글톤 매니저 스크립트와 이벤트 디스패쳐를 이용한 객체간의 통신,  main 스크립트 및 director스크립트를 이용한 프로젝트 구조 설계.<br>
-:large_blue_circle: 필드 아이템 인터렉션 터치 조작<br>
-:large_blue_circle: 스테이지간 로딩 애니메이션 및 연출 + 아이템 획득 연출 + 각종 UI 팝업 애니메이션<br>
-:large_blue_circle: 정지 UI , 게임 오버 UI , 재화 UI(디자인) , 다이얼로그 UI (구조수정 및 데이터 연동 + 그외 기능추가 ), 필드 팝업 UI, 월드 팝업 UI, 미니맵 UI<br>
-:large_blue_circle: User Following Cam 및 Hit Effect 연출.<br>
+:large_blue_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
+:large_blue_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.<br>
+:large_blue_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 로직 기획 및 제작.<br>
+:large_blue_circle: 마을과 던전 레벨 디자인.<br>
+:large_blue_circle: 인벤토리 기획 및 제작.<br>
+:large_blue_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.<br>
+:large_blue_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작 및 DOTWeen 플러그인을 활용한 UI 애니메이션.<br>
+:large_blue_circle: InfoManager & DataManager 싱글톤 패턴 스크립트 제작.<br>
+:large_blue_circle: 객체간의 통신을 위한 Event Dispatcher 싱글톤 패턴 스크립트 제작.<br>
+:large_blue_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
+:large_blue_circle: 스테이지간 전환 로직과 연출 + 아이템 획득 연출 + DOTween 플러그인을 이용한 UI애니메이션.<br>
+:large_blue_circle: 게임의 GUI 구성 기획 스크립트 제작 (일시정지화면 UI , 게임 오버 UI , 재화 UI(디자인) ,다이얼로그 UI (구조수정 및 데이터 연동), 아이템 필드 팝업 UI, NPC 월드 팝업 UI, 가이드 애로우 UI, 던전 안내멘트 팝업 UI, 미니맵 UI)<br>
+:large_blue_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
+:large_blue_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :large_blue_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 
 
@@ -30,9 +34,12 @@ https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B
 
 https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
-그럼 포트폴리오 설명을 시작하겠습니다.
+그럼 포트폴리오 설명을 시작하겠습니다.<br><br>
 
-## 프로젝트: 건즈앤레이첼스 (GunsN'Rachels)
+
+
+
+# 프로젝트: 건즈앤레이첼스 (GunsN'Rachels)
 
 건즈앤레이첼스는 전략적인 플레이와 소녀들의 아름다운 일러스트가 조합된 탄막 슈팅 게임입니다.
 
