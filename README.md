@@ -4,7 +4,7 @@
 
 유니티엔진 클라이언트 개발자직 지원자 김동준의 포트폴리오에 오신걸 환영합니다.<br>
 저는 비전공자 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
-발매작으로는 직업훈련 중 3개월간 유니티엔진을 활용하여 제작 및 발매한 "건즈앤레이첼스" 가 있습니다.<br>
+발매작으로는 직업훈련 중 3개월간 유니티엔진을 활용하여 제작 및 발매한 "건즈앤레이첼스"가 있습니다.<br>
 저는 "건즈앤레이첼스" 프로젝트를 진행하며 아래 기능들을 담당하여 제작하였습니다.<br>
 
 :red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
@@ -37,20 +37,15 @@
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 
 
-"건즈앤레이첼스" 는 현재 구글플레이스토어 와 iOS 양대마켓에서 "건즈앤레이첼스" 를 검색하여 만나보실수 있습니다.
+"건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
 
-:iphone: iOS
+:iphone: iOS : [AppStore Link][iOS Link]
 
-https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
-  
-:iphone: Google PlayStore
+[iOS Link]: https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
 
-https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
+:iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
 
-그럼 포트폴리오 설명을 시작하겠습니다.<br><br>
-
-
-
+[GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
 # 프로젝트: 건즈앤레이첼스 (GunsN'Rachels)
 
@@ -60,7 +55,7 @@ https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=k
 
 ### 게임 설명
 
-건즈앤레이첼스는 플레이어가 다양한 무기와 소녀 캐릭터를 이용하여 맵 상에서 적들과 전투하는 탄막 슈팅 게임입니다. 플레이어는 적들의 공격을 피하고 적을 제거하여 점수를 얻습니다. 게임은 여러 난이도와 다양한 스테이지로 구성되어 있어 플레이어들은 도전과 재미를 느낄 수 있습니다.
+
 
 ### 주요 기능
 
