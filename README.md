@@ -1,10 +1,11 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=유니티엔진%20클라이언트개발자%20김동준%20포트폴리오&fontSize=35)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=UnityEngine3D%20클라이언트개발자%20김동준%20포트폴리오&fontSize=35)
 <br>
-김동준의 유니티 게임클라이언트 포트폴리오 Git 페이지입니다.
+유니티엔진 클라이언트 개발자 지망생 김동준의 포트폴리오.
 
-# 김동준의 유니티 게임 클라이언트 포트폴리오
+# 소개
 
-안녕하세요! 저는 김동준이라고 합니다. 이곳은 제 유니티 게임 클라이언트 포트폴리오입니다.
+유니티엔진 클라이언트 개발자 지원자 김동준의 포트폴리오에 오신걸 환영합니다.
+저는 비전공자 개발
 
 ## 프로젝트: 건즈앤레이첼스 (GunsN'Rachels)
 
