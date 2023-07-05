@@ -49,7 +49,7 @@
 
 # 프로젝트: 건즈앤레이첼스 (GunsN'Rachels)
 
-![건즈앤레이첼스 스크린샷]([https://raw.githubusercontent.com/your-username/your-repo/master/path/to/screenshot.png](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/issues/1#issue-1789084078))
+![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1a617920-aa47-4e7a-8e06-11b1f76ca629)
 
 건즈앤레이첼스는 전략적인 플레이와 소녀들의 아름다운 일러스트가 조합된 탄막 슈팅 게임입니다.
 
