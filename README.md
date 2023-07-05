@@ -7,30 +7,34 @@
 발매작으로는 직업훈련 중 3개월간 유니티엔진을 활용하여 제작 및 발매한 "건즈앤레이첼스" 가 있습니다.<br>
 저는 "건즈앤레이첼스" 프로젝트를 진행하며 아래 기능들을 담당하여 제작하였습니다.<br>
 
-:large_blue_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
-:large_blue_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.<br>
-:large_blue_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 로직 기획 및 제작.<br>
-:large_blue_circle: 마을과 던전 레벨 디자인.<br>
-:large_blue_circle: 인벤토리 기획 및 제작.<br>
-:large_blue_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.<br>
-:large_blue_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작 및 DOTWeen 플러그인을 활용한 UI 애니메이션.<br>
-:large_blue_circle: InfoManager & DataManager 싱글톤 패턴 스크립트 제작.<br>
-:large_blue_circle: 객체간의 통신을 위한 Event Dispatcher 싱글톤 패턴 스크립트 제작.<br>
-:large_blue_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
-:large_blue_circle: 스테이지간 전환 로직과 연출 + 아이템 획득 연출 + DOTween 플러그인을 이용한 UI애니메이션.<br>
-:large_blue_circle: 게임의 GUI 구성 기획 스크립트 제작 <br>
-  :arrow_forward:일시정지화면 UI <br>
-  :arrow_forward:게임 오버 UI <br>
-  :arrow_forward:재화 UI(디자인)<br>
-  :arrow_forward:다이얼로그 UI<br>
-  :arrow_forward:아이템 필드 팝업 UI<br>
-  :arrow_forward: NPC 월드 팝업 UI <br>
-  :arrow_forward:가이드 애로우 UI <br>
-  :arrow_forward: 안내멘트 팝업 UI<br>
-  :arrow_forward:  미니맵 UI<br>
-:large_blue_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
-:large_blue_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
-:large_blue_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
+:red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.<br>
+:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
+:red_circle: 마을과 던전 레벨 디자인.<br>
+:green_circle: 인벤토리 기획 및 제작.<br>
+:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.<br>
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작.<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
+:green_circle: DOTween 플러그인을 이용한 아이템 획득 연출.<br>
+:large_blue_circle: 게임의 전반적인 GUI 구성 기획 스크립트 제작 <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 재화 UI(디자인)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI<br>
+:large_blue_circle: 싱글톤 패턴 스크립트 기획 및 제작.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위해 제작)<br>
+:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
+:yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
+:yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 
 
 "건즈앤레이첼스" 는 현재 구글플레이스토어 와 iOS 양대마켓에서 "건즈앤레이첼스" 를 검색하여 만나보실수 있습니다.
