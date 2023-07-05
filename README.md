@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=유니티엔진%20클라이언트개발자%20김동준%20포트폴리오&fontSize=70)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=유니티엔진%20클라이언트개발자%20김동준%20포트폴리오&fontSize=50)
 <br>
 김동준의 유니티 게임클라이언트 포트폴리오 Git 페이지입니다.
 
