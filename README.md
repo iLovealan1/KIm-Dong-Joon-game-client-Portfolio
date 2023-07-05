@@ -5,13 +5,17 @@
 
 유니티엔진 클라이언트 개발자직 지원자 김동준(Alan Kim)의 포트폴리오에 오신걸 환영합니다.<br>
 -------------
-저는 비전공자 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
+저는 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
 개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br>
 
-⬇️: 아래는 "건즈앤레이첼스" 프로젝트에 참여하며 담당했던 개발 목록입니다.<br>
+:page_facing_up: : 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
+
+
+⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
+
 - - -
-:red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.<br>
+:red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
 * * *
@@ -39,10 +43,22 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위해 제작)<br>
  * * *
 :yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
+:yellow_circle: 디파짓 시스템 핵심 기능 제작.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
 
+# 발매작 : 건즈앤레이첼스 (GunsN'Rachels) 개요
+
+![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1a617920-aa47-4e7a-8e06-11b1f76ca629)
+
+
+- 이름 : 건즈앤레이첼스(Guns N` Rahcels)<br>
+- 장르 : 로그라이크 핵앤슬래시 액션 슈터<br>
+- 엔진 : UnityEngine3D<br>
+- 플랫폼 : iOS , Android<br>
+- 출시일 : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
+- 제작 : Team Vizeon<br>
 
 "건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
 
@@ -54,29 +70,17 @@
 
 [GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
-# 발매작 : 건즈앤레이첼스 (GunsN'Rachels) 개요
-
-![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1a617920-aa47-4e7a-8e06-11b1f76ca629)
-
-
-이름 : 건즈앤레이첼스(Guns N` Rahcels)
-장르 : 로그라이크 핵앤슬래시 액션 슈터
-엔진 : UnityEngine3D
-플랫폼 : iOS , Android
-출시일 : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)
-제작 : Team Vizeon
-
-
 ### 게임의 특징
 
-- 다양한 무기와 스킬을 활용한 전략적인 플레이
-- 아름다운 일러스트와 애니메이션으로 구성된 소녀 캐릭터
-- 다양한 난이도와 스테이지
+- 플레이 할때마다 맵이 바뀌는 바뀌는 로그라이크 스타일의 액션 슈터
+- 게임을 클리어한 뒤에도 이어지는 윤회시스템
+- RPG요소를 차용한 인벤토리 시스템과 스탯 강화 시스템
+- 4종류의 특색있는 총기를 이용한 핵앤 슬래시 액션
+- 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
+- 12종류의 특색있는 스킬들
 
-## 저에 대해
+## 제작 스크립트 설명
 
-저는 게임 클라이언트 개발에 관심이 많고 Unity를 사용하여 다양한 게임을 개발해왔습니다. 저의 포트폴리오를 더 자세히 확인하시려면 [포트폴리오 웹사이트](https://your-portfolio-website.com)를 방문해주세요.
-
-## 연락처
-
+:red_circle: A*알고리즘을 응용한 랜덤맵 생성기
+=============
 여기에 연락처 정보를 작성하세요. 이메일 주소나 GitHub 프로필 링크 등을 포함해도 좋습니다.
