@@ -18,7 +18,7 @@
 :large_blue_circle: 객체간의 통신을 위한 Event Dispatcher 싱글톤 패턴 스크립트 제작.<br>
 :large_blue_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
 :large_blue_circle: 스테이지간 전환 로직과 연출 + 아이템 획득 연출 + DOTween 플러그인을 이용한 UI애니메이션.<br>
-:large_blue_circle: 게임의 GUI 구성 기획 스크립트 제작 <br>(일시정지화면 UI , 게임 오버 UI , 재화 UI(디자인) ,다이얼로그 UI (구조수정 및 데이터 연동), 아이템 필드 팝업 UI, NPC 월드 팝업 UI, 가이드 애로우 UI, 던전 안내멘트 팝업 UI, 미니맵 UI)<br>
+:large_blue_circle: 게임의 GUI 구성 기획 스크립트 제작 <br>(일시정지화면 UI , 게임 오버 UI , 재화 UI(디자인) ,다이얼로그 UI (구조수정 및 데이터 연동), 아이템 필드 팝업 UI, NPC 월드 팝업 UI, 가이드 애로우 UI, 안내멘트 팝업 UI, 미니맵 UI)<br>
 :large_blue_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
 :large_blue_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :large_blue_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
