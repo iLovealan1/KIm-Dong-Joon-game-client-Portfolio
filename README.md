@@ -7,8 +7,11 @@
 첫 개발작품은 유니티엔진을 활용하여 제작 및 발매한 "건즈앤레이첼스" 이며 장르는 2D 로그라이크 액션 슈터 입니다.
 현재 구글플레이스토어 와 iOS 양대마켓에서 "건즈앤레이첼스" 를 검색하여 만나보실수 있습니다.
 
-iOS : https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
-Google PlayStore : https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
+<iOS>
+https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
+  
+<Google PlayStore>
+https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
 그럼 포트폴리오 설명을 시작하겠습니다.
 
