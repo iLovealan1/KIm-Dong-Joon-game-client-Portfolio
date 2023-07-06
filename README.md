@@ -25,7 +25,7 @@
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
 :green_circle: DOTween 플러그인을 이용한 아이템 획득 연출.<br>
 * * *
-:large_blue_circle: 게임의 전반적인 GUI 구성 기획 스크립트 제작 <br>
+:large_blue_circle: **제작한 GUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 재화 UI(디자인)<br>
@@ -35,7 +35,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI<br>
-:large_blue_circle: 싱글톤 패턴 스크립트 기획 및 제작.<br>
+:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트**.<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
