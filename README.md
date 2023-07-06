@@ -50,7 +50,7 @@
 
 # 발매작 : 건즈앤레이첼스 (GunsN'Rachels) 개요
 
-![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1a617920-aa47-4e7a-8e06-11b1f76ca629)
+![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
 
 
 - 이름 : 건즈앤레이첼스(Guns N` Rahcels)<br>
