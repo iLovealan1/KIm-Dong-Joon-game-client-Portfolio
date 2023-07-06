@@ -53,12 +53,12 @@
 ![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
 
 
-- 이름 : 건즈앤레이첼스(Guns N` Rahcels)<br>
-- 장르 : 로그라이크 핵앤슬래시 액션 슈터<br>
-- 엔진 : UnityEngine3D<br>
-- 플랫폼 : iOS , Android<br>
-- 출시일 : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
-- 제작 : Team Vizeon<br>
+- **제목** : 건즈앤레이첼스(Guns N` Rahcels)<br>
+- **장르** : 로그라이크 핵앤슬래시 액션 슈터<br>
+- **엔진** : UnityEngine3D<br>
+- **플랫폼** : iOS , Android<br>
+- **출시일** : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
+- **제작** : Team Vizeon<br>
 
 "건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
 
