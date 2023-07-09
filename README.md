@@ -13,10 +13,11 @@
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
+#목차
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Astar_Random_Map_Generator)<br>
-:red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
-:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.<br> [바로가기](#Main&Directors)<br>
+:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>[바로가기](#Main&Directors)<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
 * * *
 :green_circle: 인벤토리 기획 및 제작.<br>
@@ -98,7 +99,6 @@
 - 랜덤알고리즘의 경우 매번 새로운 시드생성을 위해 (다채로운 랜덤을 위해) Unity.Random이 아닌 System.Random 클래스를 사용.
 - 2차원 배열,리스트 자료구조 사용, LINQ를 사용하여 관리.
   
-
 ### **상세 내용**
 A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니다.
 맵 생성기는 Init() 메서드를 호출하여 맵을 생성합니다. 맵생단계는 아래와 같습니다.
@@ -110,3 +110,39 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 5. A* 알고리즘을 반대로 적용하여 시작맵부터 보스맵까지 가중치가 가장 높은 포지션을 선정해 일반맵을 생성합니다. 이후 같은 방법으로 시작맵부터 상점맵까지 일반맵을 생성합니다.
 6. 일반맵중 랜덤한 맵을 선택해 히든맵(보상맵) 으로 변경합니다.
 7. 생성된 맵 사이사이를 이러주는 포탈을 생성합니다.
+
+[목차로](#목차)
+
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+### Main&Directors
+![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
+![포탈이펙트](https://blog.kakaocdn.net/dn/bnDJvn/btserNfbalg/kfAk5YvwLhBA02UyKZS231/img.gif)
+![StagePortal](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9d9333a2-1209-4313-b7e7-84810ddd698b)
+### **이미지 설명**
+- (왼쪽 상단부터) 씬전환 모습, 포탈이동 모습, 스테이전 전환 연출을 볼수 있습니다.
+
+### **요약**
+- 앱의 시작부터 종료까지 게임의 씬전환, 기초 데이터 로드를 책임지는 최상위 단의 App class 스크립트(Mono)
+- 각 씬의 Initialize를 담당하는 Main 스크립트, 씬의 스크립트 실행 주기를 Init()메서드를 통해 관리합니다.
+- 각 씬의 UI들을 관리하는 Director 스크립트 씬의 UI 실행 주기를 Init()메서드를 통해 관리합니다.
+
+### **상세 내용**
+- App 스크립트는 씬전환을 담당하며 앱의 시작과 끝까지 살아 있는 스크립트입니다.
+- App 스크립트는 게임의 시작시 저장데이터의 유무여부에 따라 유저가 신규유저인지 기존유저인지 판단합니다.
+- App 스크립트는 GPGS 플러그인과 Firebase 플러그인의 Authenticate 를 담당합니다.
+- App 스크립트는 유저가 앱을 벗어나 홈화면으로 나갈시 UIPauseDirector의 씬 존재유무에 따라 앱을 정지합니다.
+- App 스크립트는 SceneArgs클래스를 사용해 유저가 어떤 씬에서 넘어왔는지에 대한 정보를 다음  LoadingSceneMain 스크립트에 전달합니다.
+- SanctuarySceneMain 스크립트는 마을맵의 오브젝트들을 Initialize 하며 관리합니다.
+- SanctuarySceneMain 스크립트는 유저의 스폰 및 파티클시스템을 이용한 연출을 담당합니다.
+- DungeonSceneMain 스크립트는 유저의 현재 스테이지 정보에 따라 맵의 생성수를 조절합니다. (while문 사용)
+- DungeonSceneMain 스크립트는 유저의 스테이지 이동시 UIDungeonLoadingDirector 스크립트의 화면 전환 연출 사이 맵과 데이터를 불러옵니다.
+- DungeonSceneMain 스크립트는 유저가 포탈에 접근시 해당 포탈의 목적지인 다음 포탈까지 유저를 이동시킵니다.
+- DungeonSceneMain 스크립트는 카메라 연출과 파티클시스템 사용을 통한 연출 또한 담당합니다.
+- UIDungeonDirector 스크립트는 Stack 자료구조를 사용하여 휴대전화의 뒤로가기 버튼에 대응합니다. UI팝업창이 뜬 순서대로  Stack에 쌓아 순서대로 UI를 종료 비활성화 시킵니다.
+- UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.
+
+[목차로](#목차)
+
+:red_circle: Main to Director 스크립트 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+
+[목차로](#목차)
