@@ -16,11 +16,11 @@
 # 목차
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Astar_Random_Map_Generator)<br>
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.<br> [바로가기](#Main&Directors)<br>
-:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>[바로가기](#Main&Directors)<br>
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[바로가기](#Main&Directors)<br>
+:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[바로가기](#Main&Directors)<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
 * * *
-:green_circle: 인벤토리 기획 및 제작.<br>
+:green_circle: 스탯인벤토리 제작.<br>[바로가기](#StatInventory)
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.<br>
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작.<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
@@ -87,6 +87,8 @@
 
 ## 📜: 제작 스크립트 설명
 
+* * *
+
 :red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
 ### Astar_Random_Map_Generator
@@ -113,7 +115,10 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 
 [목차로](#목차)
 
+* * *
+
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+===
 ### Main&Directors
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
 ![포탈이펙트](https://blog.kakaocdn.net/dn/bnDJvn/btserNfbalg/kfAk5YvwLhBA02UyKZS231/img.gif)
@@ -127,22 +132,31 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 - 각 씬의 UI들을 관리하는 Director 스크립트 씬의 UI 실행 주기를 Init()메서드를 통해 관리합니다.
 
 ### **상세 내용**
-- App 스크립트는 씬전환을 담당하며 앱의 시작과 끝까지 살아 있는 스크립트입니다.
-- App 스크립트는 게임의 시작시 저장데이터의 유무여부에 따라 유저가 신규유저인지 기존유저인지 판단합니다.
-- App 스크립트는 GPGS 플러그인과 Firebase 플러그인의 Authenticate 를 담당합니다.
-- App 스크립트는 유저가 앱을 벗어나 홈화면으로 나갈시 UIPauseDirector의 씬 존재유무에 따라 앱을 정지합니다.
-- App 스크립트는 SceneArgs클래스를 사용해 유저가 어떤 씬에서 넘어왔는지에 대한 정보를 다음  LoadingSceneMain 스크립트에 전달합니다.
-- SanctuarySceneMain 스크립트는 마을맵의 오브젝트들을 Initialize 하며 관리합니다.
-- SanctuarySceneMain 스크립트는 유저의 스폰 및 파티클시스템을 이용한 연출을 담당합니다.
-- DungeonSceneMain 스크립트는 유저의 현재 스테이지 정보에 따라 맵의 생성수를 조절합니다. (while문 사용)
-- DungeonSceneMain 스크립트는 유저의 스테이지 이동시 UIDungeonLoadingDirector 스크립트의 화면 전환 연출 사이 맵과 데이터를 불러옵니다.
-- DungeonSceneMain 스크립트는 유저가 포탈에 접근시 해당 포탈의 목적지인 다음 포탈까지 유저를 이동시킵니다.
-- DungeonSceneMain 스크립트는 카메라 연출과 파티클시스템 사용을 통한 연출 또한 담당합니다.
-- UIDungeonDirector 스크립트는 Stack 자료구조를 사용하여 휴대전화의 뒤로가기 버튼에 대응합니다. UI팝업창이 뜬 순서대로  Stack에 쌓아 순서대로 UI를 종료 비활성화 시킵니다.
-- UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.
+**App**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●:App 스크립트는 씬전환을 담당하며 앱의 시작과 끝까지 살아 있는 스크립트입니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 게임의 시작시 저장데이터의 유무여부에 따라 유저가 신규유저인지 기존유저인지 판단합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 GPGS 플러그인과 Firebase 플러그인의 Authenticate 를 담당합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 유저가 앱을 벗어나 홈화면으로 나갈시 UIPauseDirector의 씬 존재유무에 따라 앱을 정지합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 SceneArgs클래스를 사용, 유저가 어떤 씬에서 넘어왔는지에 대한 정보를 다음  LoadingSceneMain 스크립트에 전달합니다.<br>
+ **SanctuarySceneMain**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●SanctuarySceneMain 스크립트는 마을맵의 오브젝트들을 Initialize 하며 관리합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●SanctuarySceneMain 스크립트는 유저의 스폰 및 파티클시스템을 이용한 연출을 담당합니다.<br>
+ **DungeonSceneMain**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저의 현재 스테이지 정보에 따라 맵의 생성수를 조절합니다. (while문 사용)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저의 스테이지 이동시 UIDungeonLoadingDirector 스크립트의 화면 전환 연출 사이 맵과 데이터를 불러옵니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저가 포탈에 접근시 해당 포탈의 목적지인 다음 포탈까지 유저를 이동시킵니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 카메라 연출과 파티클시스템 사용을 통한 연출 또한 담당합니다.<br>
+ **UIDungeonDirector**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonDirector 스크립트는 Stack 자료구조를 사용하여 휴대전화의 뒤로가기 버튼에 대응합니다. UI팝업창이 뜬 순서대로  Stack에 쌓아 순서대로 UI를 종료 비활성화 시킵니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.<br>
 
 [목차로](#목차)
 
-:red_circle: Main to Director 스크립트 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+* * *
+
+:green_circle:스탯인벤토리 제작 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+===
+### StatInventory
+
 
 [목차로](#목차)
