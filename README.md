@@ -14,7 +14,7 @@
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio#red_circle-a%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EC%9D%91%EC%9A%A9%ED%95%9C-%EB%9E%9C%EB%8D%A4%EB%A7%B5-%EC%83%9D%EC%84%B1%EA%B8%B0)<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio#red_circle-a%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EC%9D%91%EC%9A%A9%ED%95%9C-%EB%9E%9C%EB%8D%A4%EB%A7%B5-%EC%83%9D%EC%84%B1%EA%B8%B0-%EC%BD%94%EB%93%9C%EB%B3%B4%EA%B8%B0)<br>
 :red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
