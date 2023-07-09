@@ -14,7 +14,7 @@
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Astar_Random_Map_Generator)<br>
 :red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
@@ -53,6 +53,12 @@
 ![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
 
 
+## 🎥: **홍보영상**<br>
+[![유튜브 동영상](https://img.youtube.com/vi/uf8yAuG5YM0/0.jpg)](https://www.youtube.com/watch?v=uf8yAuG5YM0)<br>
+*클릭시 유튜브 링크로 연결됩니다.
+
+##
+
 - **제목** : 건즈앤레이첼스(Guns N` Rahcels)<br>
 - **장르** : 로그라이크 핵앤슬래시 액션 슈터<br>
 - **엔진** : UnityEngine3D<br>
@@ -60,7 +66,7 @@
 - **출시일** : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
 - **제작** : Team Vizeon<br>
 
-"건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
+*"건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
 
 :iphone: iOS : [AppStore Link][iOS Link]
 
@@ -69,8 +75,7 @@
 :iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
 
 [GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
-
-### 게임의 특징
+## 🎮:게임의 특징
 
 - 플레이 할때마다 맵이 바뀌는 바뀌는 로그라이크 스타일의 액션 슈터
 - 게임을 클리어한 뒤에도 이어지는 윤회시스템
@@ -79,8 +84,29 @@
 - 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
 - 12종류의 특색있는 스킬들
 
-## 제작 스크립트 설명
+## 📜: 제작 스크립트 설명
 
-:red_circle: A*알고리즘을 응용한 랜덤맵 생성기
-=============
-여기에 연락처 정보를 작성하세요. 이메일 주소나 GitHub 프로필 링크 등을 포함해도 좋습니다.
+:red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
+===
+### Astar_Random_Map_Generator
+![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
+### **이미지 설명**
+- 1스테이지 에서 랜덤으로 생성되는 맵 종류의 일부을 볼수 있습니다. (보라색은 시작맵, 빨간색은 보스맵, 초록색은 상점맵, 노란색은 히든맵)
+
+### **요약**
+- A*알고리즘을 반대로 적용한 절차적 랜덤맵 생성기.
+- 랜덤알고리즘의 경우 매번 새로운 시드생성을 위해 (다채로운 랜덤을 위해) Unity.Random이 아닌 System.Random 클래스를 사용.
+- 2차원 배열,리스트 자료구조 사용, LINQ를 사용하여 관리.
+  
+
+### **상세 내용**
+A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니다.
+맵 생성기는 Init() 메서드를 호출하여 맵을 생성합니다. 맵생단계는 아래와 같습니다.
+
+1. InfoManager를 참조하여 현재 유저의 던전 정보를 가져와 2차원 배열맵의 Maxcol 과 MaxRow를 랜덤하게 정합니다.
+2. 생성된 2차원 인덱스 값 X,Y에 Vector값을 곱해 (맵 사이간의 거리가 됩니다.) 2차원 벡터 배열을 생성합니다.
+3. 이렇게 생성된 2차원 배열중 절반의 인덱스를 래덤하게 선정하고 각각의 거리를 비교하여 직선거리가 가장 먼 인덱스 두개와 거리가 가장 가까운 인덱스 2개를 선정합니다.
+4. 시작맵, 보스맵, 상점맵 세개의 고정맵을 해당 위치에 스폰 시킵니다.
+5. A* 알고리즘을 반대로 적용하여 시작맵부터 보스맵까지 가중치가 가장 높은 포지션을 선정해 일반맵을 생성합니다. 이후 같은 방법으로 시작맵부터 상점맵까지 일반맵을 생성합니다.
+6. 일반맵중 랜덤한 맵을 선택해 히든맵(보상맵) 으로 변경합니다.
+7. 생성된 맵 사이사이를 이러주는 포탈을 생성합니다.
