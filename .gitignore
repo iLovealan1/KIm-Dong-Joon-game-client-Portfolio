@@ -33,6 +33,10 @@
 ExportedObj/
 .consulo/
 *.unityproj
+<<<<<<< HEAD
+=======
+*.sln
+>>>>>>> 89a28aa51e9a5d9fe90bf3b9afbf5c8ed9dfb0e6
 *.suo
 *.tmp
 *.user
