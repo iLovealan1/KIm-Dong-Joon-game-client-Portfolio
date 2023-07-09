@@ -14,7 +14,7 @@
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Map-Generator-설명)<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Map-Generator)<br>
 :red_circle: 마을씬 던전씬의 Main to Director 스크립트 구조 기획 및 설계.<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
@@ -52,11 +52,12 @@
 
 ![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
 
-* * *
-🎥: **홍보영상**<br>
+
+## 🎥: **홍보영상**<br>
 [![유튜브 동영상](https://img.youtube.com/vi/uf8yAuG5YM0/0.jpg)](https://www.youtube.com/watch?v=uf8yAuG5YM0)<br>
 *클릭시 유튜브 링크로 연결됩니다.
 
+##
 
 - **제목** : 건즈앤레이첼스(Guns N` Rahcels)<br>
 - **장르** : 로그라이크 핵앤슬래시 액션 슈터<br>
@@ -74,7 +75,7 @@
 :iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
 
 [GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
-### 게임의 특징
+## 🎮:게임의 특징
 
 - 플레이 할때마다 맵이 바뀌는 바뀌는 로그라이크 스타일의 액션 슈터
 - 게임을 클리어한 뒤에도 이어지는 윤회시스템
@@ -83,15 +84,21 @@
 - 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
 - 12종류의 특색있는 스킬들
 
-## 제작 스크립트 설명
+## 📜: 제작 스크립트 설명
 
 :red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
-### Map-Generator-설명
+### Map-Generator
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
 
+### **요약**
+- A*알고리즘을 사용한 절차적 랜덤맵 생성기
+- 랜덤알고리즘의 경우 매번 새로운 시드생성을 위해 (다채로운 랜덤을 위해) Unity.Random 이 아닌 System.Random 클래스를 사용
+- 
+
+### **상세 내용**
 A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니다.
-맵 생성기는 Init() 메서드를 호출함으로서 맵을 생성합니다. 맵생성시 단계는 아래와 같습니다.
+맵 생성기는 Init() 메서드를 호출하여 맵을 생성합니다. 맵생단계는 아래와 같습니다.
 
 1. InfoManager를 참조하여 현재 유저의 던전 정보를 가져와 2차원 배열맵의 Maxcol 과 MaxRow를 랜덤하게 정합니다.
 2. 생성된 2차원 인덱스 값 X,Y에 Vector값을 곱해 (맵 사이간의 거리가 됩니다.) 2차원 벡터 배열을 생성합니다.
