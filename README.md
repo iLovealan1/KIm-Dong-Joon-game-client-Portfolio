@@ -159,7 +159,7 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 ### StatInventory
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
 ![InventoryOverall](https://blog.kakaocdn.net/dn/dKQf9B/btsgGkg6zYn/BhQiJuaHqKgrB1ktOgdtqk/img.gif)
-![InventoryOverall](https://blog.kakaocdn.net/dn/crhbgQ/btsgDOw8JaM/SDogCa8f4zpLf6KGJjGaik/img.gif)
+![InventoryOverall](https://blog.kakaocdn.net/dn/crhbgQ/btsgDOw8JaM/SDogCa8f4zpLf6KGJjGaik/img.gif)<br>
 ![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLnXhH%2FbtsitZwiQ9B%2F076offkN08cQfXz9fTMGO1%2Fimg.png)
 ![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb51xQF%2Fbtsivf6tlpI%2FjPDVopBeczpTC7D99K4ibK%2Fimg.png)
 
