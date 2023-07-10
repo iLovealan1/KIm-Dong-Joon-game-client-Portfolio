@@ -111,7 +111,7 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 4. 시작맵, 보스맵, 상점맵 세개의 고정맵을 해당 위치에 스폰 시킵니다.
 5. A* 알고리즘을 반대로 적용하여 시작맵부터 보스맵까지 가중치가 가장 높은 포지션을 선정해 일반맵을 생성합니다. 이후 같은 방법으로 시작맵부터 상점맵까지 일반맵을 생성합니다.
 6. 일반맵중 랜덤한 맵을 선택해 히든맵(보상맵) 으로 변경합니다.
-7. 생성된 맵 사이사이를 이러주는 포탈을 생성합니다.
+7. 생성된 맵 사이사이를 이어주는 포탈을 생성합니다.
 
 [목차로](#목차)
 
@@ -168,15 +168,27 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 - 단일 아이템 획득 연출
 - 다중 아이템 획득 연출
 - 실시간 아이템 갯수 표시 UI
+
+### **요약**
+- 스탯인벤토리는 유저의 스탯과 인벤토리 아이템을 한번에 표시해주는 역할.
+- UGUI를 활용하여 제작, Scroll Rect, Mask, Content Size Filter, Grid Rayout Group 내장 컴포넌트를 활용.
+- 추상팩토리 패턴, 구조체 클래스와 상속을 활용한 아이템 스탯 적용.
+- JsonConvert.DeserializeObject 메서드를 활용한 아이템 데이터 역직렬화.
+- DOTween을 활용한 애니메이션 제어.
+- 포스트 프로세싱 Bloom 효과와 All in 1 Shader 외부 플러그인을 활용한 비주얼 향상.
+- IDragHandler, IPointerDownHandler 인터페이스를 상속받은 터치 인풋 제어
+- DataManager, InfoManager 싱글톤 클래스와 변하는 값의 실시간 데이터 공유
+  
+  
+
 ### **상세 내용**
-- 스탯인벤토리는 유저의 스탯과 인벤토리 아이템을 한번에 표시해주는 역할을합니다.
-- UGUI를 활용하여 제작, Scroll Rect, Mask, Content Size Filter, Grid Rayout Group 내장 컴포넌트를 활용하였습니다.
-- 아이템들은 IPointerDownHandler 인터페이스를 상속받아 터치 인풋을 처리하며 터치시 System.Action을 통해 자식으로 들어온 아이템의 이름과 HashCode 정보를 인벤토리 클래스에 전달합니다.
+- ContentGrid클래스는 IDragHandler, EquipmentBG클래스는 IPointerDownHandler 인터페이스를 상속받아 터치 인풋을 처리하며 터치시 System.Action을 통해 자식으로 들어온 아이템의 이름과 HashCode 정보를 인벤토리 클래스에 전달합니다.
 - 유저가 아이템을 획득시 추상 팩토리 패턴을 사용해 획득한 아이템을 인벤토리에 생성합니다. [코드](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Inventory/ABSFactory)
 - 유저가 아이템을 획득시 Stat 구조체 클래스(스탯 필드 값을 가진 구조체) 변수를 가진 Equipment 클래스를 상속받은 4종류의 장비 아이템 클래스의 능력치를 InfoManager에 전달하여 유저의 능력치를 상승시킵니다.[코드](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Inventory/Equipment)
 - 유저가 총기를 변경시 변경된 총기의 스탯을 반영하여 InfoManager에 전달, 유저의 스탯를 실시간으로 표시합니다.
 - 인벤토리 아이콘은 아이템의 갯수를 실시간으로 체크하며 인벤토리 아이템 갯수에 따라 여유공간이 있는지 여부를 아이콘 하단에 표시합니다.
 - 유저가 아이템을 획득시 아이콘으로 빨려들어가는 연출과 연속해서 아이템을 획득시 점점 커지는 애니메이션을 DOTween을 이용해 제어합니다
+- DataManager 싱글톤 스크립트를 이용해 JsonConvert.DeserializeObject 외부 플러그인을 사용하여 json 파일을 역직렬화 한 Data를 이용해 스탯과 아이템의 설명, 이름을 가져옵니다.
 
 
 [목차로](#목차)
