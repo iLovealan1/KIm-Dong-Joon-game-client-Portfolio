@@ -154,9 +154,29 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 
 * * *
 
-:green_circle:스탯인벤토리 제작 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:green_circle:스탯인벤토리 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 ### StatInventory
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
+![InventoryOverall](https://blog.kakaocdn.net/dn/dKQf9B/btsgGkg6zYn/BhQiJuaHqKgrB1ktOgdtqk/img.gif)
+![InventoryOverall](https://blog.kakaocdn.net/dn/crhbgQ/btsgDOw8JaM/SDogCa8f4zpLf6KGJjGaik/img.gif)
+![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLnXhH%2FbtsitZwiQ9B%2F076offkN08cQfXz9fTMGO1%2Fimg.png)
+![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb51xQF%2Fbtsivf6tlpI%2FjPDVopBeczpTC7D99K4ibK%2Fimg.png)
+
+### **이미지 설명**
+- (최상단부터)스탯인벤토리의 전체적인 기능 사용 모습입니다.
+- 단일 아이템 획득 연출
+- 다중 아이템 획득 연출
+- 실시간 아이템 갯수 표시 UI
+### **상세 내용**
+- 스탯인벤토리는 유저의 스탯과 인벤토리 아이템을 한번에 표시해주는 역할을합니다.
+- UGUI를 활용하여 제작, Scroll Rect, Mask, Content Size Filter, Grid Rayout Group 내장 컴포넌트를 활용하였습니다.
+- 아이템들은 IPointerDownHandler 인터페이스를 상속받아 터치 인풋을 처리하며 터치시 System.Action을 통해 자식으로 들어온 아이템의 이름과 HashCode 정보를 인벤토리 클래스에 전달합니다.
+- 유저가 아이템을 획득시 추상 팩토리 패턴을 사용해 획득한 아이템을 인벤토리에 생성합니다. [코드](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Inventory/ABSFactory)
+- 유저가 아이템을 획득시 Stat 구조체 클래스(스탯 필드 값을 가진 구조체) 변수를 가진 Equipment 클래스를 상속받은 4종류의 장비 아이템 클래스의 능력치를 InfoManager에 전달하여 유저의 능력치를 상승시킵니다.[코드](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Inventory/Equipment)
+- 유저가 총기를 변경시 변경된 총기의 스탯을 반영하여 InfoManager에 전달, 유저의 스탯를 실시간으로 표시합니다.
+- 인벤토리 아이콘은 아이템의 갯수를 실시간으로 체크하며 인벤토리 아이템 갯수에 따라 여유공간이 있는지 여부를 아이콘 하단에 표시합니다.
+- 유저가 아이템을 획득시 아이콘으로 빨려들어가는 연출과 연속해서 아이템을 획득시 점점 커지는 애니메이션을 DOTween을 이용해 제어합니다
+
 
 [목차로](#목차)
