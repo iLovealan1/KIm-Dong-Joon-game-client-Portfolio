@@ -157,6 +157,6 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 :green_circle:스탯인벤토리 제작 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 ### StatInventory
-
+![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
 
 [목차로](#목차)
