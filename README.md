@@ -16,8 +16,8 @@
 # 목차
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작. [바로가기](#Astar_Random_Map_Generator)<br>
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[바로가기](#Main&Directors)<br>
-:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[바로가기](#Main&Directors)<br>
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[바로가기](#Main_Directors)<br>
+:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[바로가기](#Main_Directors)<br>
 :red_circle: 마을과 던전 레벨 디자인.<br>
 * * *
 :green_circle: 스탯인벤토리 제작.<br>[바로가기](#StatInventory)
@@ -119,7 +119,7 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
-### Main&Directors
+### Main_Directors
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
 ![포탈이펙트](https://blog.kakaocdn.net/dn/bnDJvn/btserNfbalg/kfAk5YvwLhBA02UyKZS231/img.gif)
 ![StagePortal](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9d9333a2-1209-4313-b7e7-84810ddd698b)
