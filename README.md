@@ -34,7 +34,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [설명보기](#GuideArrowUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [설명보기](#AnnounceUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [설명보기](#Minimap) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
-:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(일부 협업을 위한 Partial Scripts)**.<br>
+:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업을 위한 InfoManager, DataManager Partial Scripts)**.[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/SingleTonManager)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
