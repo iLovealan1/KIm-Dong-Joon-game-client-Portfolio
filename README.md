@@ -198,7 +198,7 @@
 [목차로](#목차)
 
 * * *
-:green_circle:상자 생성 및 아이템 생성[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:green_circle:상자 생성 및 아이템 생성[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ### Chest_ItemGenerator
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
@@ -206,8 +206,8 @@
 
 
 ### **이미지 설명(최상단부터)**
-- UINPCPopupDirector 스크립트를 이용한 월드 UI, 상자 아이템 생성 과 연출.
-- 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업또한 확인 가능합니다).
+- UINPCPopupDirector 스크립트를 이용한 월드 UI, 상자 아이템 생성 및 연출.
+- 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업, 체스트 가이드 애로우 확인이 가능합니다.).
 
 ### **요약**
 - NPCController 와 UINPCPopupDirector스크립트는 NPC 와 상자에 사용되는 스크립트로 유저의 물리적인 감지와 터치 인터렉션을 수행.
@@ -234,3 +234,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 아이템의 생성연출 애니메이션을 만들었습니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● UniRx 플러그인과 Physics2D 클래스를 사용해 터치 인풋을 제어합니다. (UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작 참조) 
 &nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.
+**ChestArrowController**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● BoxCollider2D 컴포넌트를 이용해 유저의 상자 진입여부를 판단합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 유저 접근시 DOTWeen의 DOFade 메서드를 사용해 화살표가 사라지는 연출을 조절합니다.
+
+[목차로](#목차)
+
+* * *
