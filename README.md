@@ -22,7 +22,7 @@
 * * *
 :green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[바로가기](#Chest_ItemGenerator)<br>
-:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작.<br>
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작[바로가기](#Field_Coin).<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
 :green_circle: DOTween 플러그인을 이용한 아이템 획득 연출.<br>
 * * *
@@ -241,3 +241,42 @@
 [목차로](#목차)
 
 * * *
+
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### Field_Coin
+![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+
+
+### **이미지 설명(최상단부터)**
+- UINPCPopupDirector 스크립트를 이용한 월드 UI, 상자 아이템 생성 및 연출.
+- 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업, 체스트 가이드 애로우 확인이 가능합니다.).
+
+### **요약**
+- NPCController 와 UINPCPopupDirector스크립트는 NPC 와 상자에 사용되는 스크립트로 유저의 물리적인 감지와 터치 인터렉션을 수행.
+- NPCController 와 UINPCPopupDirector스크립트는 EventDispatcher 싱글톤 스크립트로 ChestItemGenerator 스크립트와 통신하여 아이템 생성
+- ChestItemGenerator 스크립트는 EventDispatcher로 전달받은 String , Vector3, vector2 타입의 값을 활용해 아이템을 제작.
+- 포스트 프로세싱 Bloom 효과를 사용해 상자객체의 외곽선을 랜더링하고 빛나는 연출 구현.
+- HashSet, List, Dictionary, array 등의 자료구조를 사용.
+
+### **상세 내용**
+**NPCController**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 NPC 타입을 정의하여 [SerializeField] eNpcType 필드에 값을 할당해 자신의 타입별로 if 문을 사용해 어떤 이벤트를 호출할지 결정합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.
+**UINPCPopupDirector**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 팝업 상태를 정의하며 [SerializeField] ePopupType popupType 필드에 값을 할당해 자신의 타입별로 switch 문과 if문을 사용해 어떤 이벤트를 호출할지 결정합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 데미지를 주는 히든 상자에 의해 호출될 경우 TakeChestDamage 메서드를 통해 EventDispatcher를 사용하여 유저에게 데미지를 가합니다.(체력과 아이템 교환)
+&nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● eDropItemGrade 와 eDropItemType enum 타입으로 아이템을 구분합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 상자와 아이템은 GameObject 타입의 프리팹을  [SerializeField] 로 할당하여 Instanciate 합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 아이템은 factory 패턴을 사용하여 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● InfoManager 싱글톤 스크립트와 통신하여 현재 유저의 던전 상태(난이도,스테이지)에 따라 아이템과 재화를 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● HashSet 자료구조를 이용해 아이템이 상자에서 나올때 중복된 Vector2값에 겹치지 않게 제작하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 아이템의 생성연출 애니메이션을 만들었습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● UniRx 플러그인과 Physics2D 클래스를 사용해 터치 인풋을 제어합니다. (UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작 참조) 
+&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.
+**ChestArrowController**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● BoxCollider2D 컴포넌트를 이용해 유저의 상자 진입여부를 판단합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 유저 접근시 DOTWeen의 DOFade 메서드를 사용해 화살표가 사라지는 연출을 조절합니다.
