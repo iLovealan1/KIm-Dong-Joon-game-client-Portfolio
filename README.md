@@ -118,6 +118,7 @@
 - PortalController 스크립트는 ePortaltype 필드로 포탈 타입을 지정해 OnTriggerEnter2D 메서드로 플레이어의 진입여부를 판단합니다.
 - EventDispatcher 싱글톤 스크립트를 이용해 DungeonMain는 이벤트를 수신하여 유저를 이동시킵니다.
 - InfoManager 스크립트와 GPGSManager 싱글톤 스크립트와 통신해 유저의 스테이지 정보를 변경하거나 도전과제를 달성시킵니다.
+- IDungeonBossHandler 인터페이스를 제작해 보스 제작 팀원과 원활한 협업
 
 [목차로](#목차)
 
@@ -246,12 +247,17 @@
 ### Field_Items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
 ![GetCoins](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c648bc0f-bf08-49fc-bfb0-35be7a8fa1f3)
+![coinspin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/e3286a16-e4bb-413b-9316-c1e3cb0973db)
+![itemFloating](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b2cb028f-7512-4199-aa7f-3c933119a3bd)
 
 ### **이미지 설명(최상단부터)**
 - 필드 코인 개별 획득
 - 라운드 종료시 코인 일괄 획득
+- 코인 스핀 애니메이션
+- 아이템 플로팅 애니메이
 
 ### **요약**
+-
 - 필드코인은 몬스터를 사냥시 30%확률로 획득 가능한 전리품.
 - BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출 (DOTween 을 이용한 애니메이션 코드 제어)
 - DOTween 을 이용한 회전 연출 및 아이템 Floating 연출
