@@ -83,18 +83,6 @@ public partial class InfoManager
     /// </summary>
     public void LoadInventoryInfo()
     {
-        //string path = string.Format("{0}/Inventory_Info.json",
-        //    Application.persistentDataPath);
-        //string json = File.ReadAllText(path);
-        //this.inventoryInfo = JsonConvert.DeserializeObject<InventoryInfo>(json);
-        //Debug.Log("인벤토리 인포 로드 완료");
-
-        //string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
-        //string encryptedJson = File.ReadAllText(path);
-        //string decryptedJson = encryption.GetGeneric<string>(path, encryptedJson);
-        //this.inventoryInfo = JsonConvert.DeserializeObject<InventoryInfo>(decryptedJson);
-        //Debug.Log("<color=red>inventoryInfo loaded successfully.</color>");
-
         try
         {
             string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
@@ -115,17 +103,6 @@ public partial class InfoManager
     /// </summary>
     public void SaveInventoryInfo()
     {
-        //string path = string.Format("{0}/Inventory_Info.json",
-        //    Application.persistentDataPath);
-        //string json = JsonConvert.SerializeObject(this.inventoryInfo);
-        //File.WriteAllText(path, json);
-        //Debug.Log("인벤토리 인포 저장 완료");
-
-        //string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
-        //string json = JsonConvert.SerializeObject(this.inventoryInfo);
-        //encryption.SetGeneric(path, json);
-        //Debug.Log("<color=red>inventoryInfo saved successfully.</color>");
-
         try
         {
             string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
@@ -176,18 +153,6 @@ public partial class InfoManager
 
     public void LoadGameInfo()
     {
-        //string path = string.Format("{0}/game_info.json",
-        //    Application.persistentDataPath);
-        //string json = File.ReadAllText(path);
-        //this.gameInfo = JsonConvert.DeserializeObject<GameInfo>(json);
-        //Debug.Log("게임 인포 로드 완료");
-
-        //string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
-        //string encryptedJson = File.ReadAllText(path);
-        //string decryptedJson = encryption.GetGeneric<string>(path, encryptedJson);
-        //this.gameInfo = JsonConvert.DeserializeObject<GameInfo>(decryptedJson);
-        //Debug.Log("<color=red>gameInfo loaded successfully.</color>");
-
         try
         {
             string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
@@ -209,17 +174,6 @@ public partial class InfoManager
     /// </summary>
     public void SaveGameInfo()
     {
-        //string path = string.Format("{0}/game_info.json",
-        //    Application.persistentDataPath);
-        //string json = JsonConvert.SerializeObject(this.gameInfo);
-        //File.WriteAllText(path, json);
-        //Debug.Log("게임 인포 저장 완료");
-
-        //string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
-        //string json = JsonConvert.SerializeObject(this.gameInfo);
-        //encryption.SetGeneric(path, json);
-        //Debug.Log("<color=red>gameInfo saved successfully.</color>");
-
         try
         {
             string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
