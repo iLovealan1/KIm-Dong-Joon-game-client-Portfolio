@@ -27,7 +27,7 @@
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [바로가기](#GameOverUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
@@ -350,99 +350,21 @@
 [목차로](#목차)
 
 * * *
-
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
-### PauseUI
+### GameOverUI
+![GamOver](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/89414533-d698-4cc0-bf44-74709f462708)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 게임 오버시 출력되는 팝업입니다. (구글 애드몹 광고가 포함됩니다.)
 
 ### **요약**
-- 
+-  코루틴을 사용하여 GameOver 애니메이션 조절 및 버튼 활성화 코드 조절
+-  구글 애드몹 광고 표시 
 
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
 
 [목차로](#목차)
 
 * * *
 
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
-### PauseUI
-
-### **이미지 설명(최상단부터)**
-- 
-
-### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-
-[목차로](#목차)
-
-* * *
-
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
-### PauseUI
-
-### **이미지 설명(최상단부터)**
-- 
-
-### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-
-[목차로](#목차)
-
-* * *
-
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
-### PauseUI
-
-### **이미지 설명(최상단부터)**
-- 
-
-### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-
-[목차로](#목차)
-
-* * *
-
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
-### PauseUI
-
-### **이미지 설명(최상단부터)**
-- 
-
-### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-
-[목차로](#목차)
-
-* * *
-
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
 ### PauseUI
 
 ### **이미지 설명(최상단부터)**
@@ -460,8 +382,74 @@
 * * *
 
 
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+
+
 ### PauseUI
 
 ### **이미지 설명(최상단부터)**
