@@ -305,12 +305,11 @@
 ### **상세 내용**
 **ChestItemGenerator**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-
+&nbsp;&nbsp;&nbsp;&nbsp;● 비동기적인 이벤트 처리(응답성과 반응성)와 코드 가독성을 위해 Unirx를 사용하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● .Throttle(TimeSpan.FromSeconds(0.3)) 메서드를 통해 인풋이 0.3초 이상 지속되면 팝업을 띄웁니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● Physics2D.Raycast() 메서드를 사용하여 터치에 반응한 물체를 확인합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● LayerMask.NameToLayer("item")으로 설정되어있는 아이템 프리팹들의 .transform.gameObject.layer 속성을 확인하여 비교합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● Camera.main.ScreenToWorldPoint() 메서드로 스크린 좌표를 월드 좌표로 변환하여 EventDispatcher를 통해 팝업 이벤트를 호출합니다.
 
 
 [목차로](#목차)
