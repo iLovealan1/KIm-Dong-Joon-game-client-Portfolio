@@ -116,6 +116,9 @@
 
 - 타일맵 컴포넌트를 가진 오브젝트를 Instanciate 하는 것이 불가능하여 타일맵을 하나의 스프라이트 .png 확장자로 변경해주는 TilemapToSprite 스크립트를 제작하였습니다.
 - TilemapToSprite 스크립트는 메인 카메라로 이미지를 촬영후 RenderTexture 클래스를 사용하여 렌더 텍스쳐에서 스프라이트로 변환후 파일로 저장하는작업을 수행합니다.
+- PortalController 스크립트는 ePortaltype 필드로 포탈 타입을 지정해 OnTriggerEnter2D 메서드로 플레이어의 진입여부를 판단합니다.
+- EventDispatcher 싱글톤 스크립트를 이용해 DungeonMain는 이벤트를 수신하여 유저를 이동시킵니다.
+- InfoManager 스크립트와 GPGSManager 싱글톤 스크립트와 통신해 유저의 스테이지 정보를 변경하거나 도전과제를 달성시킵니다.
 
 [목차로](#목차)
 
@@ -221,8 +224,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 팝업 상태를 정의하며 [SerializeField] ePopupType popupType 필드에 값을 할당해 자신의 타입별로 switch 문과 if문을 사용해 어떤 이벤트를 호출할지 결정합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● 데미지를 주는 히든 상자에 의해 호출될 경우 TakeChestDamage 메서드를 통해 EventDispatcher를 사용하여 유저에게 데미지를 가합니다.(체력과 아이템 교환)
 &nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.
 **ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-
+&nbsp;&nbsp;&nbsp;&nbsp;● eDropItemGrade 와 eDropItemType enum 타입으로 아이템을 구분합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 상자와 아이템은 GameObject 타입의 프리팹을  [SerializeField] 로 할당하여 Instanciate 합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 아이템은 factory 패턴을 사용하여 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● InfoManager 싱글톤 스크립트와 통신하여 현재 유저의 던전 상태(난이도,스테이지)에 따라 아이템과 재화를 생성합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● HashSet 자료구조를 이용해 아이템이 상자에서 나올때 중복된 Vector2값에 겹치지 않게 제작하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 아이템의 생성연출 애니메이션을 만들었습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● UniRx 플러그인과 Physics2D 클래스를 사용해 터치 인풋을 제어합니다. (UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작 참조) 
+&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.
