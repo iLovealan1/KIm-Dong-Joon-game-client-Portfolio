@@ -155,6 +155,9 @@
  **UIDungeonDirector**<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonDirector 스크립트는 Stack 자료구조를 사용하여 휴대전화의 뒤로가기 버튼에 대응합니다. UI팝업창이 뜬 순서대로  Stack에 쌓아 순서대로 UI를 종료 비활성화 시킵니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.<br>
+ **MonsterGenerator**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●RoomClearInitializing() 메서드를 호출해 레벨 종료시 포탈, 안내UI, 모든 필드코인 획득, 유저 던전 레벨 올리기 작업을 수행합니다.<br>
+
 
 [목차로](#목차)
 
@@ -277,6 +280,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● 코드를 사용해 tag, sortingLayerName,sortingOrder,localScale,name,BoxCollider2D의 size를 제어하였습니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● GetObjectFromPool() 메서드를 호출하여 List의 코인을 가져오며 만약 코인이 부족할시 새롭게 만들어 리스트에 추가하여 관리하였습니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● Mono 오브젝트로 만들어 객체의 자식으로 코인을 관리하여 Hierarchy 창에서 관리가 용의 하게 제작하였습니다.
+**MonsterGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 레벨 종료시 GetAllFieldCoins() 메서드를 호출해 LINQ로 DropItem Field Coin 객체를 모두 담아 DropItem클래스의 ClickedItemCheck() 메서드를 호출하여 일괄적으로 수급합니다.
+
 
 
 [목차로](#목차)
@@ -319,16 +325,27 @@
 :large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ### PauseUI
+![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
+![Credit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c2de8d5f-baf9-42a7-a3d8-f5cec9aef9e8)
 
 ### **이미지 설명(최상단부터)**
-- 
+- PauseUI 실행 및 BGM, SFX 볼륨 설정과 진동 토글, 게임 포기 팝업 장면입니다.
+- DOTween 을 활용한 크레딧 애니메이션 입니다.(Alan Kim 으로 참여)
 
 ### **요약**
-- 
+- 게임의 일시정지, 게임 공식 블로그 연결, 볼륨조절, 진동체크, 게임 버전확인, 크레딧, 게임 포기 의 기능을 포함합니다.
+- Slide, toggle, Button 컴포넌트를 사용하여 UISettingPopup 제작.
+- 볼륨과 진동 체크 유무는 InfoManager 싱글톤 스크립트로 직렬화 하여 저장.
+- DOTween을 활용하여 크레딧 팝업 화면을 제작.
 
 ### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
+- 일시정지 기능은 Time.timeScale 속성을 0으로 만들어 구현하였습니다.
+- 성소로 돌아가기 버튼은 EventDispatcher 싱글톤 스크립트를 이용해 DungeonMain -> App 스크립트 순으로 이벤트를 호출해 유저의 씬을 전환 시킵니다.
+- InfoManager 의 settingInfo 클래스 를 사용해 유저의 셋팅 정보를 저장합니다 (음악&특수효과 볼륨, 진동여부)
+- Application.version 속성을 사용해 버전을 표기합니다.
+- Application.OpenURL 메서드를 사용해 버튼을 누를시 게임의 공식 블로그로 연동하였습니다.
+- UICreditPopup 스크립트는 DOTween플러그인을 사용해 코루틴으로 크레딧 애니메이션을 코드로 제어하였습니다.
+
 
 [목차로](#목차)
 
