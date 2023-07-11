@@ -123,8 +123,8 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
 ![포탈이펙트](https://blog.kakaocdn.net/dn/bnDJvn/btserNfbalg/kfAk5YvwLhBA02UyKZS231/img.gif)
 ![StagePortal](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9d9333a2-1209-4313-b7e7-84810ddd698b)
-### **이미지 설명**
-- (왼쪽 상단부터) 씬전환 모습, 포탈이동 모습, 스테이전 전환 연출을 볼수 있습니다.
+### **이미지 설명(왼쪽 상단부터)**
+-  씬전환 모습, 포탈이동 모습, 스테이전 전환 연출을 볼수 있습니다.
 
 ### **요약**
 - 앱의 시작부터 종료까지 게임의 씬전환, 기초 데이터 로드를 책임지는 최상위 단의 App class 스크립트(Mono)
@@ -163,8 +163,8 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 ![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLnXhH%2FbtsitZwiQ9B%2F076offkN08cQfXz9fTMGO1%2Fimg.png)
 ![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb51xQF%2Fbtsivf6tlpI%2FjPDVopBeczpTC7D99K4ibK%2Fimg.png)
 
-### **이미지 설명**
-- (최상단부터)스탯인벤토리의 전체적인 기능 사용 모습입니다.
+### **이미지 설명(최상단부터)**
+- 스탯인벤토리의 전체적인 기능 사용 모습입니다.
 - 단일 아이템 획득 연출 & 다중 아이템 획득 연출
 - 실시간 아이템 갯수 표시 UI (여유&꽉참)
 
@@ -195,12 +195,12 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 ===
 ### Chest_ItemGenerator
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
+![ChestAppear](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/d19ac2aa-c489-4cfc-a558-a7f09fe3e6dd)
 
 
-
-### **이미지 설명**
+### **이미지 설명(최상단부터)**
 - 상자 아이템 생성 연출
-- 
+- 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업을 함께 확인할수 있습니다.)
 
 ### **요약**
 
