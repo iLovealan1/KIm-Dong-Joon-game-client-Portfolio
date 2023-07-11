@@ -22,9 +22,8 @@
 * * *
 :green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[바로가기](#Chest_ItemGenerator)<br>
-:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작[바로가기](#Field_Coin).<br>
-:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
-:green_circle: DOTween 플러그인을 이용한 아이템 획득 연출.<br>
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작[바로가기](#Field_Items).<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).<br>
 * * *
 :large_blue_circle: **제작한 GUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
@@ -242,22 +241,22 @@
 
 * * *
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
-### Field_Coin
+### Field_Items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
-
+![GetCoins](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c648bc0f-bf08-49fc-bfb0-35be7a8fa1f3)
 
 ### **이미지 설명(최상단부터)**
-- UINPCPopupDirector 스크립트를 이용한 월드 UI, 상자 아이템 생성 및 연출.
-- 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업, 체스트 가이드 애로우 확인이 가능합니다.).
+- 필드 코인 개별 획득
+- 라운드 종료시 코인 일괄 획득
 
 ### **요약**
-- NPCController 와 UINPCPopupDirector스크립트는 NPC 와 상자에 사용되는 스크립트로 유저의 물리적인 감지와 터치 인터렉션을 수행.
-- NPCController 와 UINPCPopupDirector스크립트는 EventDispatcher 싱글톤 스크립트로 ChestItemGenerator 스크립트와 통신하여 아이템 생성
-- ChestItemGenerator 스크립트는 EventDispatcher로 전달받은 String , Vector3, vector2 타입의 값을 활용해 아이템을 제작.
-- 포스트 프로세싱 Bloom 효과를 사용해 상자객체의 외곽선을 랜더링하고 빛나는 연출 구현.
-- HashSet, List, Dictionary, array 등의 자료구조를 사용.
+- 필드코인은 몬스터를 사냥시 30%확률로 획득 가능한 전리품.
+- BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출 (DOTween 을 이용한 애니메이션 코드 제어)
+- DOTween 을 이용한 회전 연출 및 아이템 Floating 연출
+- SpriteGlowEffect 외부 스크립트를 활용한 포스트 프로세싱 Bloom 효과 연출
+- 
 
 ### **상세 내용**
 **NPCController**<br>
