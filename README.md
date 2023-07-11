@@ -26,7 +26,7 @@
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).[바로가기](#UniRx_Touch_Control)<br>
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI) PauseUI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
