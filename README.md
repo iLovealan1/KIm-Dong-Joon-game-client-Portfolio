@@ -29,7 +29,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [바로가기](#GameOverUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [바로가기](#DialogUI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [바로가기](#Item_Field_Popup_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
@@ -386,8 +386,8 @@
 
 * * *
 
-
-### PauseUI
+### Item_Field_Popup_UI
+![UnirxGetItemsPopup](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2585b3c6-5622-4664-a1cf-393f9c0d5cd8)
 
 ### **이미지 설명(최상단부터)**
 - 
@@ -395,9 +395,6 @@
 ### **요약**
 - 
 
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
 
 [목차로](#목차)
 
