@@ -28,7 +28,6 @@
 :large_blue_circle: **제작한 GUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 재화 UI(디자인)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
@@ -261,19 +260,45 @@
 - ChestItemGenerator 클래스와 CoinPool 오브젝트 풀링 스크립트를 이용한 코인 생성.
 - Field Coin은 ChestItemGenerator 의 MakeFieldCoin 메서드의 UnityEngine.Random.Range() 메서드 사용 30% 의 확률로 생성
 - BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출. (DOTween 을 이용한 애니메이션 코드 제어)
-- DOTween 을 이용한 회전 연출 및 아이템 Floating 연출.
+- DOTween을 이용한 회전 연출 및 아이템 Floating 연출.
 - SpriteGlowEffect 외부 스크립트를 활용한 포스트 프로세싱 Bloom 효과 연출.
 
 ### **상세 내용**
-**NPCController**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 NPC 타입을 정의하여 [SerializeField] eNpcType 필드에 값을 할당해 자신의 타입별로 if 문을 사용해 어떤 이벤트를 호출할지 결정합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.
-**UINPCPopupDirector**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 팝업 상태를 정의하며 [SerializeField] ePopupType popupType 필드에 값을 할당해 자신의 타입별로 switch 문과 if문을 사용해 어떤 이벤트를 호출할지 결정합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 데미지를 주는 히든 상자에 의해 호출될 경우 TakeChestDamage 메서드를 통해 EventDispatcher를 사용하여 유저에게 데미지를 가합니다.(체력과 아이템 교환)
-&nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.
-**ChestItemGenerator**<br>
+**DropItem**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 추상 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 각각 다른 UI위치로 아이템을 보내는 연출을 코드로 제어하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 FloatingEffect() 메서드와 FieldCoinAimStart() 메서드를 제작해 각기 다른 애니메이션을 코드로 제어하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 호출하여 아이템 Full 팝업 UI를 체력 Full 팝업 UI 를 포하 각기 다른 UI의 메서드를 호출하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 등록하여 ChestItemGenerator 의 터치이벤트에 반응하는 메서드를 호출시킵니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DataManager 싱글톤 클래스로 변하지 않는 기획된 양 만큼의 코인 값을 Infomanager 싱글톤 스크립트에 전달하여 직렬화 하여 저장하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 외부 스크립트를 활용해 포스트 프로세싱 Bloom  효과를 더한 아이템 획득 이펙트 연출을 제작하였습니다.
+**CoinPool**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● List 자료구조를 사용해 FieldCoin 게임 오브젝트 프리팹을 Initializing 단계에서 생성하여 오브젝트 풀을 관리하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 코드를 사용해 tag, sortingLayerName,sortingOrder,localScale,name,BoxCollider2D의 size를 제어하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● GetObjectFromPool() 메서드를 호출하여 List의 코인을 가져오며 만약 코인이 부족할시 새롭게 만들어 리스트에 추가하여 관리하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● Mono 오브젝트로 만들어 객체의 자식으로 코인을 관리하여 Hierarchy 창에서 관리가 용의 하게 제작하였습니다.
+
+
+[목차로](#목차)
+
+* * *
+
+:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### Field_Items
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**DropItem**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+**CoinPool**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
 
 [목차로](#목차)
 
