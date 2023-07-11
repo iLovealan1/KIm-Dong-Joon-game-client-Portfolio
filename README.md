@@ -324,7 +324,8 @@
 
 :large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)
 ===
-### PauseUI  [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)
+### PauseUI  
+[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
 ![Credit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c2de8d5f-baf9-42a7-a3d8-f5cec9aef9e8)
 
