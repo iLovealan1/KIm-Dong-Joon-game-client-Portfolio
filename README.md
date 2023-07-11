@@ -21,7 +21,7 @@
 :red_circle: 마을과 던전 레벨 디자인.<br>
 * * *
 :green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory)<br>
-:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.<br>
+:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[바로가기](#Chest_ItemGenerator)<br>
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 제작.<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작.<br>
 :green_circle: DOTween 플러그인을 이용한 아이템 획득 연출.<br>
@@ -177,8 +177,6 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 - 포스트 프로세싱 Bloom 효과와 All in 1 Shader 외부 플러그인을 활용한 비주얼 향상.
 - IDragHandler, IPointerDownHandler 인터페이스를 상속받은 터치 인풋 제어
 - DataManager, InfoManager 싱글톤 클래스와 변하는 값의 실시간 데이터 공유
-  
-  
 
 ### **상세 내용**
 - ContentGrid클래스는 IDragHandler, EquipmentBG클래스는 IPointerDownHandler 인터페이스를 상속받아 터치 인풋을 처리하며 터치시 System.Action을 통해 자식으로 들어온 아이템의 이름과 HashCode 정보를 인벤토리 클래스에 전달합니다.
@@ -191,3 +189,21 @@ A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니
 
 
 [목차로](#목차)
+
+* * *
+:green_circle:상자 생성 및 아이템 생성[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+===
+### Chest_ItemGenerator
+![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
+
+
+
+### **이미지 설명**
+- 상자 아이템 생성 연출
+- 
+
+### **요약**
+
+
+### **상세 내용**
+
