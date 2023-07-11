@@ -32,8 +32,8 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [바로가기](#Item_Field_Popup_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [바로가기](#Chest_ItemGenerator)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [바로가기](#GuideArrowUI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [바로가기](#AnnounceUI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [바로가기](#Minimap)<br>
 :large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트**.<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
@@ -143,18 +143,18 @@
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 게임의 시작시 저장데이터의 유무여부에 따라 유저가 신규유저인지 기존유저인지 판단합니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 GPGS 플러그인과 Firebase 플러그인의 Authenticate 를 담당합니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 유저가 앱을 벗어나 홈화면으로 나갈시 UIPauseDirector의 씬 존재유무에 따라 앱을 정지합니다.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 SceneArgs클래스를 사용, 유저가 어떤 씬에서 넘어왔는지에 대한 정보를 다음  LoadingSceneMain 스크립트에 전달합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 SceneArgs클래스를 사용, 유저가 어떤 씬에서 넘어왔는지에 대한 정보를 다음  LoadingSceneMain 스크립트에 전달합니다.<br><br>
  **SanctuarySceneMain**<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●SanctuarySceneMain 스크립트는 마을맵의 오브젝트들을 Initialize 하며 관리합니다.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;●SanctuarySceneMain 스크립트는 유저의 스폰 및 파티클시스템을 이용한 연출을 담당합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●SanctuarySceneMain 스크립트는 유저의 스폰 및 파티클시스템을 이용한 연출을 담당합니다.<br><br>
  **DungeonSceneMain**<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저의 현재 스테이지 정보에 따라 맵의 생성수를 조절합니다. (while문 사용)<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저의 스테이지 이동시 UIDungeonLoadingDirector 스크립트의 화면 전환 연출 사이 맵과 데이터를 불러옵니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 유저가 포탈에 접근시 해당 포탈의 목적지인 다음 포탈까지 유저를 이동시킵니다.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 카메라 연출과 파티클시스템 사용을 통한 연출 또한 담당합니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●DungeonSceneMain 스크립트는 카메라 연출과 파티클시스템 사용을 통한 연출 또한 담당합니다.<br><br>
  **UIDungeonDirector**<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonDirector 스크립트는 Stack 자료구조를 사용하여 휴대전화의 뒤로가기 버튼에 대응합니다. UI팝업창이 뜬 순서대로  Stack에 쌓아 순서대로 UI를 종료 비활성화 시킵니다.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●UIDungeonLoadingDirector 스크립트는 DOTween을 이용한 포탈 이동 연출을 사용하였습니다.<br><br>
  **MonsterGenerator**<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●RoomClearInitializing() 메서드를 호출해 레벨 종료시 포탈, 안내UI, 모든 필드코인 획득, 유저 던전 레벨 올리기 작업을 수행합니다.<br>
 
@@ -221,12 +221,12 @@
 ### **상세 내용**
 **NPCController**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 NPC 타입을 정의하여 [SerializeField] eNpcType 필드에 값을 할당해 자신의 타입별로 if 문을 사용해 어떤 이벤트를 호출할지 결정합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.<br>
 **UINPCPopupDirector**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 팝업 상태를 정의하며 [SerializeField] ePopupType popupType 필드에 값을 할당해 자신의 타입별로 switch 문과 if문을 사용해 어떤 이벤트를 호출할지 결정합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● 데미지를 주는 히든 상자에 의해 호출될 경우 TakeChestDamage 메서드를 통해 EventDispatcher를 사용하여 유저에게 데미지를 가합니다.(체력과 아이템 교환)
 &nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.<br>
 **ChestItemGenerator**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● eDropItemGrade 와 eDropItemType enum 타입으로 아이템을 구분합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● 상자와 아이템은 GameObject 타입의 프리팹을  [SerializeField] 로 할당하여 Instanciate 합니다.
@@ -235,7 +235,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● HashSet 자료구조를 이용해 아이템이 상자에서 나올때 중복된 Vector2값에 겹치지 않게 제작하였습니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 아이템의 생성연출 애니메이션을 만들었습니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● UniRx 플러그인과 Physics2D 클래스를 사용해 터치 인풋을 제어합니다. (UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작 참조) 
-&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.<br>
 **ChestArrowController**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● BoxCollider2D 컴포넌트를 이용해 유저의 상자 진입여부를 판단합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● 유저 접근시 DOTWeen의 DOFade 메서드를 사용해 화살표가 사라지는 연출을 조절합니다.
@@ -268,20 +268,20 @@
 
 ### **상세 내용**
 **DropItem**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 추상 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 각각 다른 UI위치로 아이템을 보내는 연출을 코드로 제어하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 FloatingEffect() 메서드와 FieldCoinAimStart() 메서드를 제작해 각기 다른 애니메이션을 코드로 제어하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 호출하여 아이템 Full 팝업 UI를 체력 Full 팝업 UI 를 포하 각기 다른 UI의 메서드를 호출하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 등록하여 ChestItemGenerator 의 터치이벤트에 반응하는 메서드를 호출시킵니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DataManager 싱글톤 클래스로 변하지 않는 기획된 양 만큼의 코인 값을 Infomanager 싱글톤 스크립트에 전달하여 직렬화 하여 저장하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 외부 스크립트를 활용해 포스트 프로세싱 Bloom  효과를 더한 아이템 획득 이펙트 연출을 제작하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 추상 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 각각 다른 UI위치로 아이템을 보내는 연출을 코드로 제어하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 FloatingEffect() 메서드와 FieldCoinAimStart() 메서드를 제작해 각기 다른 애니메이션을 코드로 제어하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 호출하여 아이템 Full 팝업 UI를 체력 Full 팝업 UI 를 포하 각기 다른 UI의 메서드를 호출하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 등록하여 ChestItemGenerator 의 터치이벤트에 반응하는 메서드를 호출시킵니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● DataManager 싱글톤 클래스로 변하지 않는 기획된 양 만큼의 코인 값을 Infomanager 싱글톤 스크립트에 전달하여 직렬화 하여 저장하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 외부 스크립트를 활용해 포스트 프로세싱 Bloom  효과를 더한 아이템 획득 이펙트 연출을 제작하였습니다.<br><br>
 **CoinPool**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● List 자료구조를 사용해 FieldCoin 게임 오브젝트 프리팹을 Initializing 단계에서 생성하여 오브젝트 풀을 관리하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 코드를 사용해 tag, sortingLayerName,sortingOrder,localScale,name,BoxCollider2D의 size를 제어하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● GetObjectFromPool() 메서드를 호출하여 List의 코인을 가져오며 만약 코인이 부족할시 새롭게 만들어 리스트에 추가하여 관리하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● Mono 오브젝트로 만들어 객체의 자식으로 코인을 관리하여 Hierarchy 창에서 관리가 용의 하게 제작하였습니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● List 자료구조를 사용해 FieldCoin 게임 오브젝트 프리팹을 Initializing 단계에서 생성하여 오브젝트 풀을 관리하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 코드를 사용해 tag, sortingLayerName,sortingOrder,localScale,name,BoxCollider2D의 size를 제어하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● GetObjectFromPool() 메서드를 호출하여 List의 코인을 가져오며 만약 코인이 부족할시 새롭게 만들어 리스트에 추가하여 관리하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● Mono 오브젝트로 만들어 객체의 자식으로 코인을 관리하여 Hierarchy 창에서 관리가 용의 하게 제작하였습니다.<br><br>
 **MonsterGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 레벨 종료시 GetAllFieldCoins() 메서드를 호출해 LINQ로 DropItem Field Coin 객체를 모두 담아 DropItem클래스의 ClickedItemCheck() 메서드를 호출하여 일괄적으로 수급합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 레벨 종료시 GetAllFieldCoins() 메서드를 호출해 LINQ로 DropItem Field Coin 객체를 모두 담아 DropItem클래스의 ClickedItemCheck() 메서드를 호출하여 일괄적으로 수급합니다.<br>
 
 
 
@@ -310,12 +310,12 @@
 
 ### **상세 내용**
 **ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 비동기적인 이벤트 처리(응답성과 반응성)와 코드 가독성을 위해 Unirx를 사용하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● .Throttle(TimeSpan.FromSeconds(0.3)) 메서드를 통해 인풋이 0.3초 이상 지속되면 팝업을 띄웁니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● Physics2D.Raycast() 메서드를 사용하여 터치에 반응한 물체를 확인합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● LayerMask.NameToLayer("item")으로 설정되어있는 아이템 프리팹들의 .transform.gameObject.layer 속성을 확인하여 비교합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● Camera.main.ScreenToWorldPoint() 메서드로 스크린 좌표를 월드 좌표로 변환하여 EventDispatcher를 통해 팝업 이벤트를 호출합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 비동기적인 이벤트 처리(응답성과 반응성)와 코드 가독성을 위해 Unirx를 사용하였습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● .Throttle(TimeSpan.FromSeconds(0.3)) 메서드를 통해 인풋이 0.3초 이상 지속되면 팝업을 띄웁니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● Physics2D.Raycast() 메서드를 사용하여 터치에 반응한 물체를 확인합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● LayerMask.NameToLayer("item")으로 설정되어있는 아이템 프리팹들의 .transform.gameObject.layer 속성을 확인하여 비교합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● Camera.main.ScreenToWorldPoint() 메서드로 스크린 좌표를 월드 좌표로 변환하여 EventDispatcher를 통해 팝업 이벤트를 호출합니다.<br>
 
 
 [목차로](#목차)
@@ -435,40 +435,45 @@
 * * *
 
 
-### PauseUI
+### AnnounceUI
+![AnnounceUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/97bfcdaa-2fc9-4b38-9694-c6e97690cf08)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 맵별 안내 UI 팝업 모습입니다.
 
 ### **요약**
-- 
+- DungeonSceneMain의 PlayerTransferToRoom() 코루틴에서 맵의 속성을 확인, 각 맵에 맞는 eAnnounceType  enum 타입의 값을 StartAnnounce() 코루틴의 매개변수로 보내 안내 멘트 팝업 호출.
+- TextAnimatorPlayer 컴포넌트와 외부 플러그인 Text Animator 를 활용하여 애니메이션 제어.
+- 코루틴의  yield return new WaitForSeconds() yield 문을 활용하여 애니메이션 시간 제어.
+- DOTween을 활용하여 알파값 코드 제어.
+- InfoManager 싱글톤 스크립트의 dungeonInfo 클래스의 필드값을 참조하여 MakeStageName() 메서드의 이름 변경.
 
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
 
 [목차로](#목차)
 
 * * *
 
 
-### PauseUI
+### Minimap
+
+![MiniMap](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/67ac7b78-2530-4b33-be35-2fc0eec12125)
+![MiniMap2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9688d25e-31bf-4143-8be3-9277dd29eec8)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/16b310e4-7c1b-4257-8fe1-5254f139dce0)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 미니맵 확장 전 이미지.
+- 미니맵 확장 후 이미지.
+- 맵 프리팹의 상공에 자식으로 넣어둔 Layer Mask UI Image.
 
 ### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
+-  UI Camra 를 활용 Layer UI인 맵 상공의  객체만을 촬영하여 미니맵 구현.
+-  Raw Image 컴포넌트를 사용. 
+-  IPointerDownHandler 인터페이스로 터치 인풋을 받아 확장 및 축소 가능.
+-  코루틴을 사용하여 실시간으로 유저의 위치를 미니맵에 표시.
 
 [목차로](#목차)
 
 * * *
-
-
 
 ### PauseUI
 
