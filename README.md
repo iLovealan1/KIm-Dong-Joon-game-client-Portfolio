@@ -241,7 +241,7 @@
 
 * * *
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 ===
 ### Field_Items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
