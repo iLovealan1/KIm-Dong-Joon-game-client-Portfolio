@@ -414,9 +414,9 @@
 * * *
 
 ### GuideArrowUI  [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
-![GuideArrow2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2b8d7cb8-4c41-4965-8856-b87357923300)
 
 ![GuideArrow](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/dc831c4d-c2d5-4d71-b4ee-1f1fb2a7176e)
+![GuideArrow2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2b8d7cb8-4c41-4965-8856-b87357923300)
 
 ### **이미지 설명(최상단부터)**
 - 유저 던전 입장시 가이드 애로우 모습 & 포탈 이동시 가이드 애로우 모습.
