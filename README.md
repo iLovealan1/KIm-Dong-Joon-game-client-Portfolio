@@ -28,7 +28,7 @@
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [바로가기](#GameOverUI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [바로가기](#DialogUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
@@ -364,13 +364,19 @@
 [목차로](#목차)
 
 * * *
+### DialogUI
 
-### PauseUI
+![Dialog_Merchant](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/66587761-519c-44e9-8202-001533c03acd)
+![Dialog_Knight](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/736d4ce0-86c5-4692-9af6-2ebc5aa997fe)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 상인 NPC와의 대화
+- 던전 입장 전 무기 랜덤 변경 및 이벤트 대화
 
 ### **요약**
+- eDialogType enum 타입으로 대화의 타입을 전달 받아 StartDialog() 메서드 호출
+- StartDialog()의 매개변수에 따라 DataManager 싱글톤 스크립트와 연동하여 대화값을 string 값으로 불러와 List 자료구조 형태로 관리
+- 
 - 
 
 ### **상세 내용**
