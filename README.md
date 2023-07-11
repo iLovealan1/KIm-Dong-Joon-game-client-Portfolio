@@ -311,6 +311,7 @@
 - Unirx의 인풋은 ChestItemGenerator 클래스의 Initializing 단계에서 주기 관리.
 - Physics2D 클래스를 활용하여 LayerMask의 비교를 통해 메서드 구현.
 - StayHandleInput() 메서드와 HandleInput() 메서드를 만들어 단일 Input 과 Stay Input에 따른 기능 구현.
+- Main Camera의 자식으로 빈 객체를 UI Point에 배치, 이후  GetChild() 메서드를 통해 전역으로 접근하여 DOTween을 코드로 제어하며 연출.
 
 ### **상세 내용**
 📜:**ChestItemGenerator**<br>
