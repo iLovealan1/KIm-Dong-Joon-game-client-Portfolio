@@ -38,18 +38,17 @@ public partial class InfoManager
     public GameInfo gameInfo = new GameInfo();
 
     /// <summary>
-    /// ÀÎº¥Åä¸® Á¤º¸ ÃÊ±âÈ­ + ÀÚµ¿ ÀúÀå( ´øÀü¾À ¿£µå½Ã ¹İµå½Ã È£Ãâ )
+    /// ì¸ë²¤í† ë¦¬ ì •ë³´ ì´ˆê¸°í™” + ìë™ ì €ì¥( ë˜ì „ì”¬ ì—”ë“œì‹œ ë°˜ë“œì‹œ í˜¸ì¶œ )
     /// </summary>
     public void InitInventoryInfo()
     {
-        Debug.Log("<color=red>ÀÎº¥Åä¸® ÀÎÆ÷ ÀÌ´Ï¼È¶óÀÌÂ¡</color>");
         this.inventoryInfo.isEquipment = false;
         this.inventoryInfo.currentEquipmentsArr = null;
         this.SaveInventoryInfo();
     }
 
     /// <summary>
-    /// ÇöÀç À¯Àú ³­ÀÌµµ ¹× ½ºÅ×ÀÌÁö Á¤º¸ ÃÊ±âÈ­( ´øÀü¾À ¿£µå½Ã ¹İµå½Ã È£Ãâ )
+    /// í˜„ì¬ ìœ ì € ë‚œì´ë„ ë° ìŠ¤í…Œì´ì§€ ì •ë³´ ì´ˆê¸°í™”( ë˜ì „ì”¬ ì—”ë“œì‹œ ë°˜ë“œì‹œ í˜¸ì¶œ )
     /// </summary>
     public void InitDungeonInfo()
     {
@@ -57,7 +56,7 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// ÀÎº¥Åä¸® °¹¼ö ¿µ±¸Áõ°¡(1°³) +  ÀÚµ¿ ÀúÀå
+    /// ì¸ë²¤í† ë¦¬ ê°¯ìˆ˜ ì˜êµ¬ì¦ê°€(1ê°œ) +  ìë™ ì €ì¥
     /// </summary>
     public int IncreaseInventoryCount()
     {
@@ -67,11 +66,10 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// ¾ÆÀÌÅÛ ±¸¸Å½Ã Inventory Info ¿¡ ±¸¸Å¾ÆÀÌÅÛÀ» Æ÷ÇÔÇÑ ¸®½ºÆ® ÀúÀå + ÀÚµ¿ ÀúÀå
+    /// ì•„ì´í…œ êµ¬ë§¤ì‹œ Inventory Info ì— êµ¬ë§¤ì•„ì´í…œì„ í¬í•¨í•œ ë¦¬ìŠ¤íŠ¸ ì €ì¥ + ìë™ ì €ì¥
     /// </summary>
     public void UpdateEquipmentInfo(List<string> EquipmentList)
     {
-        Debug.Log("<color=red>ÀÎº¥Åä¸® ÀÎÆ÷ ¾÷µ¥ÀÌÆ®</color>");
         if(EquipmentList.Count != 0)
             this.inventoryInfo.isEquipment = true;
         else 
@@ -81,7 +79,7 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// ÇÃ·¹ÀÌ¾î InventoryInfo ºÒ·¯¿À±â
+    /// í”Œë ˆì´ì–´ InventoryInfo ë¶ˆëŸ¬ì˜¤ê¸°
     /// </summary>
     public void LoadInventoryInfo()
     {
@@ -89,7 +87,7 @@ public partial class InfoManager
         //    Application.persistentDataPath);
         //string json = File.ReadAllText(path);
         //this.inventoryInfo = JsonConvert.DeserializeObject<InventoryInfo>(json);
-        //Debug.Log("ÀÎº¥Åä¸® ÀÎÆ÷ ·Îµå ¿Ï·á");
+        //Debug.Log("ì¸ë²¤í† ë¦¬ ì¸í¬ ë¡œë“œ ì™„ë£Œ");
 
         //string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
         //string encryptedJson = File.ReadAllText(path);
@@ -113,7 +111,7 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// ÇÃ·¹ÀÌ¾î Inventory ÀúÀå
+    /// í”Œë ˆì´ì–´ Inventory ì €ì¥
     /// </summary>
     public void SaveInventoryInfo()
     {
@@ -121,7 +119,7 @@ public partial class InfoManager
         //    Application.persistentDataPath);
         //string json = JsonConvert.SerializeObject(this.inventoryInfo);
         //File.WriteAllText(path, json);
-        //Debug.Log("ÀÎº¥Åä¸® ÀÎÆ÷ ÀúÀå ¿Ï·á");
+        //Debug.Log("ì¸ë²¤í† ë¦¬ ì¸í¬ ì €ì¥ ì™„ë£Œ");
 
         //string path = string.Format("{0}/Inventory_Info.json", Application.persistentDataPath);
         //string json = JsonConvert.SerializeObject(this.inventoryInfo);
@@ -143,12 +141,12 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// À¯Àú ³­ÀÌµµ º¯°æ (½ºÅ×ÀÌÁö Á¤º¸ ÀÔ·Â½Ã ÇØ´ç ½ºÅ×ÀÌÁö ½ÃÀÛ ³­ÀÌµµ·Î ÀÚµ¿ ¼³Á¤), ¸Å°³º¯¼ö ¾øÀ»½Ã = ³­ÀÌµµ + 1
-    /// <para>½ºÅ×ÀÌÁö2 : ½ÃÀÛ ³­ÀÌµµ = 3</para>
-    /// <para>½ºÅ×ÀÌÁö3 : ½ÃÀÛ ³­ÀÌµµ = 6</para>
-    /// <para>½ºÅ×ÀÌÁö4 : ½ÃÀÛ ³­ÀÌµµ = 10</para>
+    /// ìœ ì € ë‚œì´ë„ ë³€ê²½ (ìŠ¤í…Œì´ì§€ ì •ë³´ ì…ë ¥ì‹œ í•´ë‹¹ ìŠ¤í…Œì´ì§€ ì‹œì‘ ë‚œì´ë„ë¡œ ìë™ ì„¤ì •), ë§¤ê°œë³€ìˆ˜ ì—†ì„ì‹œ = ë‚œì´ë„ + 1
+    /// <para>ìŠ¤í…Œì´ì§€2 : ì‹œì‘ ë‚œì´ë„ = 3</para>
+    /// <para>ìŠ¤í…Œì´ì§€3 : ì‹œì‘ ë‚œì´ë„ = 6</para>
+    /// <para>ìŠ¤í…Œì´ì§€4 : ì‹œì‘ ë‚œì´ë„ = 10</para>
     /// </summary>
-    /// <param name="stage">À¯Àú ³­ÀÌµµ Á¡ÇÁ½Ã ½ºÅ×ÀÌÁö enum ÀÔ·Â</param>
+    /// <param name="stage">ìœ ì € ë‚œì´ë„ ì í”„ì‹œ ìŠ¤í…Œì´ì§€ enum ì…ë ¥</param>
     public void ChangeDungeonStepInfo(eNextStageType stage = default(eNextStageType))
     {
         if (stage == default(eNextStageType))
@@ -182,7 +180,7 @@ public partial class InfoManager
         //    Application.persistentDataPath);
         //string json = File.ReadAllText(path);
         //this.gameInfo = JsonConvert.DeserializeObject<GameInfo>(json);
-        //Debug.Log("°ÔÀÓ ÀÎÆ÷ ·Îµå ¿Ï·á");
+        //Debug.Log("ê²Œì„ ì¸í¬ ë¡œë“œ ì™„ë£Œ");
 
         //string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
         //string encryptedJson = File.ReadAllText(path);
@@ -207,7 +205,7 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// ÇÃ·¹ÀÌ¾î Inventory ÀúÀå
+    /// í”Œë ˆì´ì–´ Inventory ì €ì¥
     /// </summary>
     public void SaveGameInfo()
     {
@@ -215,7 +213,7 @@ public partial class InfoManager
         //    Application.persistentDataPath);
         //string json = JsonConvert.SerializeObject(this.gameInfo);
         //File.WriteAllText(path, json);
-        //Debug.Log("°ÔÀÓ ÀÎÆ÷ ÀúÀå ¿Ï·á");
+        //Debug.Log("ê²Œì„ ì¸í¬ ì €ì¥ ì™„ë£Œ");
 
         //string path = string.Format("{0}/game_info.json", Application.persistentDataPath);
         //string json = JsonConvert.SerializeObject(this.gameInfo);
@@ -239,7 +237,7 @@ public partial class InfoManager
     }
 
     /// <summary>
-    /// Æ©Åä¸®¾ó ¿Ï·á¿©ºÎ ÀúÀå + ÀÚµ¿ÀúÀå
+    /// íŠœí† ë¦¬ì–¼ ì™„ë£Œì—¬ë¶€ ì €ì¥ + ìë™ì €ì¥
     /// </summary>
     /// <param name="type"></param>
     public void TutorialDone(eTutorialType type)
