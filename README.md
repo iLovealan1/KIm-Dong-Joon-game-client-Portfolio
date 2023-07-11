@@ -15,34 +15,34 @@
 
 # 목차
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[설명보기](#Astar_Random_Map_Generator) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[설명보기](#Main_Directors) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
-:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[설명보기](#Main_Directors)<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#Astar_Random_Map_Generator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#Main_Directors) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
+:red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#Main_Directors)<br>
 :red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
 * * *
-:green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
-:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[설명보기](#Chest_ItemGenerator) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br> 
-:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[설명보기](#Field_Items) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)<br>
-:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).[설명보기](#UniRx_Touch_Control) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
+:green_circle: 스탯인벤토리 제작.[📚:바로가기](#StatInventory) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
+:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#Chest_ItemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br> 
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#Field_Items) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).[📚:설명보기](#UniRx_Touch_Control) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [설명보기](#PauseUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [설명보기](#GameOverUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [설명보기](#DialogUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [설명보기](#Item_Field_Popup_UI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [설명보기](#Chest_ItemGenerator) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [설명보기](#GuideArrowUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [설명보기](#AnnounceUI) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [설명보기](#Minimap) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
-:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업을 위한 InfoManager, DataManager Partial Scripts)**.[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/SingleTonManager)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#PauseUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [📚:설명보기](#GameOverUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [📚:설명보기](#DialogUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#Item_Field_Popup_UI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#Chest_ItemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#GuideArrowUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [📚:설명보기](#AnnounceUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [📚:설명보기](#Minimap) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
+:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업을 위한 InfoManager, DataManager Partial Scripts)**.[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/SingleTonManager)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위해 제작)<br>
  * * *
-:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [설명보기](#MainCam) [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
-:yellow_circle: 디파짓 시스템 핵심 기능 제작.<br>
+:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#MainCam) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
+:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
