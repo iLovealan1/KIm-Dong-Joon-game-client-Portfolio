@@ -299,13 +299,18 @@
 ### **요약**
 - 비동기적인 이벤트 처리 및 상태 관리, 코드의 가독성을 위해 Unirx의 인풋 스트림을 사용.
 - Unirx의 인풋은 ChestItemGenerator 클래스의 Initializing 단계에서 주기 관리
-- 
+- Physics2D 클래스를 활용하여 LayerMask의 비교를 통해 메서드 구현
+- StayHandleInput() 메서드와 HandleInput() 메서드를 만들어 단일 Input 과 Stay Input에 따른 기능 구현
 
 ### **상세 내용**
-**DropItem**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
-**CoinPool**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 스크립트의 Init()에서 Unirx의 Observable.EveryUpdate() 주기를 관리합니다.
+
 
 
 [목차로](#목차)
