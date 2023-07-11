@@ -18,7 +18,7 @@
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[바로가기](#Astar_Random_Map_Generator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[바로가기](#Main_Directors)<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[바로가기](#Main_Directors)<br>
-:red_circle: 마을과 던전 레벨 디자인.<br>
+:red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
 * * *
 :green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[바로가기](#Chest_ItemGenerator)<br>
@@ -137,7 +137,7 @@
 
 ### **상세 내용**
 **App**<br>
- &nbsp;&nbsp;&nbsp;&nbsp;●:App 스크립트는 씬전환을 담당하며 앱의 시작과 끝까지 살아 있는 스크립트입니다.<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 씬전환을 담당하며 앱의 시작과 끝까지 살아 있는 스크립트입니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 게임의 시작시 저장데이터의 유무여부에 따라 유저가 신규유저인지 기존유저인지 판단합니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 GPGS 플러그인과 Firebase 플러그인의 Authenticate 를 담당합니다.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;●App 스크립트는 유저가 앱을 벗어나 홈화면으로 나갈시 UIPauseDirector의 씬 존재유무에 따라 앱을 정지합니다.<br>
@@ -207,7 +207,22 @@
 - 상자 생성 연출(코인 일괄 획득 연출과 안내 UI 팝업또한 확인 가능합니다).
 
 ### **요약**
-
+- NPCController 와 UINPCPopupDirector스크립트는 NPC 와 상자에 사용되는 스크립트로 유저의 물리적인 감지와 터치 인터렉션을 수행.
+- NPCController 와 UINPCPopupDirector스크립트는 EventDispatcher 싱글톤 스크립트로 ChestItemGenerator 스크립트와 통신하여 아이템 생성
+- ChestItemGenerator 스크립트는 EventDispatcher로 전달받은 String , Vector3, vector2 타입의 값을 활용해 아이템을 제작.
+- 포스트 프로세싱 Bloom 효과를 사용해 상자객체의 외곽선을 랜더링하고 빛나는 연출 구현.
+- HashSet, List, Dictionary, array 등의 자료구조를 사용.
 
 ### **상세 내용**
+**NPCController**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 NPC 타입을 정의하여 [SerializeField] eNpcType 필드에 값을 할당해 자신의 타입별로 if 문을 사용해 어떤 이벤트를 호출할지 결정합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.
+**UINPCPopupDirector**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 팝업 상태를 정의하며 [SerializeField] ePopupType popupType 필드에 값을 할당해 자신의 타입별로 switch 문과 if문을 사용해 어떤 이벤트를 호출할지 결정합니다.
+&nbsp;&nbsp;&nbsp;&nbsp;● 데미지를 주는 히든 상자에 의해 호출될 경우 TakeChestDamage 메서드를 통해 EventDispatcher를 사용하여 유저에게 데미지를 가합니다.(체력과 아이템 교환)
+&nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+&nbsp;&nbsp;&nbsp;&nbsp;● 
 
