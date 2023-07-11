@@ -285,7 +285,7 @@
 
 :green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
-### UniRx_Touch_Contro
+### UniRx_Touch_Control
 
 ### **이미지 설명(최상단부터)**
 - 
