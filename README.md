@@ -41,7 +41,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위해 제작)<br>
  * * *
-:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출).<br>
+:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [바로가기](#MainCam)<br>
 :yellow_circle: 디파짓 시스템 핵심 기능 제작.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
@@ -470,22 +470,26 @@
 -  Raw Image 컴포넌트를 사용. 
 -  IPointerDownHandler 인터페이스로 터치 인풋을 받아 확장 및 축소 가능.
 -  코루틴을 사용하여 실시간으로 유저의 위치를 미니맵에 표시.
+-  DOTween을 사용한 확장 애니메이션 코드 제어
 
 [목차로](#목차)
 
 * * *
 
-### PauseUI
+### MainCam
+![CamHit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/700b72a3-aa70-4350-a3ac-520531a9f5ea)
+![CamHit2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fc80dc4e-b3a0-4388-a691-6b4362e9143b)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 체력이 2 이상일때의 Hit 연출.
+- 체력이 1 이하일떄의 Hit 연출.
 
 ### **요약**
-- 
+- DOTween 의  DOShakePosition() 메서드를 활용한 Hit 연출.
+- LateUpdate() 메서드를 사용해 플레이어 위치 추적.
+- List 자료구조과 LINQ  ForEach() 메서드를 사용해 Hit Sprite 객체 관리.
+- InitUIPoints() 메서드는 SceneManager.GetActiveScene().name 속성의 씬 이름을 받아 Hit Sprite 객체의 활성화 여부 결정.
 
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
 
 [목차로](#목차)
 
