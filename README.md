@@ -87,7 +87,7 @@
 
 * * *
 
-:red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
+:red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
 ### Astar_Random_Map_Generator
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
@@ -112,22 +112,22 @@
 6. 일반맵중 랜덤한 맵을 선택해 히든맵(보상맵) 으로 변경합니다.
 7. 생성된 맵 사이사이를 이어주는 포탈을 생성합니다.
 
-- 타일맵 컴포넌트를 가진 오브젝트를 Instanciate 하는 것이 불가능하여 타일맵을 하나의 스프라이트 .png 확장자로 변경해주는 TilemapToSprite 스크립트를 제작하였습니다.
+- 타일맵 컴포넌트를 가진 오브젝트를 Instanciate 하는 것이 불가능하여 타일맵을 하나의 스프라이트 .png 확장자로 변경해주는 TilemapToSprite 스크립트를 제작하였습니다.<br><br>
 📜: **TilemapToSprite**<br>
-- TilemapToSprite 스크립트는 메인 카메라로 이미지를 촬영후 RenderTexture 클래스를 사용하여 렌더 텍스쳐에서 스프라이트로 변환후 파일로 저장하는작업을 수행합니다.
+- TilemapToSprite 스크립트는 메인 카메라로 이미지를 촬영후 RenderTexture 클래스를 사용하여 렌더 텍스쳐에서 스프라이트로 변환후 파일로 저장하는작업을 수행합니다.<br><br>
 📜: **PortalController**<br>
-- PortalController 스크립트는 ePortaltype 필드로 포탈 타입을 지정해 OnTriggerEnter2D 메서드로 플레이어의 진입여부를 판단합니다.
+- PortalController 스크립트는 ePortaltype 필드로 포탈 타입을 지정해 OnTriggerEnter2D 메서드로 플레이어의 진입여부를 판단합니다.<br><br>
 📜: **DungeonSceneMain**<br>
 - EventDispatcher 싱글톤 스크립트를 이용해 DungeonSceneMain 스크립트에서 이벤트를 수신하여 유저를 이동시킵니다.
-- InfoManager 스크립트와 GPGSManager 싱글톤 스크립트와 통신해 유저의 스테이지 정보를 변경하거나 도전과제를 달성시킵니다.
+- InfoManager 스크립트와 GPGSManager 싱글톤 스크립트와 통신해 유저의 스테이지 정보를 변경하거나 도전과제를 달성시킵니다.<br><br>
 📜: **IDungeonBossHandler**<br>
 - IDungeonBossHandler 인터페이스를 제작해 보스를 제작한 팀원의 스크립트와 통신.
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 ### Main_Directors
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
@@ -163,11 +163,11 @@
  &nbsp;&nbsp;&nbsp;&nbsp;●RoomClearInitializing() 메서드를 호출해 레벨 종료시 포탈, 안내UI, 모든 필드코인 획득, 유저 던전 레벨 올리기 작업을 수행합니다.<br>
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
-:green_circle:스탯인벤토리 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:green_circle:스탯인벤토리 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 ### StatInventory
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
@@ -201,10 +201,10 @@
 - DataManager 싱글톤 스크립트를 이용해 JsonConvert.DeserializeObject 외부 플러그인을 사용하여 json 파일을 역직렬화 한 Data를 이용해 스탯과 아이템의 설명, 이름을 가져옵니다.
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
-:green_circle:상자 생성 및 아이템 생성[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:상자 생성 및 아이템 생성[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ### Chest_ItemGenerator
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
@@ -244,11 +244,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● BoxCollider2D 컴포넌트를 이용해 유저의 상자 진입여부를 판단합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● 유저 접근시 DOTWeen의 DOFade 메서드를 사용해 화살표가 사라지는 연출을 조절합니다.
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 ===
 ### Field_Items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
@@ -289,11 +289,11 @@
 
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
-:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출 [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ### UniRx_Touch_Control
 
@@ -322,14 +322,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● Camera.main.ScreenToWorldPoint() 메서드로 스크린 좌표를 월드 좌표로 변환하여 EventDispatcher를 통해 팝업 이벤트를 호출합니다.<br>
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 :large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)
 ===
 ### PauseUI  
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
 ![Credit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c2de8d5f-baf9-42a7-a3d8-f5cec9aef9e8)
 
@@ -356,7 +356,7 @@
 
 * * *
 ### GameOverUI 
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
 
 ![GamOver](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/89414533-d698-4cc0-bf44-74709f462708)
 
@@ -368,11 +368,11 @@
 -  구글 애드몹 광고 표시 .
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 ### DialogUI 
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
 
 ![Dialog_Merchant](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/66587761-519c-44e9-8202-001533c03acd)
 ![Dialog_Knight](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/736d4ce0-86c5-4692-9af6-2ebc5aa997fe)
@@ -390,12 +390,12 @@
 - System.Random() 클래스를 활용한 랜덤 무기 지급.
 - Button 컴포넌트로 구현한 대화 스킵. bool값을 체크하여 대화중인지 아닌지 체크.
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 ### Item_Field_Popup_UI 
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
 
 ![UnirxGetItems2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8fcf400b-f854-4ea4-bec9-6a65a3430dbb)
 ![UnirxGetItemsPopup](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2585b3c6-5622-4664-a1cf-393f9c0d5cd8)
@@ -417,12 +417,12 @@
 - 아이템 비교 로직은 아이템의 등급과 현재 지니고 있는 아이템의 수를 기준으로 결정.
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 ### GuideArrowUI  
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
 
 ![GuideArrow](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/dc831c4d-c2d5-4d71-b4ee-1f1fb2a7176e)
 ![GuideArrow2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2b8d7cb8-4c41-4965-8856-b87357923300)
@@ -439,13 +439,13 @@
 - Camera.Main.WorldToScreenPoint() 메서드를 사용해 관리하는 List의 포탈들의 위치를 확인해 가이드 애로우의 활성화 여부 결정
 - RoomCheck() 메서드를 사용해 DungeonSceneMain 스크립트에 wholeRoomList를 받아 유저가 도착한 방의 동서남북을 LINQ로 쿼리하여 SetOn 되어 있는지 확인하는 방식으로 유저의 방문 여부 체크.
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 
 ### AnnounceUI 
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
 ![AnnounceUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/97bfcdaa-2fc9-4b38-9694-c6e97690cf08)
 
 ### **이미지 설명(최상단부터)**
@@ -459,13 +459,13 @@
 - InfoManager 싱글톤 스크립트의 dungeonInfo 클래스의 필드값을 참조하여 MakeStageName() 메서드의 이름 변경.
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 
 ### Minimap  
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
 
 ![MiniMap](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/67ac7b78-2530-4b33-be35-2fc0eec12125)
 ![MiniMap2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9688d25e-31bf-4143-8be3-9277dd29eec8)
@@ -483,12 +483,12 @@
 -  코루틴을 사용하여 실시간으로 유저의 위치를 미니맵에 표시.
 -  DOTween을 사용한 확장 애니메이션 코드 제어
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
 
 ### MainCam  
-[**코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
+[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
 ![CamHit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/700b72a3-aa70-4350-a3ac-520531a9f5ea)
 ![CamHit2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fc80dc4e-b3a0-4388-a691-6b4362e9143b)
 
@@ -503,6 +503,6 @@
 - InitUIPoints() 메서드는 SceneManager.GetActiveScene().name 속성의 씬 이름을 받아 Hit Sprite 객체의 활성화 여부 결정.
 
 
-[목차로](#목차)
+[📑: 목차로](#목차)
 
 * * *
