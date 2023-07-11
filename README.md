@@ -22,8 +22,8 @@
 * * *
 :green_circle: 스탯인벤토리 제작.[바로가기](#StatInventory)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[바로가기](#Chest_ItemGenerator)<br>
-:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작[바로가기](#Field_Items).<br>
-:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).<br>
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[바로가기](#Field_Items)<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).[바로가기](#UniRx_Touch_Control)<br>
 * * *
 :large_blue_circle: **제작한 GUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
@@ -285,12 +285,14 @@
 
 :green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
-### Field_Items
+### UniRx_Touch_Contro
 
 ### **이미지 설명(최상단부터)**
 - 
 
 ### **요약**
+- 비동기적인 이벤트 처리 및 상태 관리, 코드의 가독성을 위해 Unirx의 인풋 스트림을 사용.
+- Unirx의 인풋은 ChestItemGenerator 클래스의 Initializing 단계에서 주기 관리
 - 
 
 ### **상세 내용**
