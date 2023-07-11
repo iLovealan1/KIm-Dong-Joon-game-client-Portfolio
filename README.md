@@ -287,8 +287,14 @@
 ===
 ### UniRx_Touch_Control
 
+![UnirxGetItems](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1d79b56b-f6f7-484e-8d69-070f950bd920)
+![UnirxGetItems3](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0739fc86-d842-4071-9f37-b7b7668fee45)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c485d708-3705-4dd3-acb1-86be07252132)
+
 ### **이미지 설명(최상단부터)**
-- 
+- 아이템 터치 획득 & 필드 아이템 상세 비교 팝업
+- 아이템별 획득시 UI 이동 위치
+- 획득 아이템 이동 포인트
 
 ### **요약**
 - 비동기적인 이벤트 처리 및 상태 관리, 코드의 가독성을 위해 Unirx의 인풋 스트림을 사용.
