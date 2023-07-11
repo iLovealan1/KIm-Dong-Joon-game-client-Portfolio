@@ -246,9 +246,9 @@
 ===
 ### Field_Items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
-![GetCoins](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c648bc0f-bf08-49fc-bfb0-35be7a8fa1f3)
-![coinspin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/e3286a16-e4bb-413b-9316-c1e3cb0973db)
-![itemFloating](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b2cb028f-7512-4199-aa7f-3c933119a3bd)
+![GetCoins](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c648bc0f-bf08-49fc-bfb0-35be7a8fa1f3)<br>
+![coinspin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/e3286a16-e4bb-413b-9316-c1e3cb0973db)<br>
+![itemFloating](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b2cb028f-7512-4199-aa7f-3c933119a3bd)<br>
 
 ### **이미지 설명(최상단부터)**
 - 필드 코인 개별 획득
@@ -257,12 +257,12 @@
 - 아이템 플로팅 애니메이
 
 ### **요약**
--
-- 필드코인은 몬스터를 사냥시 30%확률로 획득 가능한 전리품.
-- BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출 (DOTween 을 이용한 애니메이션 코드 제어)
-- DOTween 을 이용한 회전 연출 및 아이템 Floating 연출
-- SpriteGlowEffect 외부 스크립트를 활용한 포스트 프로세싱 Bloom 효과 연출
-- 
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+- ChestItemGenerator 클래스와 CoinPool 오브젝트 풀링 스크립트를 이용한 코인 생성.
+- Field Coin은 ChestItemGenerator 의 MakeFieldCoin 메서드의 UnityEngine.Random.Range() 메서드 사용 30% 의 확률로 생성
+- BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출. (DOTween 을 이용한 애니메이션 코드 제어)
+- DOTween 을 이용한 회전 연출 및 아이템 Floating 연출.
+- SpriteGlowEffect 외부 스크립트를 활용한 포스트 프로세싱 Bloom 효과 연출.
 
 ### **상세 내용**
 **NPCController**<br>
@@ -274,14 +274,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● 골드를 소비하는 히든 상자의 경우 Infomanger 싱글톤 스크립트와 통신하여 유저의 잔액량을 확인한뒤 GUI의 텍스트를 변경하거나 아이템을 생성합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 팝업이 펼쳐지고 다시 들어가는 연출을 만들었습니다.
 **ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● eDropItemGrade 와 eDropItemType enum 타입으로 아이템을 구분합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 상자와 아이템은 GameObject 타입의 프리팹을  [SerializeField] 로 할당하여 Instanciate 합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 아이템은 factory 패턴을 사용하여 생성합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● InfoManager 싱글톤 스크립트와 통신하여 현재 유저의 던전 상태(난이도,스테이지)에 따라 아이템과 재화를 생성합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● HashSet 자료구조를 이용해 아이템이 상자에서 나올때 중복된 Vector2값에 겹치지 않게 제작하였습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween을 사용하여 아이템의 생성연출 애니메이션을 만들었습니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● UniRx 플러그인과 Physics2D 클래스를 사용해 터치 인풋을 제어합니다. (UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 로직 제작 참조) 
-&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 스크립트를 포스트 프로세싱 Bloom 효과에 적용해 아이템의 외곽선과 빛나는 연출을 제작하였습니다.
-**ChestArrowController**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● BoxCollider2D 컴포넌트를 이용해 유저의 상자 진입여부를 판단합니다.
-&nbsp;&nbsp;&nbsp;&nbsp;● 유저 접근시 DOTWeen의 DOFade 메서드를 사용해 화살표가 사라지는 연출을 조절합니다.
+
+[목차로](#목차)
+
+* * *
