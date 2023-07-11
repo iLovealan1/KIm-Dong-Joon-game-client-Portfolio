@@ -31,7 +31,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [바로가기](#DialogUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [바로가기](#Item_Field_Popup_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [바로가기](#Chest_ItemGenerator)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [바로가기](#GuideArrowUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI<br>
 :large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트**.<br>
@@ -396,34 +396,39 @@
 ![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/cd8775d9-b40a-4cdb-8825-63758bdb21f7)
 
 ### **이미지 설명(최상단부터)**
-- 다양한 아이템 팝업 UI
-- 유저의 터치 위치에 따른 아이템 팝업 UI 위치변경
-- 인벤토리 내의 아이템 실시간 비교 (위에서부터 좋지 않음, 좋음, 같음 순으로) 
+- 다양한 아이템 팝업 UI.
+- 유저의 터치 위치에 따른 아이템 팝업 UI 위치변경.
+- 인벤토리 내의 아이템 실시간 비교. (위에서부터 좋지 않음, 좋음, 같음 순으로) 
 
 ### **요약**
 - AtlasManager와 DataManager 싱글톤 클래스를 연동하여 팝업에 표시할 아이템 이미지 및 설명 새로고침.
 - ChestItemGenerator에게서 전달받은 객체의 이름을  UpdatePopup() 메서드의 매개변수를 if문을 사용하여 분기, 설정.
-- GetComponent<RectTransform>().sizeDelta 속성을 이용해 각기 다른 스프라이트 에셋의 크기 조절
-- DOTween 을 활용한 팝업 애니메이션 코드 조절
-- list 자료구조와 UIInventory 클래스의 CurrentInventoryList() 메서드를 활용하여 실시간 인벤토리와 필드 아이템 비교
-- 아이템 비교 로직은 아이템의 등급과 현재 지니고 있는 아이템의 수를 기준으로 결정
+- GetComponent<RectTransform>().sizeDelta 속성을 이용해 각기 다른 스프라이트 에셋의 크기 조절.
+- DOTween 을 활용한 팝업 애니메이션 코드 조절.
+- list 자료구조와 UIInventory 클래스의 CurrentInventoryList() 메서드를 활용하여 실시간 인벤토리와 필드 아이템 비교.
+- 아이템 비교 로직은 아이템의 등급과 현재 지니고 있는 아이템의 수를 기준으로 결정.
 
 
 [목차로](#목차)
 
 * * *
 
-### PauseUI
+### GuideArrowUI  [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+![GuideArrow2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2b8d7cb8-4c41-4965-8856-b87357923300)
+
+![GuideArrow](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/dc831c4d-c2d5-4d71-b4ee-1f1fb2a7176e)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 유저 던전 입장시 가이드 애로우 모습 & 포탈 이동시 가이드 애로우 모습.
+- 유저의 위치 & 카메라의 위치에 따라 위치변경 및 상태변경하는 모습.
 
 ### **요약**
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
+- UIPortalArrowController 스크립트는 List 자료구조를 사용해 화살표UI와 유저가 방문한 맵의 포탈을 관리.
+- 코루틴으로 Screen.width Screen.height 속성을 비교하여 휴대폰 배젤의 끝에 위치하도록 설정, 태블릿을 포함한 대부분의 해상도 대응
+- DOTween 플러그인을 사용하여 화살표의 크기 제어.
+- 유저가 향하는 방의 상태에 따라 GetComponent<Image>().color 속성을 변경하여 애로우 색상 변경.(예 : 상점일 경우 초록색)
+- Camera.Main.WorldToScreenPoint() 메서드를 사용해 관리하는 List의 포탈들의 위치를 확인해 가이드 애로우의 활성화 여부 결정
+- RoomCheck() 메서드를 사용해 DungeonSceneMain 스크립트에 wholeRoomList를 받아 유저가 도착한 방의 동서남북을 LINQ로 쿼리하여 SetOn 되어 있는지 확인하는 방식으로 유저의 방문 여부 체크.
 
 [목차로](#목차)
 
