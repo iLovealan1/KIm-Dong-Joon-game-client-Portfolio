@@ -30,7 +30,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [바로가기](#GameOverUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [바로가기](#DialogUI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [바로가기](#Item_Field_Popup_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [바로가기](#Chest_ItemGenerator)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI<br>
@@ -298,15 +298,15 @@
 ![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c485d708-3705-4dd3-acb1-86be07252132)
 
 ### **이미지 설명(최상단부터)**
-- 아이템 터치 획득 & 필드 아이템 상세 비교 팝업
-- 아이템별 획득시 UI 이동 위치
-- 획득 아이템 이동 포인트
+- 아이템 터치 획득 & 필드 아이템 상세 비교 팝업.
+- 아이템별 획득시 UI 이동 위치.
+- 획득 아이템 이동 포인트.
 
 ### **요약**
 - 비동기적인 이벤트 처리 및 상태 관리, 코드의 가독성을 위해 Unirx의 인풋 스트림을 사용.
-- Unirx의 인풋은 ChestItemGenerator 클래스의 Initializing 단계에서 주기 관리
-- Physics2D 클래스를 활용하여 LayerMask의 비교를 통해 메서드 구현
-- StayHandleInput() 메서드와 HandleInput() 메서드를 만들어 단일 Input 과 Stay Input에 따른 기능 구현
+- Unirx의 인풋은 ChestItemGenerator 클래스의 Initializing 단계에서 주기 관리.
+- Physics2D 클래스를 활용하여 LayerMask의 비교를 통해 메서드 구현.
+- StayHandleInput() 메서드와 HandleInput() 메서드를 만들어 단일 Input 과 Stay Input에 따른 기능 구현.
 
 ### **상세 내용**
 **ChestItemGenerator**<br>
@@ -322,9 +322,9 @@
 
 * * *
 
-:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)
 ===
-### PauseUI
+### PauseUI [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
 ![Credit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c2de8d5f-baf9-42a7-a3d8-f5cec9aef9e8)
 
@@ -341,7 +341,7 @@
 ### **상세 내용**
 - 일시정지 기능은 Time.timeScale 속성을 0으로 만들어 구현하였습니다.
 - 성소로 돌아가기 버튼은 EventDispatcher 싱글톤 스크립트를 이용해 DungeonMain -> App 스크립트 순으로 이벤트를 호출해 유저의 씬을 전환 시킵니다.
-- InfoManager 의 settingInfo 클래스 를 사용해 유저의 셋팅 정보를 저장합니다 (음악&특수효과 볼륨, 진동여부)
+- InfoManager 의 settingInfo 클래스 를 사용해 유저의 셋팅 정보를 저장합니다. (음악&특수효과 볼륨, 진동여부)
 - Application.version 속성을 사용해 버전을 표기합니다.
 - Application.OpenURL 메서드를 사용해 버튼을 누를시 게임의 공식 블로그로 연동하였습니다.
 - UICreditPopup 스크립트는 DOTween플러그인을 사용해 코루틴으로 크레딧 애니메이션을 코드로 제어하였습니다.
@@ -350,43 +350,45 @@
 [목차로](#목차)
 
 * * *
-### GameOverUI
+### GameOverUI [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+
 ![GamOver](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/89414533-d698-4cc0-bf44-74709f462708)
 
 ### **이미지 설명(최상단부터)**
 - 게임 오버시 출력되는 팝업입니다. (구글 애드몹 광고가 포함됩니다.)
 
 ### **요약**
--  코루틴을 사용하여 GameOver 애니메이션 조절 및 버튼 활성화 코드 조절
--  구글 애드몹 광고 표시 
+-  코루틴을 사용하여 GameOver 애니메이션 조절 및 버튼 활성화 코드 조절.
+-  구글 애드몹 광고 표시 .
 
 
 [목차로](#목차)
 
 * * *
-### DialogUI
+### DialogUI [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 
 ![Dialog_Merchant](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/66587761-519c-44e9-8202-001533c03acd)
 ![Dialog_Knight](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/736d4ce0-86c5-4692-9af6-2ebc5aa997fe)
 
 ### **이미지 설명(최상단부터)**
-- 상인 NPC와의 대화
-- 던전 입장 전 무기 랜덤 변경 및 이벤트 대화
+- 상인 NPC와의 대화.
+- 던전 입장 전 무기 랜덤 변경 및 이벤트 대화.
 
 ### **요약**
-- eDialogType enum 타입으로 대화의 타입을 전달 받아 StartDialog() 메서드 호출
-- StartDialog()의 매개변수에 따라 DataManager 싱글톤 스크립트와 연동하여 대화값을 string 값으로 불러와 List 자료구조 형태로 관리
-- UIDirector의 event Action 매개변수 전달로 RandomWeaponDialog()메서드의 대화 종료시 씬 전환 구현
-- LINQ ForEach() 메서드 사용으로 data 시트의 언어 변수 값에 맞는 대화 쿼리
+- eDialogType enum 타입으로 대화의 타입을 전달 받아 StartDialog() 메서드 호출.
+- StartDialog()의 매개변수에 따라 DataManager 싱글톤 스크립트와 연동하여 대화값을 string 값으로 불러와 List 자료구조 형태로 관리.
+- UIDirector의 event Action 매개변수 전달로 RandomWeaponDialog()메서드의 대화 종료시 씬 전환 구현.
+- LINQ ForEach() 메서드 사용으로 data 시트의 언어 변수 값에 맞는 대화 쿼리.
 - InfoManager와의 연동, 튜토리얼 완료 여부 info 저장.
-- System.Random() 클래스를 활용한 랜덤 무기 지급
-- Button 컴포넌트로 구현한 대화 스킵. bool값을 체크하여 대화중인지 아닌지 체크
+- System.Random() 클래스를 활용한 랜덤 무기 지급.
+- Button 컴포넌트로 구현한 대화 스킵. bool값을 체크하여 대화중인지 아닌지 체크.
 
 [목차로](#목차)
 
 * * *
 
-### Item_Field_Popup_UI
+### Item_Field_Popup_UI [코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+
 ![UnirxGetItems2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8fcf400b-f854-4ea4-bec9-6a65a3430dbb)
 ![UnirxGetItemsPopup](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2585b3c6-5622-4664-a1cf-393f9c0d5cd8)
 ![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0cefca4b-a194-4073-a3a4-1fd7a10536eb)
@@ -399,7 +401,12 @@
 - 인벤토리 내의 아이템 실시간 비교 (위에서부터 좋지 않음, 좋음, 같음 순으로) 
 
 ### **요약**
-- 
+- AtlasManager와 DataManager 싱글톤 클래스를 연동하여 팝업에 표시할 아이템 이미지 및 설명 새로고침.
+- ChestItemGenerator에게서 전달받은 객체의 이름을  UpdatePopup() 메서드의 매개변수를 if문을 사용하여 분기, 설정.
+- GetComponent<RectTransform>().sizeDelta 속성을 이용해 각기 다른 스프라이트 에셋의 크기 조절
+- DOTween 을 활용한 팝업 애니메이션 코드 조절
+- list 자료구조와 UIInventory 클래스의 CurrentInventoryList() 메서드를 활용하여 실시간 인벤토리와 필드 아이템 비교
+- 아이템 비교 로직은 아이템의 등급과 현재 지니고 있는 아이템의 수를 기준으로 결정
 
 
 [목차로](#목차)
