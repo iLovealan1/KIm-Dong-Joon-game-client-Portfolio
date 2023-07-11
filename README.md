@@ -376,12 +376,11 @@
 ### **요약**
 - eDialogType enum 타입으로 대화의 타입을 전달 받아 StartDialog() 메서드 호출
 - StartDialog()의 매개변수에 따라 DataManager 싱글톤 스크립트와 연동하여 대화값을 string 값으로 불러와 List 자료구조 형태로 관리
-- 
-- 
-
-### **상세 내용**
-**ChestItemGenerator**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 
+- UIDirector의 event Action 매개변수 전달로 RandomWeaponDialog()메서드의 대화 종료시 씬 전환 구현
+- LINQ ForEach() 메서드 사용으로 data 시트의 언어 변수 값에 맞는 대화 쿼리
+- InfoManager와의 연동, 튜토리얼 완료 여부 info 저장.
+- System.Random() 클래스를 활용한 랜덤 무기 지급
+- Button 컴포넌트로 구현한 대화 스킵. bool값을 체크하여 대화중인지 아닌지 체크
 
 [목차로](#목차)
 
