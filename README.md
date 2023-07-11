@@ -387,10 +387,16 @@
 * * *
 
 ### Item_Field_Popup_UI
+![UnirxGetItems2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8fcf400b-f854-4ea4-bec9-6a65a3430dbb)
 ![UnirxGetItemsPopup](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/2585b3c6-5622-4664-a1cf-393f9c0d5cd8)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0cefca4b-a194-4073-a3a4-1fd7a10536eb)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ea6cd970-352c-4a70-adac-4a3d7d90442f)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/cd8775d9-b40a-4cdb-8825-63758bdb21f7)
 
 ### **이미지 설명(최상단부터)**
-- 
+- 다양한 아이템 팝업 UI
+- 유저의 터치 위치에 따른 아이템 팝업 UI 위치변경
+- 인벤토리 내의 아이템 실시간 비교 (위에서부터 좋지 않음, 좋음, 같음 순으로) 
 
 ### **요약**
 - 
