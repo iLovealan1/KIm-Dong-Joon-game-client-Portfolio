@@ -25,8 +25,8 @@
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[바로가기](#Field_Items)<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 기획 및 스크립트 제작(+ DOTween 획득 애니메이션 코드제어).[바로가기](#UniRx_Touch_Control)<br>
 * * *
-:large_blue_circle: **제작한 GUI 리스트 (구성,기획,스크립트 제작)**<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI <br>
+:large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [바로가기](#PauseUI) PauseUI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI<br>
@@ -311,6 +311,151 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● LayerMask.NameToLayer("item")으로 설정되어있는 아이템 프리팹들의 .transform.gameObject.layer 속성을 확인하여 비교합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● Camera.main.ScreenToWorldPoint() 메서드로 스크린 좌표를 월드 좌표로 변환하여 EventDispatcher를 통해 팝업 이벤트를 호출합니다.
 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
+
+[목차로](#목차)
+
+* * *
+
+
+:large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)[코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+===
+### PauseUI
+
+### **이미지 설명(최상단부터)**
+- 
+
+### **요약**
+- 
+
+### **상세 내용**
+**ChestItemGenerator**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● 
 
 [목차로](#목차)
 
