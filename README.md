@@ -6,6 +6,7 @@
 유니티엔진 클라이언트 개발자직 지원자 김동준(Alan Kim)의 포트폴리오에 오신걸 환영합니다.<br>
 -------------
 저는 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
+총 6개월간의 과정중 프로젝트를 제작한 실 기간은 3개월 정도 이며 
 
 🖋️::Stacks<br>
 <img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white">
@@ -21,8 +22,21 @@
 
 개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br>
 
+🔌: UnityEngine 프로젝트 당시 사용 외부 플러그인 목록
+✔️: DOTween
+✔️: UniRx
+✔️: AllIn1SpriteShader
+✔️: SpriteGlow
+✔️: SR Debugger
+✔️: Google Play Games
+✔️: FireBase
+✔️: GoogleMobileAds
+✔️: Apple Gamecenter
+✔️: SoundManager
+✔️: Text Animator
+✔️: TextMesh Pro
+✔️: ExternalDependencyManager
 :page_facing_up: : 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
-
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
@@ -44,18 +58,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [📚:설명보기](#DialogUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#Item_Field_Popup_UI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#Chest_ItemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#GuideArrowUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [📚:설명보기](#AnnounceUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [📚:설명보기](#Minimap) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
-:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업을 위한 InfoManager, DataManager Partial Scripts)**.[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/SingleTonManager)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위해 제작)<br>
- * * *
-:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#MainCam) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
-:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#GuideArrowUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scr결.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
