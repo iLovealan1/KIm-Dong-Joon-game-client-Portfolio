@@ -50,7 +50,7 @@
 :green_circle: 스탯인벤토리 제작.[📚:바로가기](#StatInventory) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#Chest_ItemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br> 
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#Field_Items) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)<br>
-:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 제작(+ DOTween 획득 애니메이션 코드제어).[📚:설명보기](#UniRx_Touch_Control) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#UniRx_Touch_Control) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#PauseUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
