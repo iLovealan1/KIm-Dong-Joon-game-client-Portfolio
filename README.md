@@ -10,10 +10,6 @@
 개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br><br>
 건즈앤레이첼스에서는 랜덤던전 생성 알고리즘을 포함한 게임의 맵 제작, 인벤토리, 터치 조작 및 아이템 생성, 카메라 조작, NPC 인터렉션, 그외 전반적인 UGUI 기획 및 제작을 전담하였습니다.
 
-# Contacts
-📧 이메일 :  korindj@kakao.com <br>
-🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
-
 # 🖋️::Stacks<br>
 
 <img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"> <img src="https://img.shields.io/badge/Csharp-239120?style=for-the-badge&logo=csharp&logoColor=white">
@@ -26,26 +22,15 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
 
-# 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
-✔️: DOTween
-✔️: UniRx
-✔️: AllIn1SpriteShader
-✔️: SpriteGlow
-✔️: SR Debugger
-✔️: Google Play Games
-✔️: FireBase
-✔️: GoogleMobileAds
-✔️: Apple Gamecenter
-✔️: SoundManager
-✔️: Text Animator
-✔️: TextMesh Pro
-✔️: ExternalDependencyManager<br><br>
+# 🤙: Contacts
+📧 이메일 :  korindj@kakao.com <br>
+🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
-# 목차
+# 📇: 목차
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
-🎮: 발매작 건즈앤 레일체스 개요 [📚:설명보기](#GunsAndRachels)
+🎮: 발매작 건즈앤 레일체스 개요 (사용한 외부 플러그인 목록 포함)  [📚:설명보기](#GunsAndRachels)
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#Astar_Random_Map_Generator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#Main_Directors) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
@@ -115,6 +100,21 @@
 - 4종류의 특색있는 총기를 이용한 핵앤 슬래시 액션
 - 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
 - 12종류의 특색있는 스킬들
+
+## 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
+✔️: DOTween
+✔️: UniRx
+✔️: AllIn1SpriteShader
+✔️: SpriteGlow
+✔️: SR Debugger
+✔️: Google Play Games
+✔️: FireBase
+✔️: GoogleMobileAds
+✔️: Apple Gamecenter
+✔️: SoundManager
+✔️: Text Animator
+✔️: TextMesh Pro
+✔️: ExternalDependencyManager<br><br>
 
 ## 🗃️:: 제작 스크립트 설명
 
