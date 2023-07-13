@@ -7,6 +7,12 @@
 -------------
 저는 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
 총 6개월간의 과정중 프로젝트를 제작한 실 기간은 3개월 정도 이며 
+개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br>
+건즈앤 레이첼스에서는 크게 맵랜덤생성 알고리즘, 인벤토리, 터치 조작 및 아이템 생성, 그외 전반적인 UGUI 기획 및 제작을 전담하였습니다.
+
+# Contacts
+📧 이메일 :  korindj@kakao.com <br>
+🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
 # 🖋️::Stacks<br>
 
@@ -20,9 +26,7 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
 
-개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br>
-
-🔌: UnityEngine 외부 플러그인 목록
+# 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
 ✔️: DOTween
 ✔️: UniRx
 ✔️: AllIn1SpriteShader
@@ -36,10 +40,6 @@
 ✔️: Text Animator
 ✔️: TextMesh Pro
 ✔️: ExternalDependencyManager<br><br>
-
-# Contacts
-📧 이메일 :  korindj@kakao.com <br>
-🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
 # 목차
 
