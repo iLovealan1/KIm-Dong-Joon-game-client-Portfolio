@@ -38,7 +38,7 @@
 ✔️: ExternalDependencyManager<br><br>
 
 # Contacts
-📧 이메일 :  korindj@kakao.com 
+📧 이메일 :  korindj@kakao.com <br>
 🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
 # 목차
