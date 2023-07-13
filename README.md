@@ -39,11 +39,11 @@
 
 # Contacts
 📧 이메일 :  korindj@kakao.com 
-:page_facing_up: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
-
-⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
+🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
 # 목차
+
+⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#Astar_Random_Map_Generator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#Main_Directors) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
