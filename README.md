@@ -8,17 +8,18 @@
 저는 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
 총 6개월간의 과정중 프로젝트를 제작한 실 기간은 3개월 정도 이며 
 
-🖋️::Stacks<br>
+# 🖋️::Stacks<br>
+
 <img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white">
 <img src="https://img.shields.io/badge/Csharp-239120?style=for-the-badge&logo=csharp&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
-<img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><br>
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+<img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
 
 개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br>
 
