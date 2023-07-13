@@ -37,7 +37,7 @@
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#Main_Directors)<br>
 :red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
 * * *
-:green_circle: 스탯인벤토리 제작.[📚:바로가기](#StatInventory) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
+:green_circle: 스탯인벤토리 제작.[📚:설명보기](#StatInventory) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#Chest_ItemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br> 
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#Field_Items) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#UniRx_Touch_Control) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
