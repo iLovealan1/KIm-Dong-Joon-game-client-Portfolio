@@ -300,7 +300,7 @@
 
 ### **상세 내용**
 📜:**DropItem**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 추상 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 각각 다른 UI위치로 아이템을 보내는 연출을 코드로 제어하였습니다.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 FloatingEffect() 메서드와 FieldCoinAimStart() 메서드를 제작해 각기 다른 애니메이션을 코드로 제어하였습니다.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 호출하여 아이템 Full 팝업 UI를 체력 Full 팝업 UI 를 포하 각기 다른 UI의 메서드를 호출하였습니다.<br>
