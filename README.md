@@ -71,7 +71,7 @@
  * * *
 :yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#MainCam) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
 :yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
- :yellow_circle: 모바일 플랫폼 iOS & Android 빌드 & 트러블슈팅.<br>
+🟠: 모바일 플랫폼 iOS & Android 빌드 & 트러블슈팅.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
