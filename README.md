@@ -101,7 +101,7 @@
 - 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
 - 12종류의 특색있는 스킬들
 
-## 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
+## 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 및 SDK 목록
 ✔️: DOTween
 ✔️: UniRx
 ✔️: AllIn1SpriteShader
