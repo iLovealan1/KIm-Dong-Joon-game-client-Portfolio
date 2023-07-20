@@ -136,7 +136,7 @@
 ### **상세 내용**
 - A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니다.
 
- 📜: **MapGenerator**<br> [클래스 보기](//github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Astar_MapGenerator/MapGenerator.cs)
+ 📜: **MapGenerator**[클래스 보기](//github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Astar_MapGenerator/MapGenerator.cs)<br>
 - 맵 생성기는 Init() 메서드를 호출하여 맵을 생성합니다. 맵생단계는 아래와 같습니다.
 1. InfoManager를 참조하여 현재 유저의 던전 정보를 가져와 2차원 배열맵의 Maxcol 과 MaxRow를 랜덤하게 정합니다.
 2. 생성된 2차원 인덱스 값 X,Y에 Vector값을 곱해 (맵 사이간의 거리가 됩니다.) 2차원 벡터 배열을 생성합니다.
