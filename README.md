@@ -136,7 +136,7 @@
 ### **상세 내용**
 - A* 알고리즘을 이용하여 절차적인 맵 생성기를 제작하였습니다.
 
- 📜: **MapGenerator**<br>
+ 📜: **MapGenerator**<br> [클래스 보기](//github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Astar_MapGenerator/MapGenerator.cs)
 - 맵 생성기는 Init() 메서드를 호출하여 맵을 생성합니다. 맵생단계는 아래와 같습니다.
 1. InfoManager를 참조하여 현재 유저의 던전 정보를 가져와 2차원 배열맵의 Maxcol 과 MaxRow를 랜덤하게 정합니다.
 2. 생성된 2차원 인덱스 값 X,Y에 Vector값을 곱해 (맵 사이간의 거리가 됩니다.) 2차원 벡터 배열을 생성합니다.
@@ -211,7 +211,7 @@
 ![InventoryOverall](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb51xQF%2Fbtsivf6tlpI%2FjPDVopBeczpTC7D99K4ibK%2Fimg.png)
 
 ### **이미지 설명(최상단부터)**
-- 스탯인벤토리의 전체적인 기능 사용 모습입니다.
+- 스탯인벤토리의 전체적인 기능 사용입니다.
 - 단일 아이템 획득 연출 & 다중 아이템 획득 연출
 - 실시간 아이템 갯수 표시 UI (여유&꽉참)
 
@@ -257,7 +257,7 @@
 - HashSet, List, Dictionary, array 등의 자료구조를 사용.
 
 ### **상세 내용**
-📜:**NPCController**<br>
+📜:**NPCController**<br>https:
 &nbsp;&nbsp;&nbsp;&nbsp;● enum 타입의 NPC 타입을 정의하여 [SerializeField] eNpcType 필드에 값을 할당해 자신의 타입별로 if 문을 사용해 어떤 이벤트를 호출할지 결정합니다.
 &nbsp;&nbsp;&nbsp;&nbsp;● NPC와 상자는 Collider2D 컴포넌트를 사용하며 OnTriggerEnter2D 메서드와 OnTriggerExit2D 메서드를 사용해 유저의 위치에 따라 이벤트를 호출합니다.<br>
 📜:**UINPCPopupDirector**<br>
