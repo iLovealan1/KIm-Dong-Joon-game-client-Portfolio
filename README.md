@@ -22,7 +22,7 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
 
-# 🗃️ 국비과정 훈련 리스트<br>
+# 🗃️ 국비과정 훈련 진행 내역<br>
 
 ○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
 ○  유니티 구글 카드보드 sdk 를 활용한 VR 프로젝트 제작, 3D 좀비서바이버, 종스크롤 2D 슈팅 게임 제작.<br>
