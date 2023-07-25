@@ -22,6 +22,14 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
 
+# 🗃️ 국비과정 훈련 리스트<br>
+
+○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
+○  유니티 구글 카드보드 sdk 를 활용한 VR 프로젝트 제작, 3D 좀비서바이버, 종스크롤 2D 슈팅 게임 제작.<br>
+○  유니티 ML Agent 를 활용한 인공지능 Ai제작 프로젝트. (플래피 버드, 펭귄Ai 트레이닝)<br>
+○  유니티 셰이더를 활용한 그래픽 프로그래밍.<br>
+○  게임컨셉기획, 레벨디자인, 밸런스기획.<br>
+
 # 🤙: Contacts
 📧 이메일 :  korindj@kakao.com <br>
 🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
