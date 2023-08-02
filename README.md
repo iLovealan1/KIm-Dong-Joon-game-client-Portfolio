@@ -170,10 +170,10 @@
 [📑: 목차로](#목차)
 
 * * *
-
+### main_directors
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
-### main_directors
+
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
 ![포탈이펙트](https://blog.kakaocdn.net/dn/bnDJvn/btserNfbalg/kfAk5YvwLhBA02UyKZS231/img.gif)
 ![StagePortal](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/9d9333a2-1209-4313-b7e7-84810ddd698b)
@@ -210,10 +210,10 @@
 [📑: 목차로](#목차)
 
 * * *
-
+### statinventory
 :green_circle:스탯인벤토리 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
-### statinventory
+
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
 ![InventoryOverall](https://blog.kakaocdn.net/dn/dKQf9B/btsgGkg6zYn/BhQiJuaHqKgrB1ktOgdtqk/img.gif)
 ![InventoryOverall](https://blog.kakaocdn.net/dn/crhbgQ/btsgDOw8JaM/SDogCa8f4zpLf6KGJjGaik/img.gif)<br>
@@ -248,12 +248,11 @@
 [📑: 목차로](#목차)
 
 * * *
+### chest_itemGenerator
 :green_circle:상자 생성 및 아이템 생성[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
-### chest_itemGenerator
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
 ![ChestAppear](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/d19ac2aa-c489-4cfc-a558-a7f09fe3e6dd)
-
 
 ### **이미지 설명(최상단부터)**
 - UINPCPopupDirector 스크립트를 이용한 월드 UI, 상자 아이템 생성 및 연출.
@@ -336,10 +335,9 @@
 [📑: 목차로](#목차)
 
 * * *
-
+### uniRx_touch_control
 :green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
-### uniRx_touch_control
 
 ![UnirxGetItems](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1d79b56b-f6f7-484e-8d69-070f950bd920)
 ![UnirxGetItems3](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0739fc86-d842-4071-9f37-b7b7668fee45)
@@ -370,10 +368,10 @@
 [📑: 목차로](#목차)
 
 * * *
-
+### pauseUI  
 :large_blue_circle: 제작 UGUI 소개(구성,기획,스크립트 제작)
 ===
-### pauseUI  
+
 [**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
 ![Credit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c2de8d5f-baf9-42a7-a3d8-f5cec9aef9e8)
@@ -398,7 +396,6 @@
 
 
 [목차로](#목차)
-
 * * *
 ### gameoverui 
 [**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
