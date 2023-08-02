@@ -129,10 +129,9 @@
 ## 🗃️:: 제작 스크립트 설명
 
 * * *
-
+### astar_random_map_generator
 :red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
-### astar_random_map_generator
 
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
 ### **이미지 설명**
