@@ -130,7 +130,7 @@
 
 * * *
 ### astar_random_map_generator
-:red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
+:red_circle: A*알고리즘을 응용한 랜덤맵 생성기<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
 
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
@@ -171,7 +171,7 @@
 
 * * *
 ### main_directors
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 
 ![씬전환](https://blog.kakaocdn.net/dn/pFvfH/btsezDXGikn/hQxYW7efHIi3mff72kzGk0/img.gif)
