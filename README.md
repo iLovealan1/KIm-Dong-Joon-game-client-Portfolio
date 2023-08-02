@@ -211,7 +211,7 @@
 
 * * *
 ### statinventory
-:green_circle:스탯인벤토리 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
+:green_circle:스탯인벤토리<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)
 ===
 
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
@@ -249,7 +249,7 @@
 
 * * *
 ### chest_itemgenerator
-:green_circle:상자 생성 및 아이템 생성[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:상자 생성 및 아이템 생성<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
 ![ChestAppear](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/d19ac2aa-c489-4cfc-a558-a7f09fe3e6dd)
@@ -291,7 +291,7 @@
 
 * * *
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 ===
 ### field_items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
@@ -336,7 +336,7 @@
 
 * * *
 ### uniRx_touch_control
-:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
+:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출<br>[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 
 ![UnirxGetItems](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1d79b56b-f6f7-484e-8d69-070f950bd920)
@@ -369,7 +369,7 @@
 
 * * *
 ### pauseui  
-:large_blue_circle: 일시정지, 크레딧 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
+:large_blue_circle: 일시정지, 크레딧 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
 ===
 
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
@@ -397,7 +397,7 @@
 [목차로](#목차)
 * * *
 ### gameoverui 
-:large_blue_circle: 게임오버 화면 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
+:large_blue_circle: 게임오버 화면 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
 ===
 
 ![GamOver](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/89414533-d698-4cc0-bf44-74709f462708)
@@ -414,7 +414,7 @@
 
 * * *
 ### dialogueui 
-:large_blue_circle: 다이얼로그 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
+:large_blue_circle: 다이얼로그 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
 ===
 
 ![Dialog_Merchant](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/66587761-519c-44e9-8202-001533c03acd)
@@ -437,7 +437,7 @@
 
 * * *
 ### item_field_popup_ui 
-:large_blue_circle: 필드 아이템 팝업 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
+:large_blue_circle: 필드 아이템 팝업 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
 ===
 
 ![UnirxGetItems2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8fcf400b-f854-4ea4-bec9-6a65a3430dbb)
@@ -464,7 +464,7 @@
 
 * * *
 ### guidearrowui  
-:large_blue_circle: 유저 맵 가이드 화살표 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
+:large_blue_circle: 유저 맵 가이드 화살표 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
 ===
 
 ![GuideArrow](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/dc831c4d-c2d5-4d71-b4ee-1f1fb2a7176e)
@@ -486,7 +486,7 @@
 
 * * *
 ### announceui 
-:large_blue_circle: 유저 안내 문구 팝업 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
+:large_blue_circle: 유저 안내 문구 팝업 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
 ===
 
 ![AnnounceUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/97bfcdaa-2fc9-4b38-9694-c6e97690cf08)
@@ -506,7 +506,7 @@
 
 * * *
 ### minimap  
-:large_blue_circle: 미니맵 UI (구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
+:large_blue_circle: 미니맵 UI (구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
 ===
 
 ![MiniMap](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/67ac7b78-2530-4b33-be35-2fc0eec12125)
@@ -529,7 +529,7 @@
 
 * * *
 ### maincam  
-:large_blue_circle: 메인카메라 연출(구성,기획,스크립트 제작)[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
+:large_blue_circle: 메인카메라 연출(구성,기획,스크립트 제작)<br>[**📜:코드보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/MainCam)<br>
 ===
 
 ![CamHit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/700b72a3-aa70-4350-a3ac-520531a9f5ea)
