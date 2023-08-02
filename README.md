@@ -52,11 +52,11 @@
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#uniRx_touch_control) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#pauseUI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#pauseui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Pause_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [📚:설명보기](#gameoverui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/GameOver_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [📚:설명보기](#dialogueui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Dialog_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#Item_Field_Popup_UI) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#chest_itemGenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#item_field_popup_ui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Item_FieldPopup_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#chest_itemgenerator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#guidearrowui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Guide_Arrow_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [📚:설명보기](#announceui) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/Announce_UI)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [📚:설명보기](#minimap) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/UGUI/MiniMap_UI)<br>
@@ -248,7 +248,7 @@
 [📑: 목차로](#목차)
 
 * * *
-### chest_itemGenerator
+### chest_itemgenerator
 :green_circle:상자 생성 및 아이템 생성[📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Chest%26ItemGenerator)
 ===
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
