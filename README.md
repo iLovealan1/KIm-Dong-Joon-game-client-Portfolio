@@ -41,7 +41,7 @@
 
 🎮: 발매작 건즈앤 레일체스 개요 (사용한 외부 플러그인 목록 포함) [📚:설명보기](#GunsAndRachels)
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#Astar_Random_Map_Generator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#Main_Directors) [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#Main_Directors)<br>
 :red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
@@ -132,7 +132,7 @@
 
 :red_circle: A*알고리즘을 응용한 랜덤맵 생성기 [📜:코드보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 ===
-### Astar_Random_Map_Generator
+### astar_random_map_generator
 
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
 ### **이미지 설명**
