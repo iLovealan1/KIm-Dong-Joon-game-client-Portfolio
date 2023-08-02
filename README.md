@@ -35,7 +35,7 @@
 📧 이메일 :  korindj@kakao.com <br>
 🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
-# 📇: 목차
+# 목차
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
