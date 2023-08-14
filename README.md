@@ -29,7 +29,7 @@
 ○  유니티 ML Agent 를 활용한 인공지능 Ai제작 프로젝트. (플래피 버드, 펭귄Ai 트레이닝)<br>
 ○  유니티 셰이더를 활용한 그래픽 프로그래밍.<br>
 ○  게임컨셉기획, 레벨디자인, 밸런스기획.<br>
-○  C, C++ 프로그래밍
+○  C,C++ 프로그래밍
 
 # 🤙: Contacts
 📧: 이메일 :  korindj@kakao.com <br>
@@ -39,7 +39,7 @@
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
-🎮: 발매작 건즈앤 레일체스 개요  [📚:설명보기](#gunsandrachels)
+🎮: 발매작 건즈앤 레일체스 개요  [📚:설명보기](#gunsandrachels)<br>
 🔌: 사용 외부 플러그인 목록  [📚:설명보기](#plugins)
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
@@ -112,7 +112,7 @@
 - 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
 - 12종류의 특색있는 스킬들
 
-## 🧰:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
+## 🔌:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
 ### plugins
 
 ✔️: DOTween
