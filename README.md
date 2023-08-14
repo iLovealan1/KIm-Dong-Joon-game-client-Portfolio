@@ -39,7 +39,8 @@
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
-🎮: 발매작 건즈앤 레일체스 개요 (사용한 외부 플러그인 목록 포함) [📚:설명보기](#plugins)
+🎮: 발매작 건즈앤 레일체스 개요  [📚:설명보기](#gunsandrachels)
+🔌: 사용 외부 플러그인 목록  [📚:설명보기](#plugins)
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#main_directors) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
