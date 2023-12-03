@@ -105,7 +105,7 @@
 
 * * *
 ### astar_random_map_generator
-:red_circle: A*알고리즘을 응용한 랜덤맵 생성기<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
+:red_circle: A*알고리즘을 응용한 랜덤맵 생성기<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Astar_MapGenerator)
 ===
 
 ![AstarDungeonMap_Generator](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8a6c67fa-e122-4def-9e5a-fb8a2a20fad7)
