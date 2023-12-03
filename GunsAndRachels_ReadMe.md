@@ -19,7 +19,7 @@
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#main_directors)<br>
 :red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
 * * *
-:green_circle: 스탯인벤토리 제작.[📚:설명보기](#statinventory) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)<br>
+:green_circle: 스탯인벤토리 제작.[📚:설명보기](#statinventory) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)<br>
 :green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#chest_itemgenerator) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br> 
 :green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#field_items) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Field_Coin%26Items)<br>
 :green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#unirx_touch_control) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br>
@@ -40,8 +40,8 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위한 옵저버 패턴, 싱글톤 패턴 사용)<br>
  * * *
-:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#maincam) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
-:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Guns%26Rachels_Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
+:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#maincam) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
+:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Guns%26Rachels_Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
 🟠: 모바일 플랫폼 iOS & Android 빌드 & 트러블슈팅.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
