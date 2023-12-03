@@ -11,7 +11,7 @@
 * BurgerPlease!의 경우 1개의 전체 프로젝트 개발 및 라이브서비스경험, 1개의 프로젝트 리펙토링 및 수정 및 라이브 서비스경험이있습니다.
 * OutletRush!의 경우 1개의 전체 프로젝트 개발 및 라이브서비스 경험이 있습니다.
 
-○ Guns And Rachels 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/GunsAndRahcels_ReadMe)<br>
+○ Guns And Rachels 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/GunsAndRahcels_ReadMe.md)<br>
 ○ BurgerPlease! 및 OutletRush! 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)
 
 
