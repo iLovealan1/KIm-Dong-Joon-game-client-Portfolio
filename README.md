@@ -26,7 +26,7 @@
 <img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
-
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white">
 # 🗃️ 국비과정 훈련 진행 내역<br>
 
 ○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
