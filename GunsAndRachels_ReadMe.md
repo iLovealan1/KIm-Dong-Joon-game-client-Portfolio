@@ -14,34 +14,34 @@
 🎮: 발매작 건즈앤 레일체스 개요  [📚:설명보기](#gunsandrachels)<br>
 🔌: 사용 외부 플러그인 목록  [📚:설명보기](#plugins)
 - - -
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Astar_MapGenerator)<br>
-:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#main_directors) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)<br>
+:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Astar_MapGenerator)<br>
+:red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#main_directors) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#main_directors)<br>
 :red_circle: 유니티 타일맵 컴포넌트를 사용한 마을 & 던전 레벨 디자인.<br>
 * * *
 :green_circle: 스탯인벤토리 제작.[📚:설명보기](#statinventory) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)<br>
-:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#chest_itemgenerator) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br> 
-:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#field_items) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Field_Coin%26Items)<br>
-:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#unirx_touch_control) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br>
+:green_circle: 상자 출현 아이템 생성 구조 설계 및 스크립트 제작.[📚:설명보기](#chest_itemgenerator) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br> 
+:green_circle: 오브젝트 풀링을 이용한 필드 출현 Coin 스크립트 및 필드 획득 아이템 제작.[📚:설명보기](#field_items) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Field_Coin%26Items)<br>
+:green_circle: UniRx 플러그인을 활용한 필드 아이템 터치 조작 & 애니메이션.[📚:설명보기](#unirx_touch_control) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br>
 * * *
 :large_blue_circle: **제작한 UGUI 리스트 (구성,기획,스크립트 제작)**<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#pauseui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Pause_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [📚:설명보기](#gameoverui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/GameOver_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [📚:설명보기](#dialogueui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Dialog_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#item_field_popup_ui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Item_FieldPopup_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#chest_itemgenerator) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#guidearrowui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Guide_Arrow_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [📚:설명보기](#announceui) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Announce_UI)<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [📚:설명보기](#minimap) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/MiniMap_UI)<br>
-:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업용 InfoManager, DataManager Partial Scripts)**.[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/SingleTonManager)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 일시정지화면 UI [📚:설명보기](#pauseui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Pause_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 게임 오버 UI [📚:설명보기](#gameoverui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/GameOver_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 다이얼로그 UI [📚:설명보기](#dialogueui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Dialog_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 아이템 필드 팝업 UI [📚:설명보기](#item_field_popup_ui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Item_FieldPopup_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: NPC 월드 팝업 UI [📚:설명보기](#chest_itemgenerator) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 가이드 애로우 UI [📚:설명보기](#guidearrowui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Guide_Arrow_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 안내멘트 팝업 UI [📚:설명보기](#announceui) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Announce_UI)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: 미니맵 UI [📚:설명보기](#minimap) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/MiniMap_UI)<br>
+:large_blue_circle: **싱글톤 패턴 스크립트 제작 리스트(협업용 InfoManager, DataManager Partial Scripts)**.[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/SingleTonManager)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager Script <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AudioManager Script (외부 플러그인기반으로 프로젝트에 맞게 새로 제작한 Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: AtlasManager Script (Mono 싱글톤 스크립트)<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: EventDispatcher Script (객체간의 원활한 통신을 위한 옵저버 패턴, 싱글톤 패턴 사용)<br>
  * * *
-:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#maincam) [📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
-:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Guns%26Rachels_Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
+:yellow_circle: 메인 카메라 로직 제작 (User Following Cam 및 Hit Effect 연출). [📚:설명보기](#maincam) [📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
+:yellow_circle: 디파짓 시스템 핵심 기능 제작(Deposit(), MakeDipositTupleList() 메서드 참조).[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Guns%26Rachels_Scripts/SingleTonManager/InfoManager_PossessionAmount.cs)<br>
 🟠: 모바일 플랫폼 iOS & Android 빌드 & 트러블슈팅.<br>
 :yellow_circle: 포스트 프로세싱 Bloom + 도트 스타일의 게임 에셋을 이용한 게임의 전체적인 맵 비주얼및 톤앤 매너 정리.<br>
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
@@ -186,7 +186,7 @@
 
 * * *
 ### statinventory
-:green_circle:스탯인벤토리<br>[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)
+:green_circle:스탯인벤토리<br>[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Main%26Director)
 ===
 
 ![InventoryOverall](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a52d87ba-f218-4244-a532-4b5cbb139158)
@@ -224,7 +224,7 @@
 
 * * *
 ### chest_itemgenerator
-:green_circle:상자 생성 및 아이템 생성<br>[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)
+:green_circle:상자 생성 및 아이템 생성<br>[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)
 ===
 ![image](https://blog.kakaocdn.net/dn/by0xsP/btsibv2StgN/rmt9xJfzpsOw256gV9oUSk/img.gif)
 ![ChestAppear](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/d19ac2aa-c489-4cfc-a558-a7f09fe3e6dd)
@@ -266,7 +266,7 @@
 
 * * *
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Field_Coin%26Items)
+:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Field_Coin%26Items)
 ===
 ### field_items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
@@ -311,7 +311,7 @@
 
 * * *
 ### unirx_touch_control
-:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출<br>[📂:스크립트보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)
+:green_circle:UniRx 플러그인을 활용한 필드 아이템 터치 조작 & DOTween 아이템 획득 연출<br>[📂:폴더보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/Chest%26ItemGenerator)
 ===
 
 ![UnirxGetItems](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/1d79b56b-f6f7-484e-8d69-070f950bd920)
@@ -344,7 +344,7 @@
 
 * * *
 ### pauseui  
-:large_blue_circle: 일시정지, 크레딧 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Pause_UI)<br>
+:large_blue_circle: 일시정지, 크레딧 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Pause_UI)<br>
 ===
 
 ![PauseUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ff616897-faa2-4915-9cb2-a5ccf3d7d937)
@@ -372,7 +372,7 @@
 [목차로](#목차)
 * * *
 ### gameoverui 
-:large_blue_circle: 게임오버 화면 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/GameOver_UI)<br>
+:large_blue_circle: 게임오버 화면 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/GameOver_UI)<br>
 ===
 
 ![GamOver](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/89414533-d698-4cc0-bf44-74709f462708)
@@ -412,7 +412,7 @@
 
 * * *
 ### item_field_popup_ui 
-:large_blue_circle: 필드 아이템 팝업 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Item_FieldPopup_UI)<br>
+:large_blue_circle: 필드 아이템 팝업 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Item_FieldPopup_UI)<br>
 ===
 
 ![UnirxGetItems2](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/8fcf400b-f854-4ea4-bec9-6a65a3430dbb)
@@ -439,7 +439,7 @@
 
 * * *
 ### guidearrowui  
-:large_blue_circle: 유저 맵 가이드 화살표 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Guide_Arrow_UI)<br>
+:large_blue_circle: 유저 맵 가이드 화살표 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Guide_Arrow_UI)<br>
 ===
 
 ![GuideArrow](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/dc831c4d-c2d5-4d71-b4ee-1f1fb2a7176e)
@@ -461,7 +461,7 @@
 
 * * *
 ### announceui 
-:large_blue_circle: 유저 안내 문구 팝업 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Announce_UI)<br>
+:large_blue_circle: 유저 안내 문구 팝업 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/Announce_UI)<br>
 ===
 
 ![AnnounceUI](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/97bfcdaa-2fc9-4b38-9694-c6e97690cf08)
@@ -481,7 +481,7 @@
 
 * * *
 ### minimap  
-:large_blue_circle: 미니맵 UI (구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/MiniMap_UI)<br>
+:large_blue_circle: 미니맵 UI (구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/UGUI/MiniMap_UI)<br>
 ===
 
 ![MiniMap](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/67ac7b78-2530-4b33-be35-2fc0eec12125)
@@ -504,7 +504,7 @@
 
 * * *
 ### maincam  
-:large_blue_circle: 메인카메라 연출(구성,기획,스크립트 제작)<br>[**📂:스크립트보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
+:large_blue_circle: 메인카메라 연출(구성,기획,스크립트 제작)<br>[**📂:폴더보기**](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Guns%26Rachels_Scripts/MainCam)<br>
 ===
 
 ![CamHit](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/700b72a3-aa70-4350-a3ac-520531a9f5ea)
