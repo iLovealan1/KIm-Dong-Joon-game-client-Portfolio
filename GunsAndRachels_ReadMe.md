@@ -1,7 +1,12 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=건즈앤레이첼스&fontSize=35)
 <br>
+# 소개
+안녕하세요. 건즈앤 레이첼스 포트폴리오에 오신걸 환영합니다
+저는 반년간의 국비지원 
+건즈앤레이첼스에서는 랜덤던전 생성 알고리즘을 포함한 게임의 맵 제작, 인벤토리, 터치 조작 및 아이템 생성, 카메라 조작, NPC 인터렉션, 그외 전반적인 UGUI 기획 및 제작을 전담하였습니다.
 
 # 목차
+
 
 ⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
 
