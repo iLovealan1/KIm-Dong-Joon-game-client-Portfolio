@@ -17,16 +17,17 @@
 
 # 🖋️::Stacks<br>
 
-<img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"> <img src="https://img.shields.io/badge/Csharp-239120?style=for-the-badge&logo=csharp&logoColor=white">
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
-<img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white">
+<img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"><br>
+<img src="https://img.shields.io/badge/Csharp-A100FF?style=for-the-badge&logo=C#&logoColor=white"><br>
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"><br>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"><br>
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><br>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"><br>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"><br>
+<img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white"><br>
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><br>
+<img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white"><br>
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white"><br>
 # 🗃️ 국비과정 훈련 진행 내역<br>
 
 ○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
