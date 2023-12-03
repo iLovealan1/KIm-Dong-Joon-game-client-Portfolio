@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=PlayableGamesfontSize=35)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=PlayableGames&fontSize=35)
 <br>
 소개
 =============
