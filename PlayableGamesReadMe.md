@@ -52,7 +52,7 @@
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
 
-# 발매작 : 건즈앤레이첼스 (GunsN'Rachels) 개요
+# 플레이어블 게임 개요
 ### gunsandrachels
 
 ![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
