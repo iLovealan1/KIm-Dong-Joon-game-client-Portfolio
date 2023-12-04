@@ -199,20 +199,205 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 ![player controll & camera control](https://private-user-images.githubusercontent.com/124248265/287693313-86f36534-7d34-44dd-bf27-7f0af1011849.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTIyNTksIm5iZiI6MTcwMTY5MTk1OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjkzMzEzLTg2ZjM2NTM0LTdkMzQtNDRkZC1iZjI3LTdmMGFmMTAxMTg0OS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMjEyMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYmM5YWY5YTJlOGE1MDhkOGJmNzM1MzhkYTU4MDczZDAwYjM1OGViNjE5MjU0YWViZTIxMzUwZjQwOTk0MzFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xj00xYe8iboHk3eRSRUmLUgsAIIwp9sATPWd6ETAwJs)
 
 ### **이미지 설명(최상단부터)**
-- 가상 조이스틱을 이용한 플레이어의 움직임을 볼수 있습니다.
+- 가상 조이스틱을 이용한 플레이어의 움직임을 볼 수 있습니다.
+- 플레이어를 따라다니는 카메라의 움직임을 볼 수 있습니다.
 
 ### **요약**
-- Joystick UI 객체와 플레이어는 Interface 를 통한 상호작용
-- Event System을 통한 인터페이스 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
+- Joystick UI 객체와 MainCamer 객체는 플레이어와 Interface를 통해 소통하여 객체 은닉화.
+- Event System을 통한 IPlayerMoveHandler 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
+- IPositionReturner 인터페이스의 GetPosition() 메서드를 통한 플레이어의 현재 포지션 값을 카메라에 전달
+- IPlayerMoveHandler, IPositionReturner 간의 인터페이스 상속으로 카메라 이벤트 호출시 다운캐스팅을 통해 플레이어의 움직임 제어
 
-### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
-
+### **관련 스크립트**
+**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 ###코드
 
-    pirvate void test(){}
+&nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
 
+````
+public void MovePlayer(float vertical ,float horizontal)
+{
+    if (IsOKToMove == false)
+    {
+        _rigedBody.velocity = Vector3.zero;
+        ChangeAnimation(true);
+        return;
+    }
+    
+    if (vertical == 0 && horizontal == 0)
+    {
+        _rigedBody.velocity = Vector3.zero;
+        ChangeAnimation(true);
+        return;
+    }
+    
+    Vector3 targetDirection = _cameraForward * vertical + _cameraRight * horizontal;
+    targetDirection.Normalize();
+    
+    if (targetDirection != Vector3.zero)
+    {
+        Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, targetRotation, _rotationSpeed);
+    }
+    
+    ChangeAnimation(false);
+    _rigedBody.velocity = targetDirection * _speed;
+}
+````
+
+**PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+###코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
+
+````
+public void StartEventCamYoyo(EEventCamType type)
+{
+    var moveHandler =_playerPosReturner as IPlayerMoveHandler;
+    
+    if ( moveHandler == null )
+        return;
+
+    if ( _eventCamToken.IsValid() )
+        return;
+
+    _isEvnet = true;
+    moveHandler.IsOKToMove = false;
+
+    var defaultPos = this.transform.position;
+    var idx = (int)type;
+    var targetTrans = _eventCamTransList[idx];
+
+    var camMoveTimer = _camMoveTimer;
+    var camComebackTimer = _camComeBackTimer;
+
+    if (type == EEventCamType.DisplayCloathes)
+    {
+        camMoveTimer -= 0.2f;
+        camComebackTimer -= 0.2f;
+    }
+
+    TweenUtil.TweenPosition(
+        this.transform,
+        targetTrans,
+        new Params(TimeType.Scale)
+        {    
+            secDuration = camMoveTimer, 
+            timeModular = (t) => EaseUtil.SineIn(t) 
+        }, 
+        (done_MoveIn) =>{
+
+            var waitPos = new Vector3(
+                this.transform.position.x, 
+                this.transform.position.y + 0.0001f, 
+                this.transform.position.z);
+
+            TweenUtil.TweenPosition(
+                this.transform,
+                waitPos,
+                false,
+                _camWaitTimer,
+                (done_Wait) =>{
+                    TweenUtil.TweenPosition(
+                    this.transform,
+                    defaultPos,
+                    new Params(TimeType.Scale)
+                    {    
+                        secDuration = camComebackTimer, 
+                        timeModular = (t) => EaseUtil.SineIn(t) 
+                    }, 
+                    (done_MoveOut) =>{
+
+                        if (_onFirstMoveEventDone != null)
+                        {
+                            _onFirstMoveEventDone.Invoke();
+                            _onFirstMoveEventDone = null;
+                        }
+
+                        _isEvnet = false;
+                        moveHandler.IsOKToMove = true;
+                    });
+            });
+    });
+}
+````
+
+**PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+###코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
+
+````
+public void StartEventCamYoyo(EEventCamType type)
+{
+    var moveHandler =_playerPosReturner as IPlayerMoveHandler;
+    
+    if ( moveHandler == null )
+        return;
+
+    if ( _eventCamToken.IsValid() )
+        return;
+
+    _isEvnet = true;
+    moveHandler.IsOKToMove = false;
+
+    var defaultPos = this.transform.position;
+    var idx = (int)type;
+    var targetTrans = _eventCamTransList[idx];
+
+    var camMoveTimer = _camMoveTimer;
+    var camComebackTimer = _camComeBackTimer;
+
+    if (type == EEventCamType.DisplayCloathes)
+    {
+        camMoveTimer -= 0.2f;
+        camComebackTimer -= 0.2f;
+    }
+
+    TweenUtil.TweenPosition(
+        this.transform,
+        targetTrans,
+        new Params(TimeType.Scale)
+        {    
+            secDuration = camMoveTimer, 
+            timeModular = (t) => EaseUtil.SineIn(t) 
+        }, 
+        (done_MoveIn) =>{
+
+            var waitPos = new Vector3(
+                this.transform.position.x, 
+                this.transform.position.y + 0.0001f, 
+                this.transform.position.z);
+
+            TweenUtil.TweenPosition(
+                this.transform,
+                waitPos,
+                false,
+                _camWaitTimer,
+                (done_Wait) =>{
+                    TweenUtil.TweenPosition(
+                    this.transform,
+                    defaultPos,
+                    new Params(TimeType.Scale)
+                    {    
+                        secDuration = camComebackTimer, 
+                        timeModular = (t) => EaseUtil.SineIn(t) 
+                    }, 
+                    (done_MoveOut) =>{
+
+                        if (_onFirstMoveEventDone != null)
+                        {
+                            _onFirstMoveEventDone.Invoke();
+                            _onFirstMoveEventDone = null;
+                        }
+
+                        _isEvnet = false;
+                        moveHandler.IsOKToMove = true;
+                    });
+            });
+    });
+}
+````
 
 [📑: 목차로](#목차)
 
