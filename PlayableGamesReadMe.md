@@ -61,6 +61,8 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 *사용중인 브라우저에서 플레이 불가능시 다른 인터넷 브라우저로 플레이 가능합니다.<br>
 *게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.<br>
 
+---
+
 ## 🎮: 게임소개
 
 ![GraphicImage](https://private-user-images.githubusercontent.com/124248265/287611325-0df14cc0-d948-40fb-9a3e-2119cb44b2bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2NzI1ODgsIm5iZiI6MTcwMTY3MjI4OCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjExMzI1LTBkZjE0Y2MwLWQ5NDgtNDBmYi05YTNlLTIxMTljYjQ0YjJiYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQwNjQ0NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MTNjNzBlNmNmYmQ3NDc2Yjk2ZWJmZWUzYTFhMTU5NmZjMzhlMTFlMWYxYTQ5M2RmZjRkNTQzYjcyOGRhZWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Wq9GLm8RpAp4ypbClIomX2GwZJD7u-0u12uOk2cl_Lw)
@@ -81,13 +83,16 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 ## 🎲: 플레이 링크
 🍔: Burger Please! Playable : [Link][Burger Please! 010]
 
+---
+
 [Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-## 제작 스크립트 설명
+# 제작 스크립트 설명
 
-🟢:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
-===
+## 🟢: 오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+
+
 ### field_items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
 
