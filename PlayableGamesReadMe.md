@@ -98,7 +98,6 @@
 
 ## 🎲: 플레이 링크
 🍔: Burger Please! Playable 2 : [Link][Burger Please! 011]
-*리펙토링을 담당한 버전의 플레이어블 게임입니다.
 
 [Burger Please! 011]: 
 https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
