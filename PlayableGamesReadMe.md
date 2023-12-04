@@ -43,7 +43,40 @@
 *하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크에서 플레이가 가능합니다.<br>
 *사용중인 브라우저에서 플레이 불가능시 다른 인터넷 브라우저로 플레이 가능합니다.<br>
 *게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.<br>
-*웹상에서 플레이시 모바일로 플레이할때와 다르게 그래픽 오류등이 있을수 있습니다.(루나 자체의 버그)
+*웹상에서 플레이시 모바일로 플레이할때와 다르게 그래픽 오류등이 있을수 있습니다.
+
+---
+
+## 🎮: 게임소개
+
+![스크린샷 2023-12-04 오후 5 35 46](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a6c7d2b3-d5b0-4ba2-a261-976342089a92)
+- **제목** : Outlet Rush Playable <br> 
+- **장르** : Arcade Idle <br>
+- **엔진** : UnityEngine3D<br>
+- **플랫폼** : Luna Playable<br>
+- **Impressions (게임 노출 및 플레이 횟수)** : 0000회 이상<br>
+
+## ⭐: 게임의 특징
+
+*해당 게임은 기획단계부터 전체를 제작한 프로젝트입니다.*
+- 신발 과 옷등 아울렛을 운영하며 확장하는 아케이드 아이들 장르의 게임
+- 유명 브랜드 신발과 옷을 판매하며 매대를 확장하고 직원을 고용하며 돈을 모아 가게를 확장하는 플로우
+- 돈을 모아 최종 언락인 옷 매대 언락을하게 되면 게임이 끝나는 방식
+
+👉 신발 혹은 옷 등을 손 위에 쌓고 매대로 옮겨지는 중독성 있는 애니메이션 <br>
+👉 등뒤에 쌓이는 돈을 통해 돈을 모으는 재미를 시각적으로 표현<br>
+👉 신발 -> 옷 순으로 언락되며 판매 품목이 많아지고 가게가 확장되는 것을 보는 재미<br>
+
+## 🎲: 플레이 링크
+
+👟: Outlet Rrush : [Link_Stack_ver][OutletRush 002]
+
+[OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
+
+
+👟: Outlet Rrush : [Link_none_Stack_ver][OutletRush 002_none Stack]
+
+[OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 ---
 
@@ -104,93 +137,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ---
 
-## 🎮: 게임소개
-
-![스크린샷 2023-12-04 오후 5 35 46](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a6c7d2b3-d5b0-4ba2-a261-976342089a92)
-- **제목** : Outlet Rush Playable <br> 
-- **장르** : Arcade Idle <br>
-- **엔진** : UnityEngine3D<br>
-- **플랫폼** : Luna Playable<br>
-- **Impressions (게임 노출 및 플레이 횟수)** : 0000회 이상<br>
-
-## ⭐: 게임의 특징
-
-*해당 게임은 기획단계부터 전체를 제작한 프로젝트입니다.*
-- 신발 과 옷등 아울렛을 운영하며 확장하는 아케이드 아이들 장르의 게임
-- 유명 브랜드 신발과 옷을 판매하며 매대를 확장하고 직원을 고용하며 돈을 모아 가게를 확장하는 플로우
-- 돈을 모아 최종 언락인 옷 매대 언락을하게 되면 게임이 끝나는 방식
-
-👉 신발 혹은 옷 등을 손 위에 쌓고 매대로 옮겨지는 중독성 있는 애니메이션 <br>
-👉 등뒤에 쌓이는 돈을 통해 돈을 모으는 재미를 시각적으로 표현<br>
-👉 신발 -> 옷 순으로 언락되며 판매 품목이 많아지고 가게가 확장되는 것을 보는 재미<br>
-
-## 🎲: 플레이 링크
-
-👟: Outlet Rrush : [Link_Stack_ver][OutletRush 002]
-
-[OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
-
-
-👟: Outlet Rrush : [Link_none_Stack_ver][OutletRush 002_none Stack]
-
-[OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
-
----
-
 # 제작 스크립트 설명
-
-# 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
-
-
-### 🔖: field_items
-
-![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
-
-### **이미지 설명(최상단부터)**
-- 필드 코인 개별 획득
-
-### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
-
-### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
-
-###코드
-
-    pirvate void test(){}
-
-
-[📑: 목차로](#목차)
-
----
-
-
-## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
-
-### 🔖: field_items
-
-![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
-
-### **이미지 설명(최상단부터)**
-- 필드 코인 개별 획득
-
-### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
-
-### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
-
-###코드
-
-    pirvate void test(){}
-
-
-[📑: 목차로](#목차)
-
----
-
 
 ## 🟢: Outlet Rrush Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
@@ -378,6 +325,61 @@ public void StartEventCamYoyo(EEventCamType type)
 [📑: 목차로](#목차)
 
 ---
+
+# 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+
+
+### 🔖: field_items
+
+![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+
+### **이미지 설명(최상단부터)**
+- 필드 코인 개별 획득
+
+### **요약**
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+
+### **상세 내용**
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+###코드
+
+    pirvate void test(){}
+
+
+[📑: 목차로](#목차)
+
+---
+
+
+## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+
+### 🔖: field_items
+
+![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+
+### **이미지 설명(최상단부터)**
+- 필드 코인 개별 획득
+
+### **요약**
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+
+### **상세 내용**
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+###코드
+
+    pirvate void test(){}
+
+
+[📑: 목차로](#목차)
+
+---
+
+
+
 
 
 
