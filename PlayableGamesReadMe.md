@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)<br>
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/d6b1ae03-8cda-4b43-9aa0-4b10547d7f06)![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)<br>
 
 # 소개
 안녕하세요. 플레이어블게임 포트폴리오에 오신걸 환영합니다.
@@ -53,7 +53,7 @@
 [Burger Please! 011]: 
 https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
-👟 OutletRrush : [Game Play Link Stack_ver][OutletRush 002]
+👟 OutletRrush : [Game Play Link_Stack_ver][OutletRush 002]
 
 [OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
@@ -63,37 +63,25 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-## 🎥: **홍보영상**<br>
-[![유튜브 동영상](https://img.youtube.com/vi/uf8yAuG5YM0/0.jpg)](https://www.youtube.com/watch?v=uf8yAuG5YM0)<br>
-*클릭시 유튜브 링크로 연결됩니다.
+## 🎮: **게임 소개 및 플레이링크**<br>
 
-##
 
-- **제목** : 건즈앤레이첼스(Guns N` Rahcels)<br>
-- **장르** : 로그라이크 핵앤슬래시 액션 슈터<br>
+![GraphicImage](https://miro.medium.com/v2/resize:fit:640/format:webp/0*uVzQeTwuXXJBT5Mw.png)
+- **제목** : Burger Please! Playable & Burger Please! Playable2 <br> 
+- **장르** : 업그레이드 아이들<br>
 - **엔진** : UnityEngine3D<br>
-- **플랫폼** : iOS , Android<br>
-- **출시일** : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
-- **제작** : Team Vizeon<br>
+- **플랫폼** : Luna Playable<br>
 
-*"건즈앤레이첼스" 는 현재 구글플레이스토어 와 앱스토어 양대마켓에서 "건즈앤레이첼스" 를 검색하여 지금 플레이 하실수 있습니다.
-
-:iphone: iOS : [AppStore Link][iOS Link]
-
-[iOS Link]: https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
-
-:iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
-
-[GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
 ## 🎮:게임의 특징
 
-- 플레이 할때마다 맵이 바뀌는 바뀌는 로그라이크 스타일의 액션 슈터
-- 게임을 클리어한 뒤에도 이어지는 윤회시스템
-- RPG요소를 차용한 인벤토리 시스템과 스탯 강화 시스템
-- 4종류의 특색있는 총기를 이용한 핵앤 슬래시 액션
-- 디파짓 시스템을 통한 재화 수집 및 캐릭터 강화를 위한 에테르 수집
-- 12종류의 특색있는 스킬들
+- 주문을 위한 카운터, 버거 픽업을 위한 픽업대 구성의 업그레이드 아이들 게임
+- 버거를 수령한 손님에게서 돈을 수금하여 카운터와 픽업대를 늘려나가는것이 게임의 주요 목표
+- 게임의 마지막 언락 요소인 새로운 머신 추가시 게임이 끝나는 방식<br>
+
+👉 버거를 주문하고 받아가기위해 분주하게 움직이는 손님들을 보는 재미요소<br>
+👉 돈을 모아 가게를 확장해 가는 재미요소
+
 
 ## 🔌:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
 ### plugins
