@@ -198,6 +198,8 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ![player controll & camera control](https://private-user-images.githubusercontent.com/124248265/287693313-86f36534-7d34-44dd-bf27-7f0af1011849.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTIyNTksIm5iZiI6MTcwMTY5MTk1OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjkzMzEzLTg2ZjM2NTM0LTdkMzQtNDRkZC1iZjI3LTdmMGFmMTAxMTg0OS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMjEyMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYmM5YWY5YTJlOGE1MDhkOGJmNzM1MzhkYTU4MDczZDAwYjM1OGViNjE5MjU0YWViZTIxMzUwZjQwOTk0MzFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xj00xYe8iboHk3eRSRUmLUgsAIIwp9sATPWd6ETAwJs)
 
+![OutletRush_EventCam](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/324c3364-2b2a-4832-b147-dbb0f0c62b6b)
+
 ### **이미지 설명(최상단부터)**
 - 가상 조이스틱을 이용한 플레이어의 움직임을 볼 수 있습니다.
 - 플레이어를 따라다니는 카메라의 움직임을 볼 수 있습니다.
@@ -207,9 +209,14 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 - Event System을 통한 IPlayerMoveHandler 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
 - IPositionReturner 인터페이스의 GetPosition() 메서드를 통한 플레이어의 현재 포지션 값을 카메라에 전달
 - IPlayerMoveHandler, IPositionReturner 간의 인터페이스 상속으로 카메라 이벤트 호출시 다운캐스팅을 통해 플레이어의 움직임 제어
+- 내부 서브모듈 TWeen 유틸과 Ease 유틸을 활용한 카메라 이벤트 움직임
 
 ### **관련 스크립트**
-**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+
+**IPlayerMoveHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IPlayerMoveHandler.cs)<br>
+**IPositionReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IPositionReturner.cs)<br>
+
+**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Player.cs)<br>
 ###코드
 
 &nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
@@ -245,7 +252,7 @@ public void MovePlayer(float vertical ,float horizontal) // 잔딜받은 float �
 }
 ````
 
-**VJHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+**VJHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/UI/VJHandler.cs)<br>
 ###코드
 
 &nbsp;&nbsp;&nbsp;&nbsp;● OnDrag() : 이벤트 시스템을  MovePlayer() 메서드를 호출합니다. .<br>
@@ -278,34 +285,9 @@ public void MovePlayer(float vertical ,float horizontal) // 잔딜받은 float �
     }
 }
 
-public void OnPointerDown(PointerEventData ped)
-{
-     if (_cam == null)
-        return;
-        
-    _onTouched?.Invoke();      
-
-    if (_onGameStart != null)
-    {
-        _onGameStart.Invoke(EGuideArrowState.Counter_Upgrade);
-        _onGameStart = null;
-    }
-
-    _jsContainer.rectTransform.anchoredPosition = ScreenPointToAnchoredPosition(ped.position);
-    _jsContainer.gameObject.SetActive(true);
-    OnDrag(ped);
-}
-
-public void OnPointerUp(PointerEventData ped)
-{
-    InputDirection = Vector3.zero;
-    _joystick.rectTransform.anchoredPosition = Vector3.zero;
-    _jsContainer.gameObject.SetActive(false);
-    _playerMoveHandler.MovePlayer(InputDirection.y, InputDirection.x);
-}
 ````
 
-**PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+**PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/ETC/PlayerCamera.cs)<br>
 ###코드
 
 &nbsp;&nbsp;&nbsp;&nbsp;● GetPosition() : 플레이어의 위치를 받아오는 인터페이스 메서드입니다. LateUpdate에서 호출됩니다. <br>
