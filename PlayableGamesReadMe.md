@@ -138,6 +138,8 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ## 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
+====
+
 ### field_items
 
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
@@ -152,8 +154,14 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 **DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
 
+###코드
+
+    pirvate void test(){}
+
 
 [📑: 목차로](#목차)
+
+====
 
 
 ## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
@@ -171,6 +179,10 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 ### **상세 내용**
 **DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+###코드
+
+    pirvate void test(){}
 
 
 [📑: 목차로](#목차)
@@ -194,7 +206,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ###코드
 
-  pirvate void test(){}
+    pirvate void test(){}
 
 
 [📑: 목차로](#목차)
