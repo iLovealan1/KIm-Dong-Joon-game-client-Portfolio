@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=UnityEngine3D%20클라이언트%20개발자%20김동준%20포트폴리오&fontSize=35)
 <br>
 
-# 소개
+# ::소개
 
 ## ***유니티엔진 클라이언트 개발직 지원자 김동준(Alan Kim)의 포트폴리오에 오신걸 환영합니다.***<br>
 
@@ -9,14 +9,14 @@
 * 국비직업훈련 당시 개발 참여 작품으로는 유니티엔진을 사용하여 모바일 플랫폼으로 제작 발매한 2D 로그라이크 액션 슈팅게임 "건즈앤레이첼스" 가 있습니다.<br>
 * 슈퍼센트 주식회사 근무당시 현 라이브 서비스 중인 게임 BurgerPlease! 와 OutletRush! 의 플레이어블 게임 2편의 제작 및 라이브서비스 경험과 1편의 리펙토링 및 라이브서비스 경험이있습니다.<br><br>
 
-▶️ *건즈앤레이첼스의 제작기간은 총 6개월간의 직업 훈련 과정중 3개월 정도 입니다. <br>
-▶️ *BurgerPlease!는 1개의 전체 프로젝트개발 및 라이브서비스1개의 프로젝트 리펙토링 및 수정 및 라이브 서비스경험이있습니다.<br>
+▶️ *건즈앤레이첼스의 제작기간은 총 6개월간의 직업 훈련 과정중 3개월가량 소모되었습니다. <br>
+▶️ *BurgerPlease!는 1개의 전체 프로젝트개발 및 라이브서비스1개의 프로젝트 리펙토링 및 수정 및 라이브 서비스경험이있습니다. <br>
 ▶️ *OutletRush!는 1개의 전체 프로젝트개발 및 라이브서비스 경험이 있습니다.
   
 🗃️: Guns And Rachels 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/GunsAndRachels_ReadMe.md)<br>
 🗃️: BurgerPlease! 및 OutletRush! 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGamesReadMe.md)
 
-# 🖋️::Stacks<br>
+# 🖋️: Stacks<br>
 
 <img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"><br>
 <img src="https://img.shields.io/badge/Csharp-A100FF?style=for-the-badge&logo=C#&logoColor=white"><br>
