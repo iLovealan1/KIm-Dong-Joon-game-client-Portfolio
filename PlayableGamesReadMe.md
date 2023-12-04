@@ -38,22 +38,18 @@
 - 루나 플레이어블 플랫폼을 기반으로 제작된 전면광고용 미니 게임입니다.
 - 현 라이브 서비스중인 게임의 홍보를 위해 제작되는 게임으로 맛보기 미니 게임의 성향을 가지고 있습니다.
 
-🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
-
-[Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
-
 🍔: Burger Please! Playable 2 : [Game Play Link][Burger Please! 011]
 *리펙토링을 담당한 버전의 플레이어블 게임입니다.
 
 [Burger Please! 011]: 
 https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
-👟 OutletRrush : [Game Play Link_Stack_ver][OutletRush 002]
+👟: OutletRrush : [Game Play Link_Stack_ver][OutletRush 002]
 
 [OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-👟 OutletRrush : [Game Play Link_none_Stack_ver][OutletRush 002_none Stack]
+👟: OutletRrush : [Game Play Link_none_Stack_ver][OutletRush 002_none Stack]
 
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
@@ -82,7 +78,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 👉 버거를 주문하고 받아가기위해 분주하게 움직이는 손님들을 보는 재미요소<br>
 👉 돈을 모아 가게를 확장해 가는 재미요소
 
-## 🎲 플레이 링크
+## 🎲: 플레이 링크
 🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
 
 [Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
@@ -90,44 +86,20 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ## 제작 스크립트 설명
 
-:green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+🟢:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 ===
 ### field_items
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
-![GetCoins](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c648bc0f-bf08-49fc-bfb0-35be7a8fa1f3)<br>
-![coinspin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/e3286a16-e4bb-413b-9316-c1e3cb0973db)<br>
-![itemFloating](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b2cb028f-7512-4199-aa7f-3c933119a3bd)<br>
 
 ### **이미지 설명(최상단부터)**
 - 필드 코인 개별 획득
-- 라운드 종료시 코인 일괄 획득
-- 코인 스핀 애니메이션
-- 아이템 플로팅 애니메이
 
 ### **요약**
 - ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
-- ChestItemGenerator 클래스와 CoinPool 오브젝트 풀링 스크립트를 이용한 코인 생성.
-- Field Coin은 ChestItemGenerator 의 MakeFieldCoin 메서드의 UnityEngine.Random.Range() 메서드 사용 30% 의 확률로 생성
-- BoxCollider2D 컴포넌트를 사용해 유저 접근시 획득연출. (DOTween 을 이용한 애니메이션 코드 제어)
-- DOTween을 이용한 회전 연출 및 아이템 Floating 연출.
-- SpriteGlowEffect 외부 스크립트를 활용한 포스트 프로세싱 Bloom 효과 연출.
 
 ### **상세 내용**
-📜:**DropItem**[스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 각각 다른 UI위치로 아이템을 보내는 연출을 코드로 제어하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● DOTween플러그인을 이용해 FloatingEffect() 메서드와 FieldCoinAimStart() 메서드를 제작해 각기 다른 애니메이션을 코드로 제어하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 호출하여 아이템 Full 팝업 UI를 체력 Full 팝업 UI 를 포하 각기 다른 UI의 메서드를 호출하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● EventDispatcher 싱글톤 클래스로 이벤트를 등록하여 ChestItemGenerator 의 터치이벤트에 반응하는 메서드를 호출시킵니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● DataManager 싱글톤 클래스로 변하지 않는 기획된 양 만큼의 코인 값을 Infomanager 싱글톤 스크립트에 전달하여 직렬화 하여 저장하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● SpriteGlowEffect 외부 스크립트를 활용해 포스트 프로세싱 Bloom  효과를 더한 아이템 획득 이펙트 연출을 제작하였습니다.<br><br>
-📜:**CoinPool**[스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/CoinPool.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● List 자료구조를 사용해 FieldCoin 게임 오브젝트 프리팹을 Initializing 단계에서 생성하여 오브젝트 풀을 관리하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 코드를 사용해 tag, sortingLayerName,sortingOrder,localScale,name,BoxCollider2D의 size를 제어하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● GetObjectFromPool() 메서드를 호출하여 List의 코인을 가져오며 만약 코인이 부족할시 새롭게 만들어 리스트에 추가하여 관리하였습니다.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● Mono 오브젝트로 만들어 객체의 자식으로 코인을 관리하여 Hierarchy 창에서 관리가 용의 하게 제작하였습니다.<br><br>
-📜:**MonsterGenerator**[스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Main%26Director/MonsterGenerator.cs)<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;● 레벨 종료시 GetAllFieldCoins() 메서드를 호출해 LINQ로 DropItem Field Coin 객체를 모두 담아 DropItem클래스의 ClickedItemCheck() 메서드를 호출하여 일괄적으로 수급합니다.<br>
 
 
 [📑: 목차로](#목차)
