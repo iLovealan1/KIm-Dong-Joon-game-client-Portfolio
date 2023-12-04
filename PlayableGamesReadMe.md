@@ -61,7 +61,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 # **게임소개 및 플레이링크**<br>
 ### IntroDuction
 
-*하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크와 QR을 통해 웹상과 모바일에서 플레이가 가능합니다.<br>
+*하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크에서 플레이가 가능합니다.<br>
 *사용중인 브라우저에서 플레이 불가능시 다른 인터넷 브라우저로 플레이 가능합니다.<br>
 *게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.<br>
 
@@ -82,7 +82,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 👉 버거를 주문하고 받아가기위해 분주하게 움직이는 손님들을 보는 재미요소<br>
 👉 돈을 모아 가게를 확장해 가는 재미요소
 
-## 🎲 플레이 링크 및 QR
+## 🎲 플레이 링크
 🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
 
 [Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
