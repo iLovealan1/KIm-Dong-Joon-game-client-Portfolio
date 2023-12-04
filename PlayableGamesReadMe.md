@@ -52,13 +52,22 @@
 :yellow_circle: 그외 관련 스크립트들의 메모리 최적화 작업.<br>
 * * *
 
-# 플레이어블 게임 개요
+# 개요
 ### playableGame
 
 ![GraphicImage](https://docs.lunalabs.io/assets/lpp-overview.png)
 🌕 Luna playable : [Docs Link][Luna playable Link]
 
 [Luna playable Link]: https://docs.lunalabs.io/docs/playable/overview
+
+▶️ 플레이어블 게임?
+- 루나 플레이어블 플랫폼을 기반으로 제작된 전면광고용 미니 게임입니다.
+- 현 라이브 서비스중인 게임의 홍보를 위해 제작되는 게임으로 맛보기 미니 게임의 성향을 가지고 있습니다.
+- 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 하단 링크를 클릭하여 웹상에서도 플레이가 가능합니다.
+
+🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
+
+[Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 ## 🎥: **홍보영상**<br>
 [![유튜브 동영상](https://img.youtube.com/vi/uf8yAuG5YM0/0.jpg)](https://www.youtube.com/watch?v=uf8yAuG5YM0)<br>
