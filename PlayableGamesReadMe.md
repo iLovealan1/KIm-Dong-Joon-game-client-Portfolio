@@ -1,35 +1,14 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)
-<br>
-소개
-=============
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)<br>
 
-유니티엔진 클라이언트 개발자직 지원자 김동준(Alan Kim)의 포트폴리오에 오신걸 환영합니다.<br>
--------------
-저는 개발자 지망생으로 2022.12 부터 2023.06 까지 반년간의 직업훈련을 받았습니다.<br>
-총 6개월간의 과정중 프로젝트를 제작한 실 기간은 3개월 정도 입니다. <br>
-개발 참여 작품으로는 유니티엔진을 활용하여 제작,발매한 "건즈앤레이첼스"가 있습니다.<br><br>
-건즈앤레이첼스에서는 랜덤던전 생성 알고리즘을 포함한 게임의 맵 제작, 인벤토리, 터치 조작 및 아이템 생성, 카메라 조작, NPC 인터렉션, 그외 전반적인 UGUI 기획 및 제작을 전담하였습니다.
+# 소개
+안녕하세요. 플레이어블게임 포트폴리오에 오신걸 환영합니다.
 
-# 🖋️::Stacks<br>
+저는 슈퍼센트 주식회사에서 3개월간 인턴으로 근무하며 루나플레이어블 플랫폼 게임을 개발하는 업무를 담당하였습니다.<br>
+당시 전체 개발을 담당한 게임 2개와 리펙토링에 참여한 게임 1개가 있습니다.<br>
+전체 개발을 담당한 플레이어블게임들은 슈퍼센트 주식회사의 모바일 플랫폼 아케이드 아이들 장르의 게임인 BurgerPlease! 와 OutletRush의 미니게임 형식 게임들입니다.<br>
+두개의 게임 모두 현재 전면광고 게임으로 현재 ironSource, Applovin, Lunaplayable 등의 플랫폼에서 배포되어 서비스 중입니다.<br>
 
-<img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"> <img src="https://img.shields.io/badge/Csharp-239120?style=for-the-badge&logo=csharp&logoColor=white">
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
-<img src="https://img.shields.io/badge/TortoiseSVN-000000?style=for-the-badge&logo=TortoiseSVN&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/sourcetree-0052CC?style=for-the-badge&logo=sourcetree&logoColor=white">
-
-# 🗃️ 국비과정 훈련 진행 내역<br>
-
-○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
-○  유니티 구글 카드보드 sdk 를 활용한 VR 프로젝트 제작, 3D 좀비서바이버, 종스크롤 2D 슈팅 게임 제작.<br>
-○  유니티 ML Agent 를 활용한 인공지능 Ai제작 프로젝트. (플래피 버드, 펭귄Ai 트레이닝)<br>
-○  유니티 셰이더를 활용한 그래픽 프로그래밍.<br>
-○  게임컨셉기획, 레벨디자인, 밸런스기획.<br>
-○  C,C++ 프로그래밍
+아래는 개발한 게임 2개의 기술 목록입니다.
 
 # 🤙: Contacts
 📧: 이메일 :  korindj@kakao.com <br>
@@ -37,10 +16,8 @@
 
 # 목차
 
-⬇️: "건즈앤레이첼스" 프로젝트에서 담당했던 개발 목록입니다.<br>
+🎮: 플레이어블 게임 개요  [📚:설명보기](#gunsandrachels)<br>
 
-🎮: 발매작 건즈앤 레일체스 개요  [📚:설명보기](#gunsandrachels)<br>
-🔌: 사용 외부 플러그인 목록  [📚:설명보기](#plugins)
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#main_directors) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
