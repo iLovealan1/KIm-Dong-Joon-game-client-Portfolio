@@ -16,7 +16,7 @@
 
 # 목차
 
-🎮: 플레이어블 게임 개요  [📚:설명보기](#gunsandrachels)<br>
+🎮: 플레이어블 게임 개요  [📚:설명보기](#playableGame)<br>
 
 - - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
@@ -53,7 +53,7 @@
 * * *
 
 # 플레이어블 게임 개요
-### gunsandrachels
+### playableGame
 
 ![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
 
