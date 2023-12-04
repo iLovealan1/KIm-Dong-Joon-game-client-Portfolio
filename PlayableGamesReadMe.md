@@ -68,7 +68,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 ## 🎮: 게임소개
 
 
-![GraphicImage](https://miro.medium.com/v2/resize:fit:640/format:webp/0*uVzQeTwuXXJBT5Mw.png)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0df14cc0-d948-40fb-9a3e-2119cb44b2bb)
 - **제목** : Burger Please! Playable & Burger Please! Playable2 <br> 
 - **장르** : 업그레이드 아이들<br>
 - **엔진** : UnityEngine3D<br>
