@@ -54,7 +54,7 @@
 - **장르** : Arcade Idle <br>
 - **엔진** : UnityEngine3D<br>
 - **플랫폼** : Luna Playable<br>
-- **Impressions (게임 노출 및 플레이 횟수)** : 0000회 이상<br>
+- **Impressions (실제 게임 플레이에 기반하는 게임 노출도)** : 0000회 이상<br>
 
 ## ⭐: 게임의 특징
 
@@ -87,7 +87,7 @@
 - **장르** : Upgrade Idle <br>
 - **엔진** : UnityEngine3D<br>
 - **플랫폼** : Luna Playable<br>
-- **Impressions (게임 노출 및 플레이 횟수)** : 0000회 이상<br>
+- **Impressions (실제 게임 플레이에 기반하는 게임 노출도)** : 0000회 이상<br>
 
 ## ⭐: 게임의 특징
 
@@ -115,7 +115,7 @@
 - **장르** : Arcade Idle <br>
 - **엔진** : UnityEngine3D<br>
 - **플랫폼** : Luna Playable<br>
-- **Impressions (게임 노출 및 플레이 횟수)** : 0000회 이상<br>
+- **Impressions (실제 게임 플레이에 기반하는 게임 노출도)** : 0000회 이상<br>
 
 ## ⭐: 게임의 특징
 
