@@ -215,9 +215,9 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 &nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
 
 ````
-public void MovePlayer(float vertical ,float horizontal)
+public void MovePlayer(float vertical ,float horizontal) // 잔딜받은 float 값을 통한 플레이어 제어
 {
-    if (IsOKToMove == false)
+    if (IsOKToMove == false) // 카메라 이벤트 시작시 플레이어 움직임 제한
     {
         _rigedBody.velocity = Vector3.zero;
         ChangeAnimation(true);
@@ -245,92 +245,86 @@ public void MovePlayer(float vertical ,float horizontal)
 }
 ````
 
-**PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+**VJHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 ###코드
 
-&nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● OnDrag() : 이벤트 시스템을  MovePlayer() 메서드를 호출합니다. .<br>
 
 ````
-public void StartEventCamYoyo(EEventCamType type)
+ public void OnDrag(PointerEventData ped)
 {
-    var moveHandler =_playerPosReturner as IPlayerMoveHandler;
-    
-    if ( moveHandler == null )
-        return;
+    Vector2 position = Vector2.zero;
 
-    if ( _eventCamToken.IsValid() )
-        return;
+    ScreenPointToLocalPointInRectangle
+            (_jsContainer.rectTransform,
+            ped.position,
+            ped.pressEventCamera,
+            out position);
 
-    _isEvnet = true;
-    moveHandler.IsOKToMove = false;
+    position.x = (position.x / _jsContainer.rectTransform.sizeDelta.x);
+    position.y = (position.y / _jsContainer.rectTransform.sizeDelta.y);
 
-    var defaultPos = this.transform.position;
-    var idx = (int)type;
-    var targetTrans = _eventCamTransList[idx];
+    float x = (_jsContainer.rectTransform.pivot.x == 1f) ? position.x : position.x;
+    float y = (_jsContainer.rectTransform.pivot.y == 1f) ? position.y : position.y;
 
-    var camMoveTimer = _camMoveTimer;
-    var camComebackTimer = _camComeBackTimer;
+    InputDirection = new Vector3(x, y, 0);
+    InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
 
-    if (type == EEventCamType.DisplayCloathes)
+    _joystick.rectTransform.anchoredPosition = new Vector3(InputDirection.x * (_jsContainer.rectTransform.sizeDelta.x / 3)
+                                                           , InputDirection.y * (_jsContainer.rectTransform.sizeDelta.y) / 3);
+    if (Vector2.Distance(ped.position, ped.pressPosition) > moveThreshold)
     {
-        camMoveTimer -= 0.2f;
-        camComebackTimer -= 0.2f;
+        _playerMoveHandler.MovePlayer(InputDirection.y, InputDirection.x);   // 플레이어 이동 인터페이스 위임                                        
+    }
+}
+
+public void OnPointerDown(PointerEventData ped)
+{
+     if (_cam == null)
+        return;
+        
+    _onTouched?.Invoke();      
+
+    if (_onGameStart != null)
+    {
+        _onGameStart.Invoke(EGuideArrowState.Counter_Upgrade);
+        _onGameStart = null;
     }
 
-    TweenUtil.TweenPosition(
-        this.transform,
-        targetTrans,
-        new Params(TimeType.Scale)
-        {    
-            secDuration = camMoveTimer, 
-            timeModular = (t) => EaseUtil.SineIn(t) 
-        }, 
-        (done_MoveIn) =>{
+    _jsContainer.rectTransform.anchoredPosition = ScreenPointToAnchoredPosition(ped.position);
+    _jsContainer.gameObject.SetActive(true);
+    OnDrag(ped);
+}
 
-            var waitPos = new Vector3(
-                this.transform.position.x, 
-                this.transform.position.y + 0.0001f, 
-                this.transform.position.z);
-
-            TweenUtil.TweenPosition(
-                this.transform,
-                waitPos,
-                false,
-                _camWaitTimer,
-                (done_Wait) =>{
-                    TweenUtil.TweenPosition(
-                    this.transform,
-                    defaultPos,
-                    new Params(TimeType.Scale)
-                    {    
-                        secDuration = camComebackTimer, 
-                        timeModular = (t) => EaseUtil.SineIn(t) 
-                    }, 
-                    (done_MoveOut) =>{
-
-                        if (_onFirstMoveEventDone != null)
-                        {
-                            _onFirstMoveEventDone.Invoke();
-                            _onFirstMoveEventDone = null;
-                        }
-
-                        _isEvnet = false;
-                        moveHandler.IsOKToMove = true;
-                    });
-            });
-    });
+public void OnPointerUp(PointerEventData ped)
+{
+    InputDirection = Vector3.zero;
+    _joystick.rectTransform.anchoredPosition = Vector3.zero;
+    _jsContainer.gameObject.SetActive(false);
+    _playerMoveHandler.MovePlayer(InputDirection.y, InputDirection.x);
 }
 ````
 
 **PlayerCamera**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
 ###코드
 
-&nbsp;&nbsp;&nbsp;&nbsp;● MovePlayer() : 플레이어의 이동 로직 메서드입니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● GetPosition() : 플레이어의 위치를 받아오는 인터페이스 메서드입니다. LateUpdate에서 호출됩니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● StartEventCamYoyo() : 카메라 이벤트 이동 메서드입니다. 이동은 Tween 유틸과 Ease 유틸을 활용하였습니다. <br>
 
 ````
+
+private void LateUpdate()
+{
+    if (!_isEvnet)
+    {
+        _playerPos = _playerPosReturner.GetPosition();
+        this.transform.position = _playerPos - _targetPos;
+    }
+}
+
 public void StartEventCamYoyo(EEventCamType type)
 {
-    var moveHandler =_playerPosReturner as IPlayerMoveHandler;
+    var moveHandler =_playerPosReturner as IPlayerMoveHandler; // 다운캐스팅을 통한 bool값 제어
     
     if ( moveHandler == null )
         return;
