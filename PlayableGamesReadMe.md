@@ -194,15 +194,16 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ## 🟢: Outlet Rrush Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
-### 🔖: field_items
+### 🔖: player control & camera control
 
-![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+![player controll & camera control](https://private-user-images.githubusercontent.com/124248265/287693313-86f36534-7d34-44dd-bf27-7f0af1011849.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTIyNTksIm5iZiI6MTcwMTY5MTk1OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjkzMzEzLTg2ZjM2NTM0LTdkMzQtNDRkZC1iZjI3LTdmMGFmMTAxMTg0OS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMjEyMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYmM5YWY5YTJlOGE1MDhkOGJmNzM1MzhkYTU4MDczZDAwYjM1OGViNjE5MjU0YWViZTIxMzUwZjQwOTk0MzFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xj00xYe8iboHk3eRSRUmLUgsAIIwp9sATPWd6ETAwJs)
 
 ### **이미지 설명(최상단부터)**
-- 필드 코인 개별 획득
+- 가상 조이스틱을 이용한 플레이어의 움직임을 볼수 있습니다.
 
 ### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+- Joystick UI 객체와 플레이어는 Interface 를 통한 상호작용
+- Event System을 통한 인터페이스 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
 
 ### **상세 내용**
 **DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
