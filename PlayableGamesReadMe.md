@@ -69,7 +69,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ![GraphicImage](https://private-user-images.githubusercontent.com/124248265/287611325-0df14cc0-d948-40fb-9a3e-2119cb44b2bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2NzI1ODgsIm5iZiI6MTcwMTY3MjI4OCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjExMzI1LTBkZjE0Y2MwLWQ5NDgtNDBmYi05YTNlLTIxMTljYjQ0YjJiYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQwNjQ0NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MTNjNzBlNmNmYmQ3NDc2Yjk2ZWJmZWUzYTFhMTU5NmZjMzhlMTFlMWYxYTQ5M2RmZjRkNTQzYjcyOGRhZWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Wq9GLm8RpAp4ypbClIomX2GwZJD7u-0u12uOk2cl_Lw)
 - **제목** : Burger Please! Playable & Burger Please! Playable2 <br> 
-- **장르** : Upgrade Idle<br>
+- **장르** : Upgrade Idle <br>
 - **엔진** : UnityEngine3D<br>
 - **플랫폼** : Luna Playable<br>
 
