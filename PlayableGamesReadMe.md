@@ -10,15 +10,15 @@
 
 아래는 개발한 게임 2개의 기술 목록입니다.
 
-# 🤙: Contacts
-📧: 이메일 :  korindj@kakao.com <br>
+# Contacts
+📧: 이메일 :  korindj@kakao.com<br>
 🏠: 개발자 블로그 : [Blog Link](https://bueong-e.tistory.com)
 
 # 목차
 
-🎮: 플레이어블 게임 개요  [📚:설명보기](#playableGame)<br>
+개요 : [📚:설명보기](#playableGame)<br>
+게임소개 및 플레이링크 : [📚:설명보기](#IntroDuction)<br>
 
-- - -
 :red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📜:스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
 :red_circle: Main to Director 스크립트를 이용한 씬 전환 및 스테이지 전환.[📚:설명보기](#main_directors) [📜:스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Main%26Director)<br>
 :red_circle: 스테이지 루프 로직 및 씬전환에 필요한 데이터 연동 구조 기획 및 제작.[📚:설명보기](#main_directors)<br>
@@ -58,12 +58,15 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-## 🎮: **게임소개 및 플레이링크**<br>
+# **게임소개 및 플레이링크**<br>
+### IntroDuction
 
-- 하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크와 QR을 통해 웹상과 모바일에서 플레이가 가능합니다.
-  
+*하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크와 QR을 통해 웹상과 모바일에서 플레이가 가능합니다.<br>
 *사용중인 브라우저에서 플레이 불가능시 다른 인터넷 브라우저로 플레이 가능합니다.<br>
-*게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.
+*게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.<br>
+
+## 🎮: 게임소개
+
 
 ![GraphicImage](https://miro.medium.com/v2/resize:fit:640/format:webp/0*uVzQeTwuXXJBT5Mw.png)
 - **제목** : Burger Please! Playable & Burger Please! Playable2 <br> 
@@ -71,8 +74,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 - **엔진** : UnityEngine3D<br>
 - **플랫폼** : Luna Playable<br>
 
-
-## 🎮:게임의 특징
+## ⭐: 게임의 특징
 
 - 주문을 위한 카운터, 버거 픽업을 위한 픽업대 구성의 업그레이드 아이들 게임
 - 버거를 수령한 손님에게서 돈을 수금하여 카운터와 픽업대를 늘려나가는것이 게임의 주요 목표
@@ -81,12 +83,13 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 👉 버거를 주문하고 받아가기위해 분주하게 움직이는 손님들을 보는 재미요소<br>
 👉 돈을 모아 가게를 확장해 가는 재미요소
 
+## 🎲 플레이 링크 및 QR
 🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
 
 [Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-## 🗃️:: 제작 스크립트 설명
+## 제작 스크립트 설명
 
 :green_circle:오브젝트 풀링을 이용한 필드 출현 Coin & 아이템 스크립트<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 ===
