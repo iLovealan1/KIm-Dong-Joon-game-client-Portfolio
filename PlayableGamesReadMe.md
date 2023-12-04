@@ -145,9 +145,10 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ![player controll & camera control](https://private-user-images.githubusercontent.com/124248265/287693313-86f36534-7d34-44dd-bf27-7f0af1011849.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2OTIyNTksIm5iZiI6MTcwMTY5MTk1OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjkzMzEzLTg2ZjM2NTM0LTdkMzQtNDRkZC1iZjI3LTdmMGFmMTAxMTg0OS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQxMjEyMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYmM5YWY5YTJlOGE1MDhkOGJmNzM1MzhkYTU4MDczZDAwYjM1OGViNjE5MjU0YWViZTIxMzUwZjQwOTk0MzFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xj00xYe8iboHk3eRSRUmLUgsAIIwp9sATPWd6ETAwJs)![OutletRush_EventCam](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/324c3364-2b2a-4832-b147-dbb0f0c62b6b)
 
-### **이미지 설명(최상단부터)**
+### **이미지 설명(좌측부터)**
 - 가상 조이스틱을 이용한 플레이어의 움직임을 볼 수 있습니다.
 - 플레이어를 따라다니는 카메라의 움직임을 볼 수 있습니다.
+- 이벤트 발생시 카메라의 움직임을 볼 수 있습니다.
 
 ### **요약**
 - Joystick UI 객체와 MainCamer 객체는 플레이어와 Interface를 통해 소통하여 객체 은닉화.
