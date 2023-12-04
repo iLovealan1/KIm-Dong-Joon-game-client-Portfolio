@@ -38,18 +38,18 @@
 - 루나 플레이어블 플랫폼을 기반으로 제작된 전면광고용 미니 게임입니다.
 - 현 라이브 서비스중인 게임의 홍보를 위해 제작되는 게임으로 맛보기 미니 게임의 성향을 가지고 있습니다.
 
-🍔: Burger Please! Playable 2 : [Game Play Link][Burger Please! 011]
+🍔: Burger Please! Playable 2 : [Link][Burger Please! 011]
 *리펙토링을 담당한 버전의 플레이어블 게임입니다.
 
 [Burger Please! 011]: 
 https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
-👟: OutletRrush : [Game Play Link_Stack_ver][OutletRush 002]
+👟: OutletRrush : [Link_Stack_ver][OutletRush 002]
 
 [OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-👟: OutletRrush : [Game Play Link_none_Stack_ver][OutletRush 002_none Stack]
+👟: OutletRrush : [Link_none_Stack_ver][OutletRush 002_none Stack]
 
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
@@ -79,7 +79,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 👉 돈을 모아 가게를 확장해 가는 재미요소
 
 ## 🎲: 플레이 링크
-🍔: Burger Please! Playable : [Game Play Link][Burger Please! 010]
+🍔: Burger Please! Playable : [Link][Burger Please! 010]
 
 [Burger Please! 010]: https://playground.lunalabs.io/preview/110188/155622/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
