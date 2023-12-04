@@ -125,24 +125,22 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ## 🎲: 플레이 링크
 
-👟: OutletRrush : [Link_Stack_ver][OutletRush 002]
+👟: Outlet Rrush : [Link_Stack_ver][OutletRush 002]
 
 [OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-👟: OutletRrush : [Link_none_Stack_ver][OutletRush 002_none Stack]
+👟: Outlet Rrush : [Link_none_Stack_ver][OutletRush 002_none Stack]
 
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
-
----
 
 
 # 제작 스크립트 설명
 
 ## 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
-
 ### field_items
+
 ![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
 
 ### **이미지 설명(최상단부터)**
@@ -159,3 +157,47 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 [📑: 목차로](#목차)
 
 * * *
+
+## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+
+### field_items
+
+![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+
+### **이미지 설명(최상단부터)**
+- 필드 코인 개별 획득
+
+### **요약**
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+
+### **상세 내용**
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+
+[📑: 목차로](#목차)
+
+* * *
+
+## 🟢: Outlet Rrush Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+
+### field_items
+
+![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+
+### **이미지 설명(최상단부터)**
+- 필드 코인 개별 획득
+
+### **요약**
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+
+### **상세 내용**
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+
+[📑: 목차로](#목차)
+
+* * *
+
+
