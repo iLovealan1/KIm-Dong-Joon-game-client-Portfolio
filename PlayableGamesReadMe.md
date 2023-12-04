@@ -134,6 +134,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
+---
 
 # 제작 스크립트 설명
 
@@ -156,7 +157,6 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 [📑: 목차로](#목차)
 
-* * *
 
 ## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
@@ -177,7 +177,6 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 [📑: 목차로](#목차)
 
-* * *
 
 ## 🟢: Outlet Rrush Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
@@ -198,6 +197,5 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 [📑: 목차로](#목차)
 
-* * *
 
 
