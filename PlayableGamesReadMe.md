@@ -55,8 +55,10 @@
 # 플레이어블 게임 개요
 ### playableGame
 
-![GraphicImage](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/fe788bde-68c5-4185-a71d-fa9520d29ff5)
+![GraphicImage](https://docs.lunalabs.io/assets/lpp-overview.png)
+🌕 Luna playable : [Docs Link][Luna playable Link]
 
+[Luna playable Link]: https://docs.lunalabs.io/docs/playable/overview
 
 ## 🎥: **홍보영상**<br>
 [![유튜브 동영상](https://img.youtube.com/vi/uf8yAuG5YM0/0.jpg)](https://www.youtube.com/watch?v=uf8yAuG5YM0)<br>
@@ -80,6 +82,7 @@
 :iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
 
 [GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
+
 ## 🎮:게임의 특징
 
 - 플레이 할때마다 맵이 바뀌는 바뀌는 로그라이크 스타일의 액션 슈터
