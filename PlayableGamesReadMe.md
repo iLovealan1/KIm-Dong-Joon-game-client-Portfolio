@@ -45,6 +45,7 @@
 *하단에 소개된 게임들은 전면 광고 게임으로 웹상에서 자바스크립트로 변환되어 플레이되기 때문에 게임소개 및 플레이링크 항목의 링크에서 플레이가 가능합니다.<br>
 *사용중인 브라우저에서 플레이 불가능시 다른 인터넷 브라우저로 플레이 가능합니다.<br>
 *게임 시작을 위해 클릭시 인게임 사운드가 재생됩니다.<br>
+*웹상에서 플레이시 모바일로 플레이할때와 다르게 그래픽 오류등이 있을수 있습니다.(루나 자체의 버그)
 
 ---
 
@@ -74,7 +75,8 @@
 
 ## 🎮: 게임소개
 
-![GraphicImage](https://private-user-images.githubusercontent.com/124248265/287611325-0df14cc0-d948-40fb-9a3e-2119cb44b2bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2NzI1ODgsIm5iZiI6MTcwMTY3MjI4OCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjExMzI1LTBkZjE0Y2MwLWQ5NDgtNDBmYi05YTNlLTIxMTljYjQ0YjJiYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQwNjQ0NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MTNjNzBlNmNmYmQ3NDc2Yjk2ZWJmZWUzYTFhMTU5NmZjMzhlMTFlMWYxYTQ5M2RmZjRkNTQzYjcyOGRhZWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Wq9GLm8RpAp4ypbClIomX2GwZJD7u-0u12uOk2cl_Lw)
+![스크린샷 2023-12-04 오후 5 31 02](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/ae917819-e9de-4262-aee0-e8f85bb8255b)
+
 - **제목** : Burger Please! Playable2 <br> 
 - **장르** : Arcade Idle <br>
 - **엔진** : UnityEngine3D<br>
@@ -82,9 +84,11 @@
 
 ## ⭐: 게임의 특징
 
+- 기존 라이브 서비스중이던 프로젝트에 버거머신 단계 추가, 맵 오브젝트 재배치, 버그수정등 리펙토링에 참여하였습니다.
 - 버거머신에서 버거를 수령해 손님에게 팔아 가게를 확장하는 아케이드 아이들 장르의 게임
 - 총 3단계의 버거 머신 업그레이드와 드라이브스루 파트로의 확장, 카운터 직원 고용이 게임의 핵심요소
 - 돈을 모아 마지막 확장요소인 가게 크기 확장을 하면 게임이 끝나는 방식
+
 
 👉 버거를 손 위에 쌓아 카운터로 전달하는 중독성 있는 애니메이션<br>
 👉 업그레이드된 버거머신으로 부터 나오는 버거의 진화버전을 보는 재미<br>
@@ -101,7 +105,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ## 🎮: 게임소개
 
-![GraphicImage](https://private-user-images.githubusercontent.com/124248265/287611325-0df14cc0-d948-40fb-9a3e-2119cb44b2bb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE2NzI1ODgsIm5iZiI6MTcwMTY3MjI4OCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3NjExMzI1LTBkZjE0Y2MwLWQ5NDgtNDBmYi05YTNlLTIxMTljYjQ0YjJiYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNFQwNjQ0NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MTNjNzBlNmNmYmQ3NDc2Yjk2ZWJmZWUzYTFhMTU5NmZjMzhlMTFlMWYxYTQ5M2RmZjRkNTQzYjcyOGRhZWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Wq9GLm8RpAp4ypbClIomX2GwZJD7u-0u12uOk2cl_Lw)
+![스크린샷 2023-12-04 오후 5 35 46](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a6c7d2b3-d5b0-4ba2-a261-976342089a92)
 - **제목** : Outlet Rush Playable <br> 
 - **장르** : Arcade Idle <br>
 - **엔진** : UnityEngine3D<br>
