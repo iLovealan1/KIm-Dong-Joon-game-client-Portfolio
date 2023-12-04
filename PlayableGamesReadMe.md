@@ -53,14 +53,12 @@
 [Burger Please! 011]: 
 https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
-👟 OutletRrush : [Game Play Link][OutletRush 002]
-*돈이 등 뒤에 쌓이는 버전
+👟 OutletRrush : [Game Play Link Stack_ver][OutletRush 002]
 
 [OutletRush 002]: https://playground.lunalabs.io/preview/117526/165584/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
 
-👟 OutletRrush : [Game Play Link][OutletRush 002_none Stack]
-*돈이 등 뒤에 쌓이지 않는 버전
+👟 OutletRrush : [Game Play Link_none_Stack_ver][OutletRush 002_none Stack]
 
 [OutletRush 002_none Stack]: https://playground.lunalabs.io/preview/117526/165586/1703aff40e6d4548f15efe206918c6945f053e4a8bd126710bf82d53d1925cc4
 
