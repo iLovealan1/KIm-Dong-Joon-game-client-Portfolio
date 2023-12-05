@@ -327,17 +327,18 @@ public void StartEventCamYoyo(EEventCamType type)
 ![item_stacking_2](https://private-user-images.githubusercontent.com/124248265/287960298-7cca91fd-baae-4d5d-b008-a65072be2548.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMjk4LTdjY2E5MWZkLWJhYWUtNGQ1ZC1iMDA4LWE2NTA3MmJlMjU0OC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNmRkMzAwZDgyNTE0NDg0N2ExNjBjZDljMWY3OTc3YTYxMjVlNGM0N2Y0YWY1YTI0NzA4OGE0ZjBmM2JkZTFlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qX9lOZ_moNE7HgBoq-4YEBRvcFPKeR5SFLHs2zSzTrQ)![item_stackpoint](https://private-user-images.githubusercontent.com/124248265/287960286-2cfae9ed-d92b-4b22-8659-479d42d0dfb8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMjg2LTJjZmFlOWVkLWQ5MmItNGIyMi04NjU5LTQ3OWQ0MmQwZGZiOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDEyZWMwYTllZTk1OTc1NTk5ZWUxZTEwYzBjMmQ5YjY1ODZmMzZmMmZiYzI2ZWU2ODQ1MTFkYzZjOGE1Y2Y1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lAgz8HpYSzo4jyYVFo7pxiy1KNvgR49bA8uBDjDUdwo)
 
 ### **이미지 설명(좌측 상단부터)**
-- 플레이어가 창고매대에서 아이템을 스택하는 모습입니다.
+- 플레이어가 창고매대에서 아이템을 스택 후 매장 시발매대에 디스플레잉 하는 모습입니다.
 - 카운터에서 손님의 아이템을 픽업하여 포장후 다시 손님에게로 스택되는 모습입니다.
 - 플레이어가 창고매대에서 옷과 신발을 섞어서 스택하는 모습입니다.
-- 
+- 매장 옷매대에서 옷만을 골라 디스플레잉 하는 모습입니다.
+- 플레이어의 손위 스택 포인트 기즈모를 확인할수 있습니다.
+- 모든 객체와 상호작용시 객체 하단의 그림자 인터렉티브 에리어의 사이즈가 변경되는걸 확인할수 있습니다.
 
 ### **요약**
-- Joystick UI 객체와 MainCamer 객체는 플레이어와 Interface를 통해 소통하여 객체 은닉화.
-- Event System을 통한 IPlayerMoveHandler 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
-- IPositionReturner 인터페이스의 GetPosition() 메서드를 통한 플레이어의 현재 포지션 값을 카메라에 전달
-- IPlayerMoveHandler, IPositionReturner 간의 인터페이스 상속으로 카메라 이벤트 호출시 다운캐스팅을 통해 플레이어의 움직임 제어
-- 내부 서브모듈 TWeen 유틸과 Ease 유틸을 활용한 카메라 이벤트 움직임
+- 각 객체는 자신의 colider의 TriggerEnter() 메서드 호출로 레이어로 객체를 구분하여 그에 맞는 기능을 수행합니다.
+- 각 객체와 상호작용할시 해당 클래스가 아닌 해당 클래스가 상속받은 인터페이스를 TryGetComponent로 null 체크를 수행한뒤 인터페이스의 기능을 호출합니다.
+- 아이템을 가지고 있을수 있는 객체들은 상황에 맞는 IItemListReturner,IDIsplayItemReturner,IBoxReturner 인터페이스를 상속하여 플레이어 혹은 손님 객체와 연결됩니다.
+- 
 
 ### **관련 스크립트**
 
