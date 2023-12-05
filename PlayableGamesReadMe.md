@@ -335,14 +335,185 @@ public void StartEventCamYoyo(EEventCamType type)
 - 모든 객체와 상호작용시 객체 하단의 그림자 인터렉티브 에리어의 사이즈가 변경되는걸 확인할수 있습니다.
 
 ### **요약**
-- 각 객체는 자신의 colider의 TriggerEnter() 메서드 호출로 레이어로 객체를 구분하여 그에 맞는 기능을 수행합니다.
-- 각 객체와 상호작용할시 해당 클래스가 아닌 해당 클래스가 상속받은 인터페이스를 TryGetComponent로 null 체크를 수행한뒤 인터페이스의 기능을 호출합니다.
-- 아이템을 가지고 있을수 있는 객체들은 상황에 맞는 IItemListReturner,IDIsplayItemReturner,IBoxReturner 인터페이스를 상속하여 플레이어 혹은 손님 객체와 연결됩니다.
-- 
+- 각 객체는 자신의 colider의 TriggerEnter() 메서드 호출로 레이어로 객체를 구분하여 그에 맞는 기능을 수행.
+- 상호작용시 해당 클래스가 상속받은 인터페이스를 TryGetComponent로 null 체크를 수행한뒤 인터페이스의 기능을 호출.
+- 아이템을 가지고 있을수 있는 객체들은 상황에 맞는 IItemListReturner,IDIsplayItemReturner,IBoxReturner 인터페이스를 상속하여 플레이어 혹은 손님 객체와 소통.
+- 아이템 스택은 IItemListReturner로 Item 제너릭 리스트를 넘겨받아 자신의 리스트에 넣으며 애니메이션을 실행.
+- 스택 완료시 함께 Out인자로 전달받은 done callback 을 스택이 마무리된 객체가 호출.
+- 아이템 스택은 Lerp() 함수와 Animation Curve 클래스를 활용하여 연출.
 
 ### **관련 스크립트**
+**IItemListReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IItemListReturner.cs)<br>
+**IDIsplayItemReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IDIsplayItemReturner.cs)<br>
+**IBoxReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IBoxReturner.cs)<br>
+**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Player.cs)<br>
+### 코드
 
-**IPlayerMoveHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IPlayerMoveHandler.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● TakeItems() : 플레이어가 성공적으로 매대의 인터페이스를 가져왔을떄 호출되는 메서드입니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● CoJumpItem() : 플레이어의 아이템 획득 애니메이션 로직이 실행되는 유니티 코루틴입니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● FindEmptyPoint() : 아이템을 스택할수 있는 빈 공간을 찾는 내부함수 입니다. <br>
+````
+protected override IEnumerator TakeItems(List<Item> takenItemList, Action doneCallback = null)
+{
+    _isCarrying = true;
+    _isDuringStacking = true;
+    var needAmount = _maxItemCarryAmount - _currItemList.Count;
+
+    for (int i = 0; i < needAmount; i++)
+    {
+        var lasIdx = takenItemList.Count - 1; 
+        var item = takenItemList[lasIdx]; //넘겨받은 아이템 리스트의 마지막 인덱스 요소
+        takenItemList.Remove(item);
+        _currItemList.Add(item);        //스택할 객체의 아이템 리스트에 넣기
+
+        var isClothes = item is Clothes;   //is 연산자를 통해 item을 상속받은 Clothes 클래스인지 다운캐스팅 가능여부 확인
+
+        if (i == needAmount - 1) //필요한 마지막 아이템인지 확인
+        {
+            this.StartCoroutine(CoJumpItem(item,isClothes,doneCallback)); 
+        }
+        else 
+        {
+            this.StartCoroutine(CoJumpItem(item,isClothes));
+        }
+
+        yield return CoroutineUtil.WaitForSeconds(_itemTakeTimeInterval); 
+    }
+}
+
+private IEnumerator CoJumpItem(Item item, bool isClothes = false ,Action doneCallBack = null)
+{
+    var itemTrans = item.transform;
+    itemTrans.parent = null;
+    yield return null;
+
+    var targetTrans = FindEmptyPoint(); //지역함수를 활용해 스택 가능한 위치 확인
+    var startSec = Time.time;
+    var endSec = startSec + _itemMoveTimeLimit;
+    var startPos = itemTrans.position;
+
+    AudioManager.NullableInstance.PlaySFX(EAudioName.StackSound, false, false,0.25f);
+
+    while (Time.time < endSec) //Lerp() 함수를 활용하여 아이템 이동연출
+    {
+        var ratio = (Time.time - startSec) / _itemMoveTimeLimit;
+
+        if (isClothes)
+        {
+            itemTrans.position = Vector3.Lerp(itemTrans.position, targetTrans.position, _itemMoveCurve.Evaluate(ratio));
+        }
+        else
+        {
+            itemTrans.position = Vector3.Lerp(itemTrans.position, targetTrans.position, _itemMoveCurve.Evaluate(ratio));
+        }
+
+        itemTrans.position = itemTrans.position + Vector3.up * _itemJumpCurve.Evaluate(ratio);
+        yield return CoroutineUtil.WaitForFixedUpdate;
+    }
+
+    //...
+
+    if (doneCallBack != null) // 마지막 아이템 이었다면 done Callback 호출
+    {
+        AudioManager.NullableInstance.ResetPitch(EAudioName.StackSound);
+        doneCallBack.Invoke();
+        _takeItemCorutine = null;
+        _isDuringStacking = false;
+    }
+
+    Transform FindEmptyPoint() // 빈곳 할당을 위한 지역함수
+    {
+        Transform pointTrans = null;
+
+        var idx = _currItemList.Count - 1;
+        pointTrans = _stackPointList[idx];
+
+        return pointTrans;
+    }
+}
+````
+**StorageShelf**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Shelfs/StorageShelf.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● GetItemList() : IItemListReturner를 상속받은 객체가 구현한 메서드로 자신의 상황에 따라 아이템리스트와 doneCallback을 out으로 반환합니다<br>
+
+````
+public List<Item> GetItemList(out Action doneCallBack)
+{
+    if (_isItemSpawning)
+    {
+        doneCallBack = null;
+        return null;
+    }
+    else
+    {
+        if (_onPlayerTakeItems != null)
+        {
+            doneCallBack = () => {
+                _onPlayerTakeItems.Invoke(EGuideArrowState.DisplayShelf_Shoe1_Take);
+                _onPlayerTakeItems = null;
+                GenerateItems();
+            };
+        }
+        else
+        {
+            doneCallBack = GenerateItems;
+        }
+    
+        return _currItemList;
+    }
+}                
+````
+**DisplayShelf**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Shelfs/DisplayShelf.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● OnTriggerEnter() : 콜라이더에 접근한 객체를 레이어로 확인하여 IItemListReturner 인터페이스의 GetItemList() 메서드를 호출합니다.<br>
+
+````
+private void OnTriggerEnter(Collider other) 
+{
+    var type = (ELayerName)other.gameObject.layer; 
+
+    switch(type) // 레이어 구분
+    {
+        case ELayerName.Player :  
+        {
+            if (_type == EDisplayShelfType.Shoe_2 && _isPrepared == false)
+                return;
+
+            if (_takeItemCoroutine != null)
+                return;
+                
+            if (_currItemList.Count == _pointList.Count)
+                return;
+
+            if (other.TryGetComponent<IItemListReturner>(out IItemListReturner returner)) //TryGetComponent를 통해 GetItemList() 메서드 호출 시도
+            {
+                var takenItemList = returner.GetItemList(out Action doneCallBack);
+
+                 if (takenItemList == null)
+                    return;
+
+                if (!CheckItemList(_type, takenItemList, out int availAmount))
+                    return;
+
+                _takeItemCoroutine = this.StartCoroutine(TakeItems(takenItemList,availAmount,doneCallBack));
+            }
+
+            return;
+        }
+
+        case ELayerName.Customer :
+        {
+            if (_type == EDisplayShelfType.Clothes)
+                return;
+
+            _waitCustomerQueue.Enqueue(other);
+            return;
+        }
+    }       
+}        
+````
 
 [📑: 목차로](#목차)
 
