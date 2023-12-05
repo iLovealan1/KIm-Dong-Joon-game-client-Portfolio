@@ -320,6 +320,7 @@ public void StartEventCamYoyo(EEventCamType type)
     });
 }
 ````
+[📑: 목차로](#목차)
 
 ### 🔖: Item Stacking
 
@@ -334,6 +335,7 @@ public void StartEventCamYoyo(EEventCamType type)
 - 플레이어의 손위 스택 포인트 기즈모를 확인할수 있습니다.
 - 모든 객체와 상호작용시 객체 하단의 그림자 인터렉티브 에리어의 사이즈가 변경되는걸 확인할수 있습니다.
 
+
 ### **요약**
 - 각 객체는 자신의 colider의 TriggerEnter() 메서드 호출로 레이어로 객체를 구분하여 그에 맞는 기능을 수행.
 - 상호작용시 해당 클래스가 상속받은 인터페이스를 TryGetComponent로 null 체크를 수행한뒤 인터페이스의 기능을 호출.
@@ -341,11 +343,13 @@ public void StartEventCamYoyo(EEventCamType type)
 - 아이템 스택은 IItemListReturner로 Item 제너릭 리스트를 넘겨받아 자신의 리스트에 넣으며 애니메이션을 실행.
 - 스택 완료시 함께 Out인자로 전달받은 done callback 을 스택이 마무리된 객체가 호출.
 - 아이템 스택은 Lerp() 함수와 Animation Curve 클래스를 활용하여 연출.
+- 자체 제작 오브젝트 Pool 클래스를 활용하여 메모리 부담을 덜 수 있게 활용.
 
 ### **관련 스크립트**
 **IItemListReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IItemListReturner.cs)<br>
 **IDIsplayItemReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IDIsplayItemReturner.cs)<br>
 **IBoxReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IBoxReturner.cs)<br>
+**ItemPool**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Items/ItemPool.cs)<br>
 **Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Player.cs)<br>
 ### 코드
 
@@ -513,6 +517,196 @@ private void OnTriggerEnter(Collider other)
         }
     }       
 }        
+````
+
+[📑: 목차로](#목차)
+
+### 🔖: Money Stacking
+
+![item_stacking](https://private-user-images.githubusercontent.com/124248265/287960318-16f31a90-6565-47ed-93ea-4a5f79520465.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NzE3NzQsIm5iZiI6MTcwMTc3MTQ3NCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzE4LTE2ZjMxYTkwLTY1NjUtNDdlZC05M2VhLTRhNWY3OTUyMDQ2NS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQxMDE3NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MjEyOTY1MDA5ZDZjODVkYjE5YjljYTRmNDU4ZGVlNzI2ZjRjYWZmOTRlODUyNzNkOGE2NDkzZDNhZDAwZWYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2-1DmEywPePdJt_bubIYAP158pJ9SPBsQpJhNkEoQ1E)![counter_item_stacking](https://private-user-images.githubusercontent.com/124248265/287960335-1b6b6330-2dce-4693-834e-1d7796a5c93b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NzE3NzQsIm5iZiI6MTcwMTc3MTQ3NCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzM1LTFiNmI2MzMwLTJkY2UtNDY5My04MzRlLTFkNzc5NmE1YzkzYi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQxMDE3NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNTlhNWQ1ZTcxNDhkZjc5YjkzZTUwYzQ3MmQ5YTIxNjNjZTA2ODFlNjJjODA0ZDYyZmFjNjZjNmI1OWNjNDZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.QwTyxouZaCdSkFc9ALdSnmrquPqmvOjVqPTJ13Wujho)
+
+### **이미지 설명(좌측 상단부터)**
+- 이번 프로젝트에서는 두가지 모드가 제작되었습니다. 하나는 돈이 등 뒤로 실물로 쌓이는 모드와 그렇지 않은 모드가 있습니다.
+- 첫번째는 돈이 등 뒤로 쌓이는 모드의 모습을 볼수 있습니다.
+- 두번째는 돈이 유저에게 흡수되는 모드의 모습을 볼수 있습니다.
+
+### **요약**
+- 아이템 스택과 동일하게 인터페이스로 소통하지만 IMoneyStackReturner 인터페이스로 제너릭 Stack을 이용해 Money 클래스 객체들을 저장.
+- 플레이어 돈 스택킹의 경우 Lerp() 함수와 사내 Tween 유틸을 활용하여 돈 스택킹 애니메이션을 구현.
+- 돈이 쌓이는 위치에는 Transform 배열을 활용하여 돈이 쌓이는 위치별 childCount 를 확인하여 구분하는 방식으로 돈 스택킹 구현. 
+- 자체 제작 오브젝트 Pool 클래스를 활용하여 메모리 부담을 덜 수 있게 활용.
+- 돈획득시 MoneyManager static 클래스를 통해 실제 유저의 금액을 증가시키고 static 클래스 내부에선 게임 Awake 단에서 할당된 이벤트를 호출합니다.
+  
+
+### **관련 스크립트**
+**IMoneyStackReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IMoneyStackReturner.cs)<br>
+**Money**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/MoneyObject/Money.cs)<br>
+**MoneyManager**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Managers/MoneyManager.cs)<br>
+**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Player.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● CoTakeMoney() : 플레이어가 성공적으로 인터페이스를 가져왔을떄 호출되는 메서드입니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● JumpMoney() : Lerp() 함수와 TweenUtil을 활용하여 돈을 스택하는 애니메이션을 실행합니다. <br>
+
+````
+private IEnumerator CoTakeMoney(Stack<Money> takenMoneyStack , Action doneCallback)
+{ 
+    if (!IsMoneyStackingMode) // GameManager의 설정된 모드에 따라 기능 수행
+        AudioManager.NullableInstance.PlaySFX(EAudioName.MoneyTakeSound,true);
+   
+    while(takenMoneyStack.Count > 0)
+    {
+        var money = takenMoneyStack.Pop(); // 가져온 스택에서 객체 pop
+        _currMoneyStack.Push(money); pop으로 꺼낸 객체 저장 pop
+
+        var cnt = _moneyStackPoint.childCount;
+        var targetPos = _moneyStackInterval * cnt;
+
+        if (IsMoneyStackingMode)
+            money.transform.parent = _moneyStackPoint; 
+        else 
+            money.transform.parent = null;
+        
+
+        if (takenMoneyStack.Count == 0)
+        {
+            doneCallback.Invoke();
+
+            if (IsMoneyStackingMode)
+                this.StartCoroutine(JumpMoney(money,targetPos,doneCallback));
+            else    
+                this.StartCoroutine(CoJumpMoney_NoStackVer(money,doneCallback));
+        }
+        else
+        {
+           if (IsMoneyStackingMode)
+                this.StartCoroutine(JumpMoney(money,targetPos));
+            else    
+                this.StartCoroutine(CoJumpMoney_NoStackVer(money));
+        }
+
+        yield return CoroutineUtil.WaitForSeconds(_moneyTakeInterval);
+    }
+}
+
+private IEnumerator JumpMoney(Money money, Vector3 targetPos, Action doneCallback = null)
+{
+    var moneyTrans = money.transform;
+    var startSec = Time.time;
+    var endSec = startSec + _moneyMoveTimeLimit;
+    Vector3 startPos = moneyTrans.localPosition;
+
+    // 트윈 유틸을 활용한 머니 회전
+    TweenUtil.TweenLocalRotation(moneyTrans,Quaternion.Euler(new Vector3(0f, 90f,0f)),false,_itemMoveTimeLimit);
+
+    AudioManager.NullableInstance.PlaySFX(EAudioName.MoneyStackSound,true,false, 0.05f);
+ 
+    while (Time.time < endSec) // Lerp() 함수와 AnimationCurve클래스를 활용한 머니 스택킹 애니메이션
+    {
+        var ratio = (Time.time - startSec) / _moneyMoveTimeLimit;
+        moneyTrans.localPosition = Vector3.Lerp(moneyTrans.localPosition, targetPos , _moneyMoveCurve.Evaluate(ratio));
+        moneyTrans.localPosition = moneyTrans.localPosition + Vector3.up * _moneyJumpCurve.Evaluate(ratio);
+        yield return CoroutineUtil.WaitForFixedUpdate;
+    }
+
+    moneyTrans.localPosition = targetPos; // 타겟 포지션 고정
+
+    if (doneCallback != null) // 마지막 돈 획득시 호출되는 donecallback
+    {
+        AudioManager.NullableInstance.ResetPitch(EAudioName.MoneyStackSound);
+        _takeMoneyCoroutine = null;
+
+        if (_isPlayerInMoneyStacker)
+            _checkMoneyGenCoroutine = this.StartCoroutine(CoCheckMoneyGen());
+        
+        doneCallback.Invoke();
+    }
+
+    MoneyManager.UpdateCurrentMoney(Money.Price); //  MoneyManager 스태틱 클래스의 메서드를 통해 금액 업데이트 (내부에선 콜백을 사용하여 UI와 소통)
+}
+````
+
+**MoneyStacker**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/MoneyObject/MoneyStacker.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● GenerateMoney() : CoGenerateMoney() 머니 생성 코루틴을 _isOkToGen 부울 값을 이용해 제어합니다 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● SetMoneyPos() : 돈의 생성 위치를 Transform배열과 childCount를 활용해 조정합니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● GetMoneyStack() : IMoneyStackReturner의 메서드로 done Callback과 께 머니 Stack을 반환합니다. <br>
+
+````
+public void GenerateMoney(int amount) => this.StartCoroutine(CoGenerateMoney(amount));
+
+private IEnumerator CoGenerateMoney(int amount)
+{
+    yield return CoroutineUtil.WaitUntil(() => {return _isOkToGen;});
+
+    var count = Math.Round((float)amount / (float)Money.Price , 1) ;
+
+    for (int i =0; i < count; i++)
+    {
+        var money = _moneyPool.GetMoney();
+        _currMoneyStack.Push(money);
+        SetMoneyPos(money);
+    }
+}
+
+private void SetMoneyPos(Money money)
+{
+    Transform moneyTrans =  money.transform;
+    Transform targetTrans = null;
+
+    var minCount = 0f;
+    for (int i = 0; i < _defaultPosArr.Length; i++)
+    {
+        var childCount = _defaultPosArr[i].childCount;
+
+        if (childCount == 0)
+        {
+            targetTrans = _defaultPosArr[i];
+            moneyTrans.parent = targetTrans;
+            moneyTrans.localPosition = Vector3.zero;
+            return;
+        }
+
+        if (minCount == 0)
+        {
+            minCount = childCount;
+            targetTrans = _defaultPosArr[i];
+        }
+
+        if (minCount > childCount)
+        {
+            minCount = childCount;
+            targetTrans = _defaultPosArr[i];
+        }
+    }
+
+    moneyTrans.parent = targetTrans;
+    moneyTrans.localRotation = Quaternion.identity;
+    moneyTrans.localPosition = new Vector3(0, SPACINGY * minCount, 0);
+}
+
+public Stack<Money> GetMoneyStack(out System.Action doneCallback)
+{
+    doneCallback = () => {
+        _isOkToGen = true;
+        if (_onPlayerTakeMoney != null)
+        {
+            _onPlayerTakeMoney.Invoke(EGuideArrowState.DisplayShelf_Shoe2_Upgrade);
+            _onPlayerTakeMoney = null;
+        }
+     };
+
+    if (_currMoneyStack.Count == 0)
+    {
+        return null;         
+    }
+    else
+    {
+        _isOkToGen = false;
+        return _currMoneyStack;
+    }
+}
 ````
 
 [📑: 목차로](#목차)
