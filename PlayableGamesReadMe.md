@@ -321,6 +321,27 @@ public void StartEventCamYoyo(EEventCamType type)
 }
 ````
 
+### 🔖: Item Stacking
+
+![item_stacking](https://private-user-images.githubusercontent.com/124248265/287960347-f75b00d7-2048-4805-bac4-a326c5044bca.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzQ3LWY3NWIwMGQ3LTIwNDgtNDgwNS1iYWM0LWEzMjZjNTA0NGJjYS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YzQzYmY2MmQyYTc1Njc4OWFkMDQxODc4ZDZkN2VmOTBjODc4Y2EyNzk2ODJhY2JhNDI4MTlhMTgyOGYyMjBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.22RB5d9wdW48g7et7kZUZUjZF66nCOYk8xrF9kCV--Y)![counter_item_stacking](https://private-user-images.githubusercontent.com/124248265/287960342-e5e8fa25-f841-45af-95ab-f95353ed781e.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzQyLWU1ZThmYTI1LWY4NDEtNDVhZi05NWFiLWY5NTM1M2VkNzgxZS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YTE5MTI1YzU3ODRmMzViZDQxNTIxYTcwNTAzY2MwNTNjNjk5ZjIzYWUyOGUzYmJiODQzNzI2Zjk4M2YyMjZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-frpNdojiQ3rvs_2lkO2toRBVt1H0WJiJSfHVnX1LDM)![item_stacking_mixed](https://private-user-images.githubusercontent.com/124248265/287960308-6bfca6e4-bba7-48ce-9778-ddeefa50e0c9.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzA4LTZiZmNhNmU0LWJiYTctNDhjZS05Nzc4LWRkZWVmYTUwZTBjOS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ODljODY2ZjJhMmY1MDgxMDUyNDRkMzhmMjk2ZGQ2MmRhMDJlYzFkMWFmYThiNzE2MGQwNWQ0YTZkZjBiZjVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lfBhTakjBdfYJ6-zgiVehVIkF3331yYTG4qj1t90FVY)
+![item_stacking_2](https://private-user-images.githubusercontent.com/124248265/287960308-6bfca6e4-bba7-48ce-9778-ddeefa50e0c9.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzA4LTZiZmNhNmU0LWJiYTctNDhjZS05Nzc4LWRkZWVmYTUwZTBjOS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ODljODY2ZjJhMmY1MDgxMDUyNDRkMzhmMjk2ZGQ2MmRhMDJlYzFkMWFmYThiNzE2MGQwNWQ0YTZkZjBiZjVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lfBhTakjBdfYJ6-zgiVehVIkF3331yYTG4qj1t90FVY)![item_stackpoint](https://private-user-images.githubusercontent.com/124248265/287960286-2cfae9ed-d92b-4b22-8659-479d42d0dfb8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjIyMzgsIm5iZiI6MTcwMTc2MTkzOCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMjg2LTJjZmFlOWVkLWQ5MmItNGIyMi04NjU5LTQ3OWQ0MmQwZGZiOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwNzM4NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDEyZWMwYTllZTk1OTc1NTk5ZWUxZTEwYzBjMmQ5YjY1ODZmMzZmMmZiYzI2ZWU2ODQ1MTFkYzZjOGE1Y2Y1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lAgz8HpYSzo4jyYVFo7pxiy1KNvgR49bA8uBDjDUdwo)
+
+### **이미지 설명(좌측 상단부터)**
+- 가상 조이스틱을 이용한 플레이어의 움직임을 볼 수 있습니다.
+- 플레이어를 따라다니는 카메라의 움직임을 볼 수 있습니다.
+- 이벤트 발생시 카메라의 움직임을 볼 수 있습니다.
+
+### **요약**
+- Joystick UI 객체와 MainCamer 객체는 플레이어와 Interface를 통해 소통하여 객체 은닉화.
+- Event System을 통한 IPlayerMoveHandler 메서드 호출로 인터페이스에 플레이어의 움직임을 위임
+- IPositionReturner 인터페이스의 GetPosition() 메서드를 통한 플레이어의 현재 포지션 값을 카메라에 전달
+- IPlayerMoveHandler, IPositionReturner 간의 인터페이스 상속으로 카메라 이벤트 호출시 다운캐스팅을 통해 플레이어의 움직임 제어
+- 내부 서브모듈 TWeen 유틸과 Ease 유틸을 활용한 카메라 이벤트 움직임
+
+### **관련 스크립트**
+
+**IPlayerMoveHandler**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IPlayerMoveHandler.cs)<br>
+
 [📑: 목차로](#목차)
 
 ---
