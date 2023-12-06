@@ -905,6 +905,29 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 [📑: 목차로](#목차)
 
+### 🔖: Customer Line Find
+
+![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288326933-43e349c5-b32a-4bb7-80df-0ac5bdbc9c88.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI2OTMzLTQzZTM0OWM1LWIzMmEtNGJiNy04MGRmLTBhYzViZGJjOWM4OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MWFjODdlODE5Mzk2YTYzYmQyZDVmN2RkOWQ4MzhmNzhiYmFhMjAxZDAxY2U4OThjMjk5OTVjZmRjMjIwNjY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.NKpzZ47jWzKhVo-jgh4cQiAPs3-3gNb9j70hv7FxaR0)
+![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288328333-e4f8b48e-2793-4c28-b2dd-bdb828b7c528.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI4MzMzLWU0ZjhiNDhlLTI3OTMtNGMyOC1iMmRkLWJkYjgyOGI3YzUyOC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWFhYjk3NjUzNjc2NmIzMGEyMjZmNTlmNmEzNDA0OTJhMThlYTI0OTVmYWMyOWEwODZmZmI3ZmI3MzEwZjI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-AK4rF6Yk-uM4aY_QtSnFFF7d3ZxsBIsWfKNdRtW2hw)
+
+### **이미지 설명(최상단부터)**
+- 각 카운터와 픽업대 별로 손님들이 줄을 설수 있는 Node 기즈모 들을 볼수 있습니다.
+- 입장노드 → 카운터노드 → 픽업대노드 → 출구노드 순으로 이동하는 손님들을 볼수 있습니다.
+
+### **요약**
+- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+
+### **상세 내용**
+**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+
+###코드
+
+    pirvate void test(){}
+
+
+[📑: 목차로](#목차)
+
 ---
 
 
