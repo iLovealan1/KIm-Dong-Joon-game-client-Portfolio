@@ -91,19 +91,19 @@
 ## 🔌:: 프로젝트에서 사용한 UnityEngine 외부 플러그인 목록
 ### plugins
 
-✔️: DOTween
-✔️: UniRx
-✔️: AllIn1SpriteShader
-✔️: SpriteGlow
-✔️: SR Debugger
-✔️: Google Play Games
-✔️: FireBase
-✔️: GoogleMobileAds
-✔️: Apple Gamecenter
-✔️: SoundManager
-✔️: Text Animator
-✔️: TextMesh Pro
-✔️: ExternalDependencyManager<br><br>
+✔️: DOTween<br>
+✔️: UniRx<br>
+✔️: AllIn1SpriteShader<br>
+✔️: SpriteGlow<br>
+✔️: SR Debugger<br>
+✔️: Google Play Games<br>
+✔️: FireBase<br>
+✔️: GoogleMobileAds<br>
+✔️: Apple Gamecenter<br>
+✔️: SoundManager<br>
+✔️: Text Animator<br>
+✔️: TextMesh Pro<br>
+✔️: ExternalDependencyManager<br>
 
 ## 🗃️:: 제작 스크립트 설명
 
