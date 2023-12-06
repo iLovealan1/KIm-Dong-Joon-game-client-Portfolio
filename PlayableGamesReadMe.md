@@ -905,52 +905,277 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 [📑: 목차로](#목차)
 
-### 🔖: Customer Line Find
+### 🔖: Crowd Control
 
 ![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288326933-43e349c5-b32a-4bb7-80df-0ac5bdbc9c88.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI2OTMzLTQzZTM0OWM1LWIzMmEtNGJiNy04MGRmLTBhYzViZGJjOWM4OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MWFjODdlODE5Mzk2YTYzYmQyZDVmN2RkOWQ4MzhmNzhiYmFhMjAxZDAxY2U4OThjMjk5OTVjZmRjMjIwNjY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.NKpzZ47jWzKhVo-jgh4cQiAPs3-3gNb9j70hv7FxaR0)
 ![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288328333-e4f8b48e-2793-4c28-b2dd-bdb828b7c528.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI4MzMzLWU0ZjhiNDhlLTI3OTMtNGMyOC1iMmRkLWJkYjgyOGI3YzUyOC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWFhYjk3NjUzNjc2NmIzMGEyMjZmNTlmNmEzNDA0OTJhMThlYTI0OTVmYWMyOWEwODZmZmI3ZmI3MzEwZjI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-AK4rF6Yk-uM4aY_QtSnFFF7d3ZxsBIsWfKNdRtW2hw)
 
 ### **이미지 설명(최상단부터)**
 - 각 카운터와 픽업대 별로 손님들이 줄을 설수 있는 Node 기즈모 들을 볼수 있습니다.
-- 입장노드 → 카운터노드 → 픽업대노드 → 출구노드 순으로 이동하는 손님들을 볼수 있습니다.
+- 입장노드 → 카운터노드 → 픽업대노드 → 출구노드 순으로 상태에 따라 이동하는 손님들을 볼수 있습니다.
 
 ### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+- Counter, Pickup 객체마다 소유중인 Node를 관리.
+- 각 노드가 Available 하다면 해당 객체의 Manager와 이벤트로 소통하여 손님의 이동 가능여부를 Customer Manager에 전달하여 손님을 이동.
+- 각 노드들은 가중치를 주어 현재 손님이 있는 노드의 가중치와 비교하여 새치기를 방지.
+- Customer Manager는 각 손님으로부터 전달받은 상태를 기반으로 어떤 매니저에게 소통할지 여부 결정.
+- 손님들의 상태는 enum으로 정의하여 손님들은 자신의 상태를 기반으로 유동적인 상태변환.
 
 ### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+**CustomerManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/CustomerManager.cs)<br>
+### 코드
 
-###코드
+&nbsp;&nbsp;&nbsp;&nbsp;● SetupByStateAndMoveCustomer() : Init 단계에서 정의된 이벤트로 Customer Class를 전달받아 상태에 따라 다음 행동을 정의합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● CoMoveCustomerToSpot() : 손님의 상태에따라 재귀적으로 호출되는 손님 이동 코루틴입니다. 이동은 TimeLimit과 목적지 node와의 거리를 기반하여 
+Translate() 메서드를 이용해 이동합니다.<br>
 
-    pirvate void test(){}
+````
+private IEnumerator SetupByStateAndMoveCustomer(CustomerController customerComp)
+{
+    var moveTimeLimit = 0f;
+    var isFull = false;
 
+    switch (customerComp._state)
+    {
+        case eCustomerState.SPAWNTOSPOT:               
+        isFull = SetupSpawnToSpot(customerComp);
+        if (isFull)
+            break;
+        else
+            moveTimeLimit = customerComp.MoveTimeLimit;
+        break;
+
+        case eCustomerState.COUNTERMIDLINESPOT:    
+        yield return StartCoroutine(CoSetupCounterMidlineSpot(customerComp));
+        moveTimeLimit = customerComp.MoveTimeLimit;
+        break;
+
+        case eCustomerState.COUNTERORDERSPOT:
+        yield return StartCoroutine(CoSetupCounterOrderSpot(customerComp));
+        moveTimeLimit = customerComp.MoveTimeLimit;
+        break;
+
+        case eCustomerState.PICKUPMIDSPOT:
+        yield return StartCoroutine(CoSetupPickupMidSpot(customerComp));
+        moveTimeLimit = customerComp.MoveTimeLimit;
+        break;
+
+        case eCustomerState.BACKTOHOME:
+        StartCoroutine(CoBackToHome(customerComp)); 
+        yield break;
+    }
+    
+    if (!isFull)
+        StartCoroutine(CoMoveCustomerToSpot(customerComp,moveTimeLimit));
+}
+
+private IEnumerator CoMoveCustomerToSpot(CustomerController customerComp, float moveTimeLimit)
+{
+    var customerTrans = customerComp.transform;
+    var targetComp = customerComp.TargetSpotComp;
+    var startPos = customerTrans.position;
+    var endPos = targetComp.transform.position;
+    var dir = (endPos - startPos).normalized; 
+    var dist = Vector3.Distance(startPos, endPos); 
+    var timer = 0f;     
+
+    customerTrans.LookAt(endPos);
+    customerComp.OnChangeAnimState(eUnitAnimState.RUN);   
+
+    while(true)
+    {
+        dist = Vector3.Distance(customerTrans.position,endPos);         
+        timer += Time.fixedDeltaTime;
+        if(dist < _minDist || timer > moveTimeLimit) 
+        {
+            customerTrans.position = endPos;
+            customerComp.CurrSpotComp = targetComp; 
+            customerTrans.localRotation = Quaternion.Euler(Vector3.zero); 
+            customerComp.OnChangeAnimState(eUnitAnimState.IDLE);
+            customerComp.OnNextMove();
+            yield break;
+        }
+        customerTrans.Translate(dir * _customerSpeed * Time.fixedDeltaTime,Space.World);
+        yield return CoroutineUtil.WaitForFixedUpdate;
+    }
+}
+````
+**WaitLineSpot**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Unit/WaitLineSpot.cs)<br>
+**CounterController**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Unit/CounterController.cs)<br>
+**PickupController**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Unit/PickupController.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● FindEmptySpot() : 현재 새치기가능 여부를 판단하여 가중치를 비교하여 빈 Node를 반환합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● CheckEmptySpotsAndMakeList() : 현재 비어있는 Node를 제너릭 List로 반환합니다.<br>
+
+````
+public Transform FindEmptySpot()
+{
+    if (!IsWaitAvailable) 
+        return null;     
+
+    Transform emptySpot = null;
+    bool isFull;
+    List<WaitLineSpot> emptySpotCompList = CheckEmptySpotsAndMakeList(out isFull); // 현재 줄 상태 리스트
+
+    if(isFull) // 빈 곳이 없다면
+    {
+        return emptySpot;   
+    }       
+
+    if(!emptySpotCompList.Contains(null)) // 전부 빈 곳이라면
+    {
+        emptySpot = emptySpotCompList[0].transform;
+
+        emptySpotCompList.Clear();
+        emptySpotCompList = null;
+
+        return emptySpot;   
+    } 
+
+    var emptyMinWeight = 0;
+    var fullMaxWeight = 0;
+    var isEmptyFound = false;
+    var isCutLinePossible = false;
+
+    for (int i = 0; i < _spotCount; i++) // 새치기 가능여부 확인 부분
+    {
+        var targetSpot = emptySpotCompList[i];
+        if (targetSpot == null) // 스팟에 손님이 있다면
+        {
+            if(isEmptyFound) // 스팟에 손님이 없는곳 뒤에 손님이 있다면
+            {
+                isCutLinePossible = true;
+            }
+            fullMaxWeight = i+1;
+        }   
+        else // 스팟에 손님이 없다면
+        {           
+            isEmptyFound = true;
+            var targetWeight = targetSpot.Weight;   
+
+            if (emptyMinWeight == 0)
+            {
+                emptyMinWeight = targetWeight;
+            }
+        }
+    }    
+
+    if(isCutLinePossible) // 대기라인 스팟 확정
+    {
+        if (fullMaxWeight != _spotCount)
+            emptySpot = _lineSpotTransList[fullMaxWeight];
+    }
+    else
+    {
+        var idx = emptyMinWeight - 1;
+        emptySpot = _lineSpotTransList[idx];    
+    }
+
+    return emptySpot;             
+}    
+
+private List<WaitLineSpot> CheckEmptySpotsAndMakeList(out bool isFull) //손님이 없는 대기라인을 찾기
+{
+    List<WaitLineSpot> tempTransList = new List<WaitLineSpot>();
+    isFull = true;
+
+    for (int i = 0; i < _spotCount; i++)
+    {
+        if(_lineSpotTransList[i].childCount == 0)
+        {
+            tempTransList.Add(_lineSpotCompList[i]);    // 비어있는 Node가 한곳이라도 있다면
+            isFull = false;
+        }
+        else
+        {
+            tempTransList.Add(null);  // 만약 비어있지 않다면 Null 할당
+        }
+    }
+    
+    if (isFull) // 리스트의 Node들이 전부 null이라면
+    {
+        tempTransList.Clear();
+        tempTransList = null;
+        return tempTransList;
+    }
+
+    return tempTransList;      
+}
+````
 
 [📑: 목차로](#목차)
 
----
+**CounterManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/CounterManager.cs)<br>
+**PickupManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/PickupManager.cs)<br>
+### 코드
+
+&nbsp;&nbsp;&nbsp;&nbsp;● FindWaitLineSpotForCustomer() : Active 되어있는 Pickup 객체들을 모두에게서 사용 가능한 Node를 받아 반환받습니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● FindMidLineSpotForCustomer() : 이미 줄을 한가운데 있는 손님의 앞 노드가 비어있는지 확인하고 노드를 반환합니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;● CompareWeight() :Active 되어있는 Pickup 객체들의 레벨과 노드 가중치를 비교하여 손님을 어디로 보낼지 판단하고 최종노드를 반환합니다.<br>
 
 
-## 🟢: Burger Please! Playable 2<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+````
+ private Transform FindWaitLineSpotForCustomer() // 손님이 처음 pickup으로 들어올 경우
+{
+    Transform nullableWaitLineSpot = null;
+    var transList = new List<Transform>(); 
 
-### 🔖: field_items
+    foreach(var pickup in _pickupList)
+    {
+        if(pickup.gameObject.activeSelf || pickup.UnitLevel == 1)
+        {
+            var emptySpotTrans = pickup.FindEmptySpot();
+            transList.Add(emptySpotTrans);
+        }
+    }
 
-![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+    nullableWaitLineSpot = CompareWeight(transList);   
+    return nullableWaitLineSpot;
+}
 
-### **이미지 설명(최상단부터)**
-- 필드 코인 개별 획득
+private Transform FindMidLineSpotForCustomer(eCustomerLevel customerLevel, WaitLineSpot waitLineSpotComp) // 손님이 줄을 서던 도중 노드 요청을 할 경우
+{
+    Transform nullableWaitLineSpot = null;
+    var idx = (int)customerLevel;
+    nullableWaitLineSpot = _pickupList[idx - 1].FindMidEmptySpot(waitLineSpotComp);        
+    return nullableWaitLineSpot;
+}
 
-### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+private Transform CompareWeight(List<Transform> transList) // pickup 객체들의 레벨과 각각 전달받은 노드들의 가중치를 비교
+{
+    Transform finalSpot = null;
+    var minWeight = 0;
+    var defaultTransCnt = 1;
+    var count = transList.Count;
 
-### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
+    foreach (var spotTrans in transList)
+    {
+        if(count == defaultTransCnt)
+        {
+            finalSpot = spotTrans;
+            return finalSpot;
+        }              
 
-###코드
-
-    pirvate void test(){}
-
+        if(spotTrans != null)
+        {
+            var comp = spotTrans.GetComponent<WaitLineSpot>(); 
+            if(minWeight == 0) 
+            {
+                minWeight = comp.Weight;
+                finalSpot = spotTrans;
+            }
+            else if(minWeight > comp.Weight)
+            {                      
+                minWeight = comp.Weight;
+                finalSpot = spotTrans;      
+            }
+            else continue;
+        }
+    }   
+    return finalSpot;
+}
+````
 
 [📑: 목차로](#목차)
 
