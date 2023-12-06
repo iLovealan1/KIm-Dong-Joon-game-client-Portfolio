@@ -19,7 +19,7 @@
 개요 : [📚:설명보기](#playableGame)<br>
 게임소개 및 플레이링크 : [📚:설명보기](#IntroDuction)<br>
 
-Outlet Rush Playable [📂 : 폴더로 이동 ](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/PlayableGames_Scripts/OutletRush_Playable)
+## Outlet Rush Playable [📂 : 폴더로 이동 ](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/PlayableGames_Scripts/OutletRush_Playable)
 
 :red_circle: 플레이어 이동로직 및 카메라 이벤트 로직 및 연출.[📚:설명보기](#player_control_camera_event)<br>
 :red_circle: 아이템 스택킹 로직 및 연출.[📚:설명보기](#item_stacking)<br>
