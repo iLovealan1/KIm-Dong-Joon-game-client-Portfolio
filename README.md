@@ -33,18 +33,19 @@
 
 # 🏫: 국비과정 훈련 진행 내역<br>
 
-○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축. (+ 유니티 클라이언트 연동)<br>
+○  MySQL을 활용한 DB쿼리 & Node.js를 이용한 서버구축.(+ 유니티 클라이언트 연동)<br>
 ○  유니티 구글 카드보드 sdk 를 활용한 VR 프로젝트 제작, 3D 좀비서바이버, 종스크롤 2D 슈팅 게임 제작.<br>
 ○  유니티 ML Agent 를 활용한 인공지능 Ai제작 프로젝트. (플래피 버드, 펭귄Ai 트레이닝)<br>
 ○  유니티 셰이더를 활용한 그래픽 프로그래밍.<br>
 ○  게임컨셉기획, 레벨디자인, 밸런스기획.<br>
-○  C,C++ 프로그래밍
+○  C,C++ 프로그래밍.
 
 # 🎮: 슈퍼센트 인턴당시 담당업무<br>
 
-○  유니티 Luna Playable 플러그인을 활용한 Playable AD 게임개발 및 리펙토링
-○  Github 기반 SourceTree를 활용한 프로젝트 서브모듈 최신화
-○  JenKins를 사용한 게임 빌드
+○  아트, 기획, 개발 간의 프로젝트 협업 경험.<br>
+○  유니티 Luna Playable 플러그인을 활용한 Playable AD 게임개발 및 리펙토링.<br>
+○  Github 기반 SourceTree를 활용한 프로젝트 협업 경험 및 서브모듈 최신화.<br>
+○  JenKins를 사용한 게임 빌드.
 
 # 🤙: Contacts
 📧: 이메일 :  korindj@kakao.com <br>
