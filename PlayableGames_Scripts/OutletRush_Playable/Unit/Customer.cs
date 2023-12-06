@@ -1,15 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Supercent.Util;
 using UnityEngine;
 
 namespace luna_sportshop.Playable002
 {
     using Action = System.Action;
     using Random = UnityEngine.Random;
-    using Params = Supercent.Util.TweenUtil.Params;
-    using TimeType = Supercent.Util.TweenUtil.TimeType;
 
     public delegate ECustomerState RequestChangeStateToCustomer (ECustomerState _currstate, Customer RequestedCustomer);
     public enum ECustomerShelfTarget
@@ -155,9 +152,11 @@ namespace luna_sportshop.Playable002
                 yield return null;
 
                 this.transform.LookAt(targetNode.position);;
-                TweenUtil.TweenLocalPosition(this.transform,
+                TweenUtil.TweenLocalPosition(
+                this.transform,
                 Vector3.zero,
-                false,timeLimit,
+                false,
+                timeLimit,
                 (done) =>{
                     this.StartCoroutine(CoMoveToShelfNode(nodeQ));
                 });
@@ -204,9 +203,11 @@ namespace luna_sportshop.Playable002
             this.transform.parent = targetNode;
             yield return null;
 
-            TweenUtil.TweenLocalPosition(this.transform,
+            TweenUtil.TweenLocalPosition(
+            this.transform,
             Vector3.zero,
-            false,timeLimit,
+            false,
+            timeLimit,
             (done) =>{
                 ChangeAnimation(true);                
                 _currTargetWaitNode = null;
@@ -234,9 +235,11 @@ namespace luna_sportshop.Playable002
             this.transform.parent = _homeNode;
             yield return null;
 
-            TweenUtil.TweenLocalPosition(this.transform,
+            TweenUtil.TweenLocalPosition(
+            this.transform,
             Vector3.zero,
-            false,2f,
+            false,
+            2f,
             (done) =>{
                 if (targetBox != null)
                     targetBox.Release();
