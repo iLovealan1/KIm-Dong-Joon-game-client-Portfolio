@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using Supercent.Util;
 using UnityEngine.EventSystems;
+using TMPro;
 
 namespace LunaBurger.Playable010
 { 
+    
     public class UIBtnUpgradeController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler // 전체적으로 리펙토링 필요한 클래스 (버튼 컴포넌트 상속 고려)
     {
         [SerializeField] private TextMeshProUGUI        _txtPrice;
