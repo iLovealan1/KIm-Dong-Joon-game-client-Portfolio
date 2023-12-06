@@ -6,7 +6,7 @@ namespace LunaBurger.Playable010
     public partial class App : MonoBehaviour
     {
         [SerializeField] private GameManager _gameManager;
-        private void Start()
+        private void Awake()
         {           
             _gameManager.Init();          
         }
