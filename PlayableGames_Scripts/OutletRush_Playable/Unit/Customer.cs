@@ -446,7 +446,7 @@ namespace luna_sportshop.Playable002
             _currTargetWaitNode = null;
             _isCarrying = false;
             _isCounter = false;
-            _onRelease.Invoke(this);
+            _onRelease?.Invoke(this);
         }
     }
 }
