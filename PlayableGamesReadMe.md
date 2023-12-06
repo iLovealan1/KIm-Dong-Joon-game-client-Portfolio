@@ -634,13 +634,14 @@ private IEnumerator JumpMoney(Money money, Vector3 targetPos, Action doneCallbac
 &nbsp;&nbsp;&nbsp;&nbsp;● GetMoneyStack() : IMoneyStackReturner의 메서드로 done Callback과 께 머니 Stack을 반환합니다. <br>
 
 ````
+// Awake 단에서 이벤트로 Counter 클래스의 결재 로직 마지막에 호출
 public void GenerateMoney(int amount) => this.StartCoroutine(CoGenerateMoney(amount));
 
-private IEnumerator CoGenerateMoney(int amount)
+private IEnumerator CoGenerateMoney(int amount) //인자는 전체 머니의 양
 {
-    yield return CoroutineUtil.WaitUntil(() => {return _isOkToGen;});
+    yield return CoroutineUtil.WaitUntil(() => {return _isOkToGen;}); // 머니 젠이 가능할때 까지 프레임을 넘기며 대기
 
-    var count = Math.Round((float)amount / (float)Money.Price , 1) ;
+    var count = Math.Round((float)amount / (float)Money.Price , 1) ; // 설정된 머니다발의 값어치 만큼 돈을 생성
 
     for (int i =0; i < count; i++)
     {
@@ -650,7 +651,7 @@ private IEnumerator CoGenerateMoney(int amount)
     }
 }
 
-private void SetMoneyPos(Money money)
+private void SetMoneyPos(Money money) // 머니 위치 설정
 {
     Transform moneyTrans =  money.transform;
     Transform targetTrans = null;
@@ -658,9 +659,9 @@ private void SetMoneyPos(Money money)
     var minCount = 0f;
     for (int i = 0; i < _defaultPosArr.Length; i++)
     {
-        var childCount = _defaultPosArr[i].childCount;
+        var childCount = _defaultPosArr[i].childCount; // 설정된 default Transform의 자식 갯수
 
-        if (childCount == 0)
+        if (childCount == 0) // 자식의 갯수가 0인 Transform 우선
         {
             targetTrans = _defaultPosArr[i];
             moneyTrans.parent = targetTrans;
@@ -668,13 +669,13 @@ private void SetMoneyPos(Money money)
             return;
         }
 
-        if (minCount == 0)
+        if (minCount == 0) // 모든 Transform 배열 요소의 자식 갯수가 0이 아니고 최소 갯수가 0일경우
         {
-            minCount = childCount;
-            targetTrans = _defaultPosArr[i];
+            minCount = childCount;  // 최소 자식 갯수 캐싱
+            targetTrans = _defaultPosArr[i]; // 타겟 포즈 설정
         }
 
-        if (minCount > childCount)
+        if (minCount > childCount) // 최소 갯수가 다음 요소 Transform의 자식 갯수보다 클경우 새로운 타겟 트랜스폼 설정
         {
             minCount = childCount;
             targetTrans = _defaultPosArr[i];
@@ -686,9 +687,10 @@ private void SetMoneyPos(Money money)
     moneyTrans.localPosition = new Vector3(0, SPACINGY * minCount, 0);
 }
 
-public Stack<Money> GetMoneyStack(out System.Action doneCallback)
+public Stack<Money> GetMoneyStack(out System.Action doneCallback) // IMoneyStackReturner 인터페이스 메서드
 {
     doneCallback = () => {
+        // 돈 회수가 끝난 시점에서 호출될 콜백 정의 
         _isOkToGen = true;
         if (_onPlayerTakeMoney != null)
         {
@@ -697,11 +699,11 @@ public Stack<Money> GetMoneyStack(out System.Action doneCallback)
         }
      };
 
-    if (_currMoneyStack.Count == 0)
+    if (_currMoneyStack.Count == 0) // 현재 저장된 돈이 없을경우 null 반환
     {
         return null;         
     }
-    else
+    else  //아니라면 돈이 회수될때까지 돈 생성 제한
     {
         _isOkToGen = false;
         return _currMoneyStack;
