@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Supercent.Util;
 
 namespace LunaBurger.Playable010
 {
     public class BurgerMachineController : Unit
     {   
         [SerializeField] private float _burgerSpawnTime;
-        
         [SerializeField] private float              _burgerSpeed;
         [SerializeField] private List<WaitLineSpot> _waitLineSpotList = new List<WaitLineSpot>();
         
