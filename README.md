@@ -17,7 +17,7 @@
 🗃️: Guns And Rachels 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/GunsAndRachels_ReadMe.md)<br>
 🗃️: BurgerPlease! 및 OutletRush! 제작 기술 설명 링크 : [📜:문서이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGamesReadMe.md)
 
-# 🖋️: Stacks<br>
+# 📚: Stacks<br>
 
 <img src="https://img.shields.io/badge/UnityEngine-000000?style=for-the-badge&logo=unity&logoColor=white"><br>
 <img src="https://img.shields.io/badge/Csharp-A100FF?style=for-the-badge&logo=C#&logoColor=white"><br>
