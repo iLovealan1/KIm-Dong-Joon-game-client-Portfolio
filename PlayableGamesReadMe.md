@@ -19,7 +19,12 @@
 개요 : [📚:설명보기](#playableGame)<br>
 게임소개 및 플레이링크 : [📚:설명보기](#IntroDuction)<br>
 
-:red_circle: A*알고리즘을 활용한 절차적 랜덤 맵 생성 스크립트 제작.[📚:설명보기](#astar_random_map_generator) [📜:스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Astar_MapGenerator)<br>
+Outlet Rush Playable [📂 : 폴더로 이동 ](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/PlayableGames_Scripts/OutletRush_Playable)
+
+:red_circle: 플레이어 이동로직 및 카메라 이벤트 로직 및 연출.[📚:설명보기](#player_control_camera_event)<br>
+:red_circle: 아이템 스택킹 로직 및 연출.[📚:설명보기](#item_stacking)<br>
+:red_circle: 버전에 따른 돈 스택킹 로직 및 연출.[📚:설명보기](#money_stacking)<br>
+:red_circle: 손님 이동로직 및 연출.[📚:설명보기](#customer_move)<br>
 
 * * *
 
@@ -715,191 +720,158 @@ public Stack<Money> GetMoneyStack(out System.Action doneCallback) // IMoneyStack
 
 ### 🔖: customer_move
 
-![item_stacking](https://private-user-images.githubusercontent.com/124248265/287960318-16f31a90-6565-47ed-93ea-4a5f79520465.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NzE3NzQsIm5iZiI6MTcwMTc3MTQ3NCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzE4LTE2ZjMxYTkwLTY1NjUtNDdlZC05M2VhLTRhNWY3OTUyMDQ2NS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQxMDE3NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MjEyOTY1MDA5ZDZjODVkYjE5YjljYTRmNDU4ZGVlNzI2ZjRjYWZmOTRlODUyNzNkOGE2NDkzZDNhZDAwZWYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2-1DmEywPePdJt_bubIYAP158pJ9SPBsQpJhNkEoQ1E)![counter_item_stacking](https://private-user-images.githubusercontent.com/124248265/287960335-1b6b6330-2dce-4693-834e-1d7796a5c93b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NzE3NzQsIm5iZiI6MTcwMTc3MTQ3NCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMzM1LTFiNmI2MzMwLTJkY2UtNDY5My04MzRlLTFkNzc5NmE1YzkzYi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQxMDE3NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNTlhNWQ1ZTcxNDhkZjc5YjkzZTUwYzQ3MmQ5YTIxNjNjZTA2ODFlNjJjODA0ZDYyZmFjNjZjNmI1OWNjNDZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.QwTyxouZaCdSkFc9ALdSnmrquPqmvOjVqPTJ13Wujho)
+![item_stacking](https://private-user-images.githubusercontent.com/124248265/287960279-d5d37d10-4eb0-47cb-badc-35f8c22d836a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4Mjk1ODgsIm5iZiI6MTcwMTgyOTI4OCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg3OTYwMjc5LWQ1ZDM3ZDEwLTRlYjAtNDdjYi1iYWRjLTM1ZjhjMjJkODM2YS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwMjIxMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzBhZWM1M2I1NzhjOTIwZmUzMzFjNmFmOGVkNmE4NzZkNjYxN2M4ZTU5MGQ5OWVkYzgyYWY4ZDNiNGNkOGU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rHG4HokG9oNoQqFdOy4WphdjclB-oTOx1biTMLKyFHo)!
 
 ### **이미지 설명(좌측 상단부터)**
-- 이번 프로젝트에서는 두가지 모드가 제작되었습니다. 하나는 돈이 등 뒤로 실물로 쌓이는 모드와 그렇지 않은 모드가 있습니다.
-- 첫번째는 돈이 등 뒤로 쌓이는 모드의 모습을 볼수 있습니다.
-- 두번째는 돈이 유저에게 흡수되는 모드의 모습을 볼수 있습니다.
+- 각 노드에 맞게 움직이는 손님 NPC들을 확인할수 있습니다.
 
 ### **요약**
-- 아이템 스택과 동일하게 인터페이스로 소통하지만 IMoneyStackReturner 인터페이스로 제너릭 Stack을 이용해 Money 클래스 객체들을 저장.
-- 플레이어 돈 스택킹의 경우 Lerp() 함수와 사내 Tween 유틸을 활용하여 돈 스택킹 애니메이션을 구현.
-- 돈이 쌓이는 위치에는 Transform 배열을 활용하여 돈이 쌓이는 위치별 childCount 를 확인하여 구분하는 방식으로 돈 스택킹 구현. 
-- 자체 제작 오브젝트 Pool 클래스를 활용하여 메모리 부담을 덜 수 있게 활용.
-- 돈획득시 MoneyManager static 클래스를 통해 실제 유저의 금액을 증가시키고 static 클래스 내부에선 게임 Awake 단에서 할당된 이벤트를 호출합니다.
+- Nav Mesh 컴포넌트 사용이 불가능한 Luna 플랫폼의 특성으로 노드 리스트를 이용한 손님 움직임 구현
+- enum을 활용한 간이 상태 패턴을 사용하여 상태에 맞는 이동 로직과 노드를 사용하는 Customer Class.
+- 각 손님마다 할당된 node transform 제너릭 리스트를 새로운 Queue로 복사하여 이동에 사용.
+- 트윈을 이용한 움직임 구현 및 회전
+- 손님 프리팹마다 각각의 메시 모델 리스트를 가지고 랜덤하게 자신의 모습을 바꾸어 입장하는 손님들
+- Customer Manager Class와 이벤트 호출로 소통하며 자신의 상태 변경을 요청
   
 
 ### **관련 스크립트**
-**IMoneyStackReturner**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/InterFaces/IMoneyStackReturner.cs)<br>
-**Money**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/MoneyObject/Money.cs)<br>
-**MoneyManager**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Managers/MoneyManager.cs)<br>
-**Player**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Player.cs)<br>
+**Customer**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Customer.cs)<br>
 ### 코드
 
-&nbsp;&nbsp;&nbsp;&nbsp;● CoTakeMoney() : 플레이어가 성공적으로 인터페이스를 가져왔을떄 호출되는 메서드입니다. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;● JumpMoney() : Lerp() 함수와 TweenUtil을 활용하여 돈을 스택하는 애니메이션을 실행합니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● MoveCustomerToDisplayShelf() : 손님을 가게로 입장시키는 메서드입니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● CoMoveToShelfNode() : 노드로 이동하는 손님의 로직이 담긴 메서드 입니다. <br>
 
 ````
-private IEnumerator CoTakeMoney(Stack<Money> takenMoneyStack , Action doneCallback)
-{ 
-    if (!IsMoneyStackingMode) // GameManager의 설정된 모드에 따라 기능 수행
-        AudioManager.NullableInstance.PlaySFX(EAudioName.MoneyTakeSound,true);
-   
-    while(takenMoneyStack.Count > 0)
+public void MoveCustomerToDisplayShelf() // 손님이 가게로 진입하기 전 호출
+{
+    if (_currItemList.Count != 0)
+        _currItemList[0].Disable();
+
+    var nodeQ = new Queue<Transform>(_nodelList); // Queue로 현재 손님이 가지고 있는 리스트를 복사
+    this.StartCoroutine(CoMoveToShelfNode(nodeQ));
+}
+
+private IEnumerator CoMoveToShelfNode(Queue<Transform> nodeQ)
+{
+    var timeLimit = 3f;
+
+    if (_targetShelf == ECustomerShelfTarget.Clotehs)
+        timeLimit = 0.8f;
+
+    if (nodeQ.Count == 1) // 마지막 노드일 경우 시간 설정
     {
-        var money = takenMoneyStack.Pop(); // 가져온 스택에서 객체 pop
-        _currMoneyStack.Push(money); pop으로 꺼낸 객체 저장 pop
-
-        var cnt = _moneyStackPoint.childCount;
-        var targetPos = _moneyStackInterval * cnt;
-
-        if (IsMoneyStackingMode)
-            money.transform.parent = _moneyStackPoint; 
+        if (_targetShelf == ECustomerShelfTarget.Shelf1)
+            timeLimit = 0.5f;
+        else if (_targetShelf == ECustomerShelfTarget.Clotehs)
+            timeLimit = 0.4f;
         else 
-            money.transform.parent = null;
-        
+            timeLimit = 1f;
+    }
 
-        if (takenMoneyStack.Count == 0)
-        {
-            doneCallback.Invoke();
+    if (nodeQ.Count != 0) // 노드 Queue가 Dequeue 가능한 상태일 경우
+    {
+        var targetNode = nodeQ.Dequeue();
+        ChangeAnimation(false);
 
-            if (IsMoneyStackingMode)
-                this.StartCoroutine(JumpMoney(money,targetPos,doneCallback));
-            else    
-                this.StartCoroutine(CoJumpMoney_NoStackVer(money,doneCallback));
-        }
+        this.transform.parent = targetNode;
+        yield return null;
+
+        this.transform.LookAt(targetNode.position);;
+        TweenUtil.TweenLocalPosition( 
+        this.transform, 
+        Vector3.zero,
+        false,
+        timeLimit,
+        (done) =>{
+            this.StartCoroutine(CoMoveToShelfNode(nodeQ)); // 목적지에 도착시 재귀적으로 호출
+        });
+    }
+    else
+    {
+        if (_targetShelf == ECustomerShelfTarget.Shelf2)
+            this.transform.localEulerAngles = new Vector3 (0f,180f,0f);
+
         else
-        {
-           if (IsMoneyStackingMode)
-                this.StartCoroutine(JumpMoney(money,targetPos));
-            else    
-                this.StartCoroutine(CoJumpMoney_NoStackVer(money));
-        }
+            this.transform.localEulerAngles = new Vector3 (0f,-90f,0f);
 
-        yield return CoroutineUtil.WaitForSeconds(_moneyTakeInterval);
+        _customerCloud.gameObject.SetActive(true);
+        ChangeAnimation(true);
     }
-}
-
-private IEnumerator JumpMoney(Money money, Vector3 targetPos, Action doneCallback = null)
-{
-    var moneyTrans = money.transform;
-    var startSec = Time.time;
-    var endSec = startSec + _moneyMoveTimeLimit;
-    Vector3 startPos = moneyTrans.localPosition;
-
-    // 트윈 유틸을 활용한 머니 회전
-    TweenUtil.TweenLocalRotation(moneyTrans,Quaternion.Euler(new Vector3(0f, 90f,0f)),false,_itemMoveTimeLimit);
-
-    AudioManager.NullableInstance.PlaySFX(EAudioName.MoneyStackSound,true,false, 0.05f);
- 
-    while (Time.time < endSec) // Lerp() 함수와 AnimationCurve클래스를 활용한 머니 스택킹 애니메이션
-    {
-        var ratio = (Time.time - startSec) / _moneyMoveTimeLimit;
-        moneyTrans.localPosition = Vector3.Lerp(moneyTrans.localPosition, targetPos , _moneyMoveCurve.Evaluate(ratio));
-        moneyTrans.localPosition = moneyTrans.localPosition + Vector3.up * _moneyJumpCurve.Evaluate(ratio);
-        yield return CoroutineUtil.WaitForFixedUpdate;
-    }
-
-    moneyTrans.localPosition = targetPos; // 타겟 포지션 고정
-
-    if (doneCallback != null) // 마지막 돈 획득시 호출되는 donecallback
-    {
-        AudioManager.NullableInstance.ResetPitch(EAudioName.MoneyStackSound);
-        _takeMoneyCoroutine = null;
-
-        if (_isPlayerInMoneyStacker)
-            _checkMoneyGenCoroutine = this.StartCoroutine(CoCheckMoneyGen());
-        
-        doneCallback.Invoke();
-    }
-
-    MoneyManager.UpdateCurrentMoney(Money.Price); //  MoneyManager 스태틱 클래스의 메서드를 통해 금액 업데이트 (내부에선 콜백을 사용하여 UI와 소통)
 }
 ````
 
-**MoneyStacker**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/MoneyObject/MoneyStacker.cs)<br>
+**CustomerManager**[📜 : 스크립트 전문보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/OutletRush_Playable/Unit/Customer.cs)<br>
 ### 코드
 
-&nbsp;&nbsp;&nbsp;&nbsp;● GenerateMoney() : CoGenerateMoney() 머니 생성 코루틴을 _isOkToGen 부울 값을 이용해 제어합니다 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;● SetMoneyPos() : 돈의 생성 위치를 Transform배열과 childCount를 활용해 조정합니다. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;● GetMoneyStack() : IMoneyStackReturner의 메서드로 done Callback과 께 머니 Stack을 반환합니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● ChangeCustomerState() : 호출된 손님의 상태에 따라 상태를 재정의 합니다. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;● FindEmptyWaitNode() : 줄서기 로직을 담은 메서드입니다. 새치기를 방지하기 위해 현재 줄선 위치를 기억하여 다음 줄로 이동시킵니다. <br>
 
 ````
-// Awake 단에서 이벤트로 Counter 클래스의 결재 로직 마지막에 호출
-public void GenerateMoney(int amount) => this.StartCoroutine(CoGenerateMoney(amount));
-
-private IEnumerator CoGenerateMoney(int amount) //인자는 전체 머니의 양
+private ECustomerState ChangeCustomerState(ECustomerState currState, Customer requestedCutomer)
 {
-    yield return CoroutineUtil.WaitUntil(() => {return _isOkToGen;}); // 머니 젠이 가능할때 까지 프레임을 넘기며 대기
+    var newState = ECustomerState.None;
 
-    var count = Math.Round((float)amount / (float)Money.Price , 1) ; // 설정된 머니다발의 값어치 만큼 돈을 생성
-
-    for (int i =0; i < count; i++)
+    switch (currState) // 호출된 손님의 상태에 따라 분기
     {
-        var money = _moneyPool.GetMoney();
-        _currMoneyStack.Push(money);
-        SetMoneyPos(money);
+        case ECustomerState.Shopping : 
+        {
+            newState = ECustomerState.BeforeWaitNode;
+            break;
+        }
+        case ECustomerState.BeforeWaitNode : // 손님이 물건을 매대에서부터 수령하여 줄을 서야하는 상태일경우
+        {
+            newState = FindEmptyWaitNode(requestedCutomer);
+            break;
+        }
+        case ECustomerState.PurchaseNode : 
+        {
+            break;
+        }
+        default : // 손님의 상태에 따라 다음 줄서는 위치를 선정
+        {
+            var idx = (int)currState - 1;
+
+            if (_waitNodeList[idx].childCount == 0)
+            {
+                requestedCutomer._currTargetWaitNode = _waitNodeList[idx];
+                newState = (ECustomerState)idx;
+
+            }
+            else
+            {
+                requestedCutomer._currTargetWaitNode = null;
+                newState = requestedCutomer._currState;
+            }
+            break;
+        }
     }
+
+    return newState;
 }
 
-private void SetMoneyPos(Money money) // 머니 위치 설정
+private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이 처음 줄서는 위치를 선정
 {
-    Transform moneyTrans =  money.transform;
-    Transform targetTrans = null;
+    var newState = ECustomerState.None;
 
-    var minCount = 0f;
-    for (int i = 0; i < _defaultPosArr.Length; i++)
+    for (int i = 0; i< _waitNodeList.Count; i++ ) // Manager가 보유중인 줄의 자식 수를 파악하여 목적지 선정
     {
-        var childCount = _defaultPosArr[i].childCount; // 설정된 default Transform의 자식 갯수
+        var node = _waitNodeList[i];
 
-        if (childCount == 0) // 자식의 갯수가 0인 Transform 우선
+        if (node.childCount == 0)
         {
-            targetTrans = _defaultPosArr[i];
-            moneyTrans.parent = targetTrans;
-            moneyTrans.localPosition = Vector3.zero;
-            return;
-        }
-
-        if (minCount == 0) // 모든 Transform 배열 요소의 자식 갯수가 0이 아니고 최소 갯수가 0일경우
-        {
-            minCount = childCount;  // 최소 자식 갯수 캐싱
-            targetTrans = _defaultPosArr[i]; // 타겟 포즈 설정
-        }
-
-        if (minCount > childCount) // 최소 갯수가 다음 요소 Transform의 자식 갯수보다 클경우 새로운 타겟 트랜스폼 설정
-        {
-            minCount = childCount;
-            targetTrans = _defaultPosArr[i];
+            requestedCutomer._currTargetWaitNode = node;
+            newState = (ECustomerState)i;
+            break;
         }
     }
-
-    moneyTrans.parent = targetTrans;
-    moneyTrans.localRotation = Quaternion.identity;
-    moneyTrans.localPosition = new Vector3(0, SPACINGY * minCount, 0);
-}
-
-public Stack<Money> GetMoneyStack(out System.Action doneCallback) // IMoneyStackReturner 인터페이스 메서드
-{
-    doneCallback = () => {
-        // 돈 회수가 끝난 시점에서 호출될 콜백 정의 
-        _isOkToGen = true;
-        if (_onPlayerTakeMoney != null)
-        {
-            _onPlayerTakeMoney.Invoke(EGuideArrowState.DisplayShelf_Shoe2_Upgrade);
-            _onPlayerTakeMoney = null;
-        }
-     };
-
-    if (_currMoneyStack.Count == 0) // 현재 저장된 돈이 없을경우 null 반환
+    
+    if (newState == ECustomerState.None)
     {
-        return null;         
+        requestedCutomer._currTargetWaitNode = null;
+        newState = requestedCutomer._currState;
     }
-    else  //아니라면 돈이 회수될때까지 돈 생성 제한
-    {
-        _isOkToGen = false;
-        return _currMoneyStack;
-    }
+
+    return newState;
 }
 ````
 
