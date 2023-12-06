@@ -884,7 +884,7 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 ---
 
-# 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
+# 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/PlayableGames_Scripts/BurgerPlease_Playable)
 
 
 ### manager_init
