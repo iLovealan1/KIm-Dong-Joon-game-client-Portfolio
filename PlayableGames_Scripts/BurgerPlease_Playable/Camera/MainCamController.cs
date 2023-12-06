@@ -21,8 +21,6 @@ namespace LunaBurger.Playable010
         }
     public class MainCamController : MonoBehaviour
     {
-        
-        
         //---------------------------------------------------------
         //프리셋 스크린 사이즈 데이터
         //---------------------------------------------------------
