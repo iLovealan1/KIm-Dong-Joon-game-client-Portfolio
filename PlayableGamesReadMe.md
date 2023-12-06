@@ -882,23 +882,25 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 # 🟢: Burger Please! Playable<br>[📂:폴더이동](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/Scripts/Field_Coin%26Items)
 
 
-### 🔖: field_items
-
-![GetCoin](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/b1a7ce3c-100e-4d93-a74c-1269e90e98cd)
+### 🔖: manager_init
+![Class Diagram](https://private-user-images.githubusercontent.com/124248265/288324329-0ff36f4e-a936-40c4-a89b-c660cfbe223c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDc2MjQsIm5iZiI6MTcwMTg0NzMyNCwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI0MzI5LTBmZjM2ZjRlLWE5MzYtNDBjNC1hODliLWM2NjBjZmJlMjIzYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzIyMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZmQxMDg4NTc5MzhlYzYzYjVlMDk2ODAzYmMyY2E0MTEzOTIyYzZmOGRjZjcwNWFiNjZkZTZlYjRhZjc3OTFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.cr0xw57Fz5ACy1AU4E8M6AH1C9fePkf6D8F9MC7RkK0)
 
 ### **이미지 설명(최상단부터)**
-- 필드 코인 개별 획득
+- Manager 와 Controller 간의 Init() 관계도입니다.
 
 ### **요약**
-- ChestItemGenerator 클래스와 DropItem 클래스를 이용한 아이템 생성.
+- App 클래스의 유니티 라이프사이클 Awake() 메서드 단에서 시작되는 Init 구조를 활용하여 각 객체별 이니셜라이징 순서를 조정.
+- 각 Manager 클래스는 관리대상으로 소유중인 Controller 클래스들의 이니셜라이징과 함께 자신을 초기화.
+- 각 Manager 클래스는 외부 매니저 혹은 객체와 소통할수 있도록 이벤트 등록.
 
 ### **상세 내용**
-**DropItem**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/Scripts/Field_Coin%26Items/DropItem.cs)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;● ChestItemGenerator 클래스의 메서드 팩토리 패턴으로 생성된 객체의 이름에 따라 switch문 과 if문을 통해 각각 다른 메서드를 호출합니다.<br>
-
-###코드
-
-    pirvate void test(){}
+**App**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/App.cs)<br>
+**GameManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/GameManager.cs)<br>
+**CounterManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/CounterManager.cs)<br>
+**PickupManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/PickupManager.cs)<br>
+**BurgerMachineManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/BurgerMachineManager.cs)<br>
+**CustomerManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/Manager/CustomerManager.cs)<br>
+**UIManager**[📜 : 스크립트 보기](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Scripts/BurgerPlease_Playable/UI/UIManager.cs)<br>
 
 
 [📑: 목차로](#목차)
