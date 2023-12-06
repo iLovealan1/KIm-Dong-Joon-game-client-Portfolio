@@ -26,6 +26,11 @@
 :red_circle: 버전에 따른 돈 스택킹 로직 및 연출.[📚:설명보기](#money_stacking)<br>
 :red_circle: 손님 이동로직 및 연출.[📚:설명보기](#customer_move)<br>
 
+### Burger Please! Playable [📂 : 폴더로 이동 ](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/tree/main/PlayableGames_Scripts/BurgerPlease_Playable)
+
+:red_circle: App, Manager, Controller Init 구조.[📚:설명보기](#manager_init)<br>
+:red_circle: 군중 컨트롤 및 줄서기 로직.[📚:설명보기](#crowd_control)<br>
+
 * * *
 
 
@@ -905,7 +910,7 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 [📑: 목차로](#목차)
 
-### 🔖: Crowd Control
+### 🔖: crowd_control
 
 ![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288326933-43e349c5-b32a-4bb7-80df-0ac5bdbc9c88.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI2OTMzLTQzZTM0OWM1LWIzMmEtNGJiNy04MGRmLTBhYzViZGJjOWM4OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MWFjODdlODE5Mzk2YTYzYmQyZDVmN2RkOWQ4MzhmNzhiYmFhMjAxZDAxY2U4OThjMjk5OTVjZmRjMjIwNjY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.NKpzZ47jWzKhVo-jgh4cQiAPs3-3gNb9j70hv7FxaR0)
 ![Line Gizumo](https://private-user-images.githubusercontent.com/124248265/288328333-e4f8b48e-2793-4c28-b2dd-bdb828b7c528.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4NDg1ODksIm5iZiI6MTcwMTg0ODI4OSwicGF0aCI6Ii8xMjQyNDgyNjUvMjg4MzI4MzMzLWU0ZjhiNDhlLTI3OTMtNGMyOC1iMmRkLWJkYjgyOGI3YzUyOC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNlQwNzM4MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYWFhYjk3NjUzNjc2NmIzMGEyMjZmNTlmNmEzNDA0OTJhMThlYTI0OTVmYWMyOWEwODZmZmI3ZmI3MzEwZjI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-AK4rF6Yk-uM4aY_QtSnFFF7d3ZxsBIsWfKNdRtW2hw)
@@ -1116,25 +1121,25 @@ private List<WaitLineSpot> CheckEmptySpotsAndMakeList(out bool isFull) //손님�
 
 
 ````
- private Transform FindWaitLineSpotForCustomer() // 손님이 처음 pickup으로 들어올 경우
+ private Transform FindWaitLineSpotForCustomer() // 손님이 처음 pickup으로 들어올 경우.
 {
     Transform nullableWaitLineSpot = null;
-    var transList = new List<Transform>(); 
+    var transList = new List<Transform>();  
 
-    foreach(var pickup in _pickupList)
+    foreach(var pickup in _pickupList) // 활성화된 모든 픽업대 객체들로 부터 사용가능한 node 반환
     {
         if(pickup.gameObject.activeSelf || pickup.UnitLevel == 1)
         {
             var emptySpotTrans = pickup.FindEmptySpot();
-            transList.Add(emptySpotTrans);
+            transList.Add(emptySpotTrans); // 새로운 리스트에 담기
         }
     }
 
-    nullableWaitLineSpot = CompareWeight(transList);   
-    return nullableWaitLineSpot;
+    nullableWaitLineSpot = CompareWeight(transList);   // 가중치 비교
+    return nullableWaitLineSpot; // 최종 위치 전달
 }
 
-private Transform FindMidLineSpotForCustomer(eCustomerLevel customerLevel, WaitLineSpot waitLineSpotComp) // 손님이 줄을 서던 도중 노드 요청을 할 경우
+private Transform FindMidLineSpotForCustomer(eCustomerLevel customerLevel, WaitLineSpot waitLineSpotComp) // 손님이 줄을 서던 도중 노드 요청을 할 경우.
 {
     Transform nullableWaitLineSpot = null;
     var idx = (int)customerLevel;
@@ -1142,7 +1147,7 @@ private Transform FindMidLineSpotForCustomer(eCustomerLevel customerLevel, WaitL
     return nullableWaitLineSpot;
 }
 
-private Transform CompareWeight(List<Transform> transList) // pickup 객체들의 레벨과 각각 전달받은 노드들의 가중치를 비교
+private Transform CompareWeight(List<Transform> transList) // pickup 객체들의 레벨과 각각 전달받은 노드들의 가중치를 비교.
 {
     Transform finalSpot = null;
     var minWeight = 0;
@@ -1151,13 +1156,13 @@ private Transform CompareWeight(List<Transform> transList) // pickup 객체들�
 
     foreach (var spotTrans in transList)
     {
-        if(count == defaultTransCnt)
+        if(count == defaultTransCnt) // 노드가 1개밖에 없을 경우.
         {
             finalSpot = spotTrans;
             return finalSpot;
         }              
 
-        if(spotTrans != null)
+        if(spotTrans != null) // 노드가 2개 이상일 경우 비교.
         {
             var comp = spotTrans.GetComponent<WaitLineSpot>(); 
             if(minWeight == 0) 
