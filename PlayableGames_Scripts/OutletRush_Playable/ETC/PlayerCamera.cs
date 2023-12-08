@@ -2,13 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Supercent.Util;
 
 namespace luna_sportshop.Playable002
 {
-    using Params = Supercent.Util.TweenUtil.Params;
-    using Token = Supercent.Util.TweenUtil.Token;
-    using TimeType = Supercent.Util.TweenUtil.TimeType;
     public enum EEventCamType
     {
         None = -1,
