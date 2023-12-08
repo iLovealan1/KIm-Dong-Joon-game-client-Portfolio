@@ -3,15 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Supercent.Util;
 using TMPro;
 
 namespace luna_sportshop.Playable002
 {
-    using Params = Supercent.Util.TweenUtil.Params;
-    using Token = Supercent.Util.TweenUtil.Token;
-    using TimeType = Supercent.Util.TweenUtil.TimeType;
-
     public enum EUpgradeStoolType
     {
         None = -1,
