@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace luna_sportshop.Playable002
 {
+    using Random = UnityEngine.Random;
+
     public enum EItemFormState
     {
         None = -1,
