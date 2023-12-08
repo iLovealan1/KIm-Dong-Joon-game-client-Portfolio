@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Action = System.Action;
 using LunaBurger;
 
 namespace luna_sportshop.Playable002
 {
+    using Action = System.Action;
+
     public class UIObjectField : MonoBehaviour
     {
        [SerializeField] private VJHandler _joystick = null;
