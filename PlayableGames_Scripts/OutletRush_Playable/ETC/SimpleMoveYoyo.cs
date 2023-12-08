@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Supercent.Util;
-using Token = Supercent.Util.TweenUtil.Token;
 
 public class SimpleMoveYoyo : MonoBehaviour
 {
