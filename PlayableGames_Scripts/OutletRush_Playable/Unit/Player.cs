@@ -5,8 +5,6 @@ using UnityEngine;
 namespace luna_sportshop.Playable002
 {
     using Action = System.Action;
-    using Params = Supercent.Util.TweenUtil.Params;
-    using TimeType = Supercent.Util.TweenUtil.TimeType;
 
     public class Player : Unit , IPlayerMoveHandler, IItemListReturner, IMoneyStackReturner
     {
