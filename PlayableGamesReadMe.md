@@ -155,8 +155,7 @@ https://playground.lunalabs.io/preview/113799/160490/1703aff40e6d4548f15efe20691
 
 ### player_control_camera_event
 
-![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/6314e284-b5a6-41cb-9fad-13cb78d95b7a)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/359be6d2-5245-4bde-b341-9d90af114412)
-
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_PlayerMove.gif)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_EventCam.gif)
 
 
 ### **이미지 설명(좌측부터)**
@@ -337,7 +336,8 @@ public void StartEventCamYoyo(EEventCamType type)
 
 ### item_stacking
 
-![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/98ab4632-9749-4ec8-a580-2705b065fe99)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/4d3b1d6b-e269-4e8a-9bff-94a4dce1c10a)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/bef8e7d3-6016-4d1d-b142-dc77e74925f1)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/18d7b409-c542-4e5b-83aa-3360d9a46ea6)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/0b6673c3-c4f4-4847-8179-39e6373431c9)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_PlayerStack.gif)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_CounterStack.gif)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRsuh_ClothesStack.gif)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_Clothes_Shelf_Stack.gif)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_PlayerStack%20Point.png)
 
 
 ### **이미지 설명(좌측 상단부터)**
@@ -536,7 +536,7 @@ private void OnTriggerEnter(Collider other)
 
 ### money_stacking
 
-![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c9dfd94d-c9c4-4f74-855d-26c7d31b9746)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/08df74b5-4441-43cb-ac5b-3794c83fa1c6)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_MoneyStack_2.gif)![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_MoneyNoneStack.gif)
 
 
 ### **이미지 설명(좌측 상단부터)**
@@ -729,7 +729,7 @@ public Stack<Money> GetMoneyStack(out System.Action doneCallback) // IMoneyStack
 
 ### customer_move
 
-![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/6789dc11-5c71-47d6-88b2-cc45fe21fb7c)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/OutletRush_Customer_Move_2.gif)
 
 
 ### **이미지 설명(좌측 상단부터)**
@@ -893,7 +893,7 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 
 ### manager_init
-![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c4632819-f2cf-4fd1-9dca-f93d57c8de3a)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/Burger_Graph.png)
 
 
 ### **이미지 설명(최상단부터)**
@@ -918,7 +918,6 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 
 ### crowd_control
 ![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/BurgerPlayable_CustomerLine.gif)
-
 
 
 ### **이미지 설명(최상단부터)**
