@@ -917,6 +917,8 @@ private ECustomerState FindEmptyWaitNode(Customer requestedCutomer) // 손님이
 [📑: 목차로](#목차)
 
 ### crowd_control
+
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/Burger_customer_Point.png)
 ![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/blob/main/PlayableGames_Image/BurgerPlayable_CustomerLine.gif)
 
 
