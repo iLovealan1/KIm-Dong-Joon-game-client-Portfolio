@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)<br>
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/c044a0ca-46f8-4a91-bb80-6a2c5028a237)![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Luna%20Playable%20Games&fontSize=35)<br>
 
 # 소개
 안녕하세요. 플레이어블게임 포트폴리오에 오신걸 환영합니다.
@@ -59,7 +59,8 @@
 
 ## 🎮: 게임소개
 
-![스크린샷 2023-12-04 오후 5 35 46](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/a6c7d2b3-d5b0-4ba2-a261-976342089a92)
+![image](https://github.com/iLovealan1/KIm-Dong-Joon-game-client-Portfolio/assets/124248265/11aa2eee-4f67-4aad-895c-929914dbffa2)
+
 - **제목** : Outlet Rush Playable <br> 
 - **장르** : Arcade Idle <br>
 - **엔진** : UnityEngine3D<br>
